@@ -18,17 +18,18 @@
       .OBJ-1.Inline { display:inline-block;position:relative;line-height:normal; }
       .OBJ-1 span,.OBJ-1:link span,.OBJ-1:visited span { color:#80502f;font-family:Georgia,serif;font-weight:normal;text-decoration:none;text-align:center;text-transform:capitalize;font-style:normal;left:0px;top:6px;width:96px;height:18px;line-height:18px;font-size:14px;display:block;position:absolute;cursor:pointer; }
       .OBJ-2 { line-height:30px; }
-      .P-2 { text-align:center;line-height:1px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#ffffff;background-color:transparent;font-variant:normal;font-size:13.0px;vertical-align:0; }
-      .C-2 { line-height:16.00px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#ffffff;background-color:transparent;text-decoration:none;font-variant:normal;font-size:13.3px;vertical-align:0; }
-      .P-3 { text-align:right;line-height:1px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#ffffff;background-color:transparent;font-variant:normal;font-size:13.0px;vertical-align:0; }
-      .P-4 { text-align:center;line-height:1px;font-family:"Arial", sans-serif;font-style:normal;font-weight:700;color:#ffffff;background-color:transparent;font-variant:normal;font-size:16.0px;vertical-align:0; }
-      .C-3 { line-height:20.00px;font-family:"Arial", sans-serif;font-style:normal;font-weight:700;color:#ffffff;background-color:transparent;text-decoration:none;font-variant:normal;font-size:16.0px;vertical-align:0; }
+      .P-2 { text-align:center;line-height:1px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;font-variant:normal;font-size:13.0px;vertical-align:0; }
+      .C-2 { line-height:16.00px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;text-decoration:none;font-variant:normal;font-size:13.3px;vertical-align:0; }
+      .P-3 { text-align:right;line-height:1px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;font-variant:normal;font-size:13.0px;vertical-align:0; }
+      .P-4 { text-align:center;line-height:1px;font-family:"Arial", sans-serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;font-variant:normal;font-size:16.0px;vertical-align:0; }
+      .C-3 { line-height:20.00px;font-family:"Arial", sans-serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;text-decoration:none;font-variant:normal;font-size:16.0px;vertical-align:0; }
+      .OBJ-3 { background:#000000; }
     </style>
     <script type="text/javascript" src="wpscripts/jquery.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.event.move.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.wpslider.js"></script>
-    <script type="text/javascript" src="wpscripts/jquery.marquee.js"></script>
+    <script type="text/javascript" src="wpscripts/jquery.wpvisibility.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.wputils.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -36,19 +37,19 @@
       var btnState = [];
       $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
       $('#slider_28').data('wpslider').restrictSlides();
-      $("#marq_1_0").marquee();
+      clickHide('panel_1', 'txt_1', 150);
       enableSmoothScroll();
       });
     </script>
   </head>
   <body style="height:1083px;background:#000000;">
     <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:1200px;height:1083px;">
-      <div style="position:absolute;left:379px;top:1060px;width:442px;height:18px;overflow:hidden;">
+      <div id="txt_1" style="position:absolute;left:379px;top:1060px;width:442px;height:18px;overflow:hidden;">
         <p class="Body-1 P-1"><span class="C-1">Copyright © Ford Green Hall -<wbr> All rights reserved</span></p>
       </div>
-      <img alt="Ford Green Hall" src="wpimages/wpc34a83e9_06.png" style="position:absolute;left:359px;top:2px;width:480px;height:86px;">
-      <img alt="Stoke-on-Trent" src="wpimages/wp393777aa_06.png" style="position:absolute;left:13px;top:27px;width:282px;height:43px;">
-      <img alt="Staffordshire" src="wpimages/wp03a71ada_06.png" style="position:absolute;left:925px;top:27px;width:267px;height:43px;">
+      <img alt="Ford Green Hall" src="wpimages/wp84213026_06.png" style="position:absolute;left:359px;top:2px;width:480px;height:86px;">
+      <img alt="Stoke-on-Trent" src="wpimages/wp4d8680c8_06.png" style="position:absolute;left:13px;top:27px;width:282px;height:43px;">
+      <img alt="Staffordshire" src="wpimages/wpcad9ec68_06.png" style="position:absolute;left:925px;top:27px;width:267px;height:43px;">
       <div style="position:absolute;left:0px;top:155px;width:1207px;height:45px;">
         <a href="index.html" id="nav_3_B1" class="OBJ-1 ActiveButton Down OBJ-2" style="display:block;position:absolute;left:0px;top:7px;width:96px;height:30px;">
           <span>Home</span>
@@ -90,21 +91,16 @@
       <div style="position:absolute;left:355px;top:130px;width:490px;height:30px;overflow:hidden;">
         <h2 class="User-Details2 P-2"><span class="C-2">Ford Green Road, Smallthorne, Stoke-<wbr>on-<wbr>Trent, ST6 1NG</span></h2>
       </div>
-      <div style="position:absolute;left:906px;top:130px;width:286px;height:30px;overflow:hidden;"><h2 class="User-Details2 P-3"><span class="C-2">fordgreenhall.museum@gmail.com</span></h2></div><div style="position:absolute;left:13px;top:130px;width:185px;height:30px;overflow:hidden;"><h2 class="User-Details2"><span class="C-2">Phone &nbsp;01782 537696</span></h2></div><a href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt="" src="wpimages/wp14b6419a_06.png" style="position:absolute;left:31px;top:923px;width:209px;height:58px;"></a><a href="https://twitter.com/fordgreenhall" target="_blank"><img alt="" src="wpimages/wpc6c948bf_06.png" style="position:absolute;left:959px;top:923px;width:209px;height:59px;"></a><img alt="" src="wpimages/wpfb5cc178_06.png" style="position:absolute;left:299px;top:25px;width:49px;height:49px;"><img alt="" src="wpimages/wpfb5cc178_06.png" style="position:absolute;left:848px;top:25px;width:49px;height:49px;"><img alt="Disabled access is situated at the front of the Hall, accessed from the main road." src="wpimages/wpa73c716d_06.png" style="position:absolute;left:232px;top:1020px;width:737px;height:23px;"><img alt="" src="wpimages/wp7e4454fd_05_06.jpg" style="position:absolute;left:534px;top:911px;width:132px;height:99px;"><img alt="1624 - 2019" src="wpimages/wpabcaec7e_06.png" style="position:absolute;left:517px;top:80px;width:166px;height:38px;"><div id="slider_28" style="position:absolute;left:0px;top:232px;width:1200px;height:577px;overflow:hidden;"><div id="slider_28_P1" style="position:absolute;left:0px;right:0px;width:1200px;height:577px;"><img alt="" src="wpimages/wp553e73be_05_06.jpg" style="position:absolute;left:0px;top:1px;width:1200px;height:576px;"><img alt="Where History Comes Alive" src="wpimages/wp0294f8a6_06.png" style="position:absolute;left:214px;top:33px;width:778px;height:191px;"></div><div id="slider_28_P2" style="position:absolute;left:0px;right:0px;width:1200px;height:577px;visibility:hidden;display:none;"><img alt="" src="wpimages/wp60baa1af_05_06.jpg" style="position:absolute;left:0px;top:1px;width:1200px;height:576px;"><img alt="" src="wpimages/wp7c8eae79_06.png" style="position:absolute;left:1068px;top:397px;width:114px;height:164px;"></div></div><img alt="" src="wpimages/wp27e7413b_06.png" style="position:absolute;left:0px;top:811px;width:1200px;height:93px;"><div style="position:absolute;left:337px;top:817px;width:511px;height:81px;overflow:hidden;"><p class="Normal P-4"><span class="C-3">Ford Green Hall needs you, we are raising funds </span></p>
+      <div style="position:absolute;left:906px;top:130px;width:286px;height:30px;overflow:hidden;"><h2 class="User-Details2 P-3"><span class="C-2">fordgreenhall.museum@gmail.com</span></h2></div><div style="position:absolute;left:13px;top:130px;width:185px;height:30px;overflow:hidden;"><h2 class="User-Details2"><span class="C-2">Phone &nbsp;01782 537696</span></h2></div><a href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt="" src="wpimages/wp14b6419a_06.png" style="position:absolute;left:31px;top:923px;width:209px;height:58px;"></a><a href="https://twitter.com/fordgreenhall" target="_blank"><img alt="" src="wpimages/wpc6c948bf_06.png" style="position:absolute;left:959px;top:923px;width:209px;height:59px;"></a><img alt="" src="wpimages/wpfb5cc178_06.png" style="position:absolute;left:299px;top:25px;width:49px;height:49px;"><img alt="" src="wpimages/wpfb5cc178_06.png" style="position:absolute;left:848px;top:25px;width:49px;height:49px;"><img alt="Disabled access is situated at the front of the Hall, accessed from the main road." src="wpimages/wpa73c716d_06.png" style="position:absolute;left:232px;top:1020px;width:737px;height:23px;"><img alt="" src="wpimages/wp7e4454fd_05_06.jpg" style="position:absolute;left:534px;top:911px;width:132px;height:99px;"><img alt="1624 - 2019" src="wpimages/wped82d510_06.png" style="position:absolute;left:517px;top:80px;width:166px;height:38px;"><div id="slider_28" style="position:absolute;left:0px;top:232px;width:1200px;height:577px;overflow:hidden;"><div id="slider_28_P1" style="position:absolute;left:0px;right:0px;width:1200px;height:577px;"><img alt="" src="wpimages/wp553e73be_05_06.jpg" style="position:absolute;left:0px;top:1px;width:1200px;height:576px;"><img alt="Where History Comes Alive" src="wpimages/wpfcfc0ba4_06.png" style="position:absolute;left:214px;top:33px;width:778px;height:191px;"></div><div id="slider_28_P2" style="position:absolute;left:0px;right:0px;width:1200px;height:577px;visibility:hidden;display:none;"><img alt="" src="wpimages/wp60baa1af_05_06.jpg" style="position:absolute;left:0px;top:1px;width:1200px;height:576px;"><img alt="" src="wpimages/wp7c8eae79_06.png" style="position:absolute;left:1068px;top:397px;width:114px;height:164px;"></div></div><img alt="" src="wpimages/wp27e7413b_06.png" style="position:absolute;left:0px;top:811px;width:1200px;height:93px;"><div style="position:absolute;left:337px;top:817px;width:511px;height:81px;overflow:hidden;"><p class="Normal P-4"><span class="C-3">Ford Green Hall needs you, we are raising funds </span></p>
         <p class="Normal P-4"><span class="C-3">to repair an oak beam at the front of the Hall.<br>Please click on the ‘Just Giving’ link, or donate at reception.</span></p>
         <p class="Normal P-4"><span class="C-3">Any donation is gratefully received. Thank you!</span></p></div>
       <img alt="" src="wpimages/wpf24f1971_06.png" style="position:absolute;left:17px;top:816px;width:293px;height:79px;">
       <a href="https://www.justgiving.com/fordgreenhallmuseum" target="_blank">
         <img alt="" src="wpimages/wp90621549_05_06.jpg" style="position:absolute;left:854px;top:818px;width:341px;height:80px;">
       </a>
-      <img src="wpimages/wp06fe84f6_06.png" alt="" width="199" height="33" style="position:absolute;left:0px;top:196px;width:199px;height:33px;">
-      <img alt="" src="wpimages/wpa061c277_06.png" style="position:absolute;left:199px;top:196px;width:801px;height:33px;">
-      <div style="background-color:#ffffff;position:absolute;left:199px;top:201px;width:801px;height:23px;">
-        <div style="font-family:Tahoma;font-size:18px;color:#ff0000;overflow:hidden;position:absolute;top:0px;height:21px;line-height:21px;">
-          <div id="marq_1_0" data-properties="{&quot;behaviour&quot;:&quot;scroll&quot;,&quot;direction&quot;:&quot;left&quot;,&quot;scrollamount&quot;:&quot;3.000000&quot;}" style="position:absolute;left:0px;top:0px;width:801px;height:21px;line-height:21px;">PIRATES&nbsp;are&nbsp;on&nbsp;the&nbsp;way&nbsp;to&nbsp;Ford&nbsp;Green&nbsp;Hall&nbsp;seeking&nbsp;treasures.&nbsp;They&nbsp;will&nbsp;arrive&nbsp;on&nbsp;August&nbsp;19th.</div>
-        </div>
+      <div id="panel_1" class="OBJ-3" style="position:absolute;left:0px;top:193px;width:1200px;height:37px;">
+        <img alt="Ford Green Hall respects your privacy and does not use cookies on this website" src="wpimages/wpbdbf2dfe_06.png" style="position:absolute;left:279px;top:7px;width:642px;height:19px;">
       </div>
-      <img src="wpimages/wp06fe84f6_06.png" alt="" width="199" height="33" style="position:absolute;left:1001px;top:196px;width:199px;height:33px;">
     </div>
   </body>
 </html>
