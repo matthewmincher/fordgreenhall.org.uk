@@ -1,106 +1,588 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <meta name="generator" content="Serif WebPlus X8 (16,0,4,32)">
-    <meta name="viewport" content="width=1200">
-    <link rel="stylesheet" type="text/css" href="wpscripts/wpstyles.css">
-    <style type="text/css">
-      .P-1 { text-align:center;line-height:1px;font-family:"Tahoma", sans-serif;font-style:normal;font-weight:normal;color:#ffffff;background-color:transparent;font-variant:normal;font-size:11.0px;vertical-align:0; }
-      .C-1 { line-height:13.00px;font-family:"Tahoma", sans-serif;font-style:normal;font-weight:normal;color:#ffffff;background-color:transparent;text-decoration:none;font-variant:normal;font-size:10.7px;vertical-align:0; }
-      .OBJ-1,.OBJ-1:link,.OBJ-1:visited { background-image:url('wpimages/wp2d3d0871_06.png');background-repeat:no-repeat;background-position:0px 0px;text-decoration:none;display:block;position:absolute; }
-      .OBJ-1:hover { background-position:0px -60px; }
-      .OBJ-1:active,a:link.OBJ-1.Activated,a:link.OBJ-1.Down,a:visited.OBJ-1.Activated,a:visited.OBJ-1.Down,.OBJ-1.Activated,.OBJ-1.Down { background-position:0px -30px; }
-      .OBJ-1:focus { outline-style:none; }
-      button.OBJ-1 { background-color:transparent;border:none 0px;padding:0;display:inline-block;cursor:pointer; }
-      button.OBJ-1:disabled { pointer-events:none; }
-      .OBJ-1.Inline { display:inline-block;position:relative;line-height:normal; }
-      .OBJ-1 span,.OBJ-1:link span,.OBJ-1:visited span { color:#80502f;font-family:Georgia,serif;font-weight:normal;text-decoration:none;text-align:center;text-transform:capitalize;font-style:normal;left:0px;top:6px;width:96px;height:18px;line-height:18px;font-size:14px;display:block;position:absolute;cursor:pointer; }
-      .OBJ-2 { line-height:30px; }
-      .P-2 { text-align:center;line-height:1px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;font-variant:normal;font-size:13.0px;vertical-align:0; }
-      .C-2 { line-height:16.00px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;text-decoration:none;font-variant:normal;font-size:13.3px;vertical-align:0; }
-      .P-3 { text-align:right;line-height:1px;font-family:"Georgia", serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;font-variant:normal;font-size:13.0px;vertical-align:0; }
-      .P-4 { text-align:center;line-height:1px;font-family:"Arial", sans-serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;font-variant:normal;font-size:16.0px;vertical-align:0; }
-      .C-3 { line-height:20.00px;font-family:"Arial", sans-serif;font-style:normal;font-weight:700;color:#a1aea4;background-color:transparent;text-decoration:none;font-variant:normal;font-size:16.0px;vertical-align:0; }
-      .OBJ-3 { background:#000000; }
-    </style>
-    <script type="text/javascript" src="wpscripts/jquery.js"></script>
-    <script type="text/javascript" src="wpscripts/jquery.event.move.js"></script>
-    <script type="text/javascript" src="wpscripts/jquery.event.swipe.js"></script>
-    <script type="text/javascript" src="wpscripts/jquery.wpslider.js"></script>
-    <script type="text/javascript" src="wpscripts/jquery.wpvisibility.js"></script>
-    <script type="text/javascript" src="wpscripts/jquery.wputils.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-      $('#slider_28').data('wpslider', new $.fn.wpslider( { g_nDivId:'#slider_28', g_nTransitStyle:3, g_nLoopTime:2000, g_nAnimationTime:1950, g_bPlayAtStart:true, g_bPlayAfterPress:true, g_bHandleMouseWheel:false, g_bHandleMouseSweep:false, g_nLoopAround:3, g_strEasing: "swing" } ) );
-      var btnState = [];
-      $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
-      $('#slider_28').data('wpslider').restrictSlides();
-      clickHide('panel_1', 'txt_1', 150);
-      enableSmoothScroll();
-      });
-    </script>
-  </head>
-  <body style="height:1083px;background:#000000;">
-    <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:1200px;height:1083px;">
-      <div id="txt_1" style="position:absolute;left:379px;top:1060px;width:442px;height:18px;overflow:hidden;">
-        <p class="Body-1 P-1"><span class="C-1">Copyright © Ford Green Hall -<wbr> All rights reserved</span></p>
-      </div>
-      <img alt="Ford Green Hall" src="wpimages/wp84213026_06.png" style="position:absolute;left:359px;top:2px;width:480px;height:86px;">
-      <img alt="Stoke-on-Trent" src="wpimages/wp4d8680c8_06.png" style="position:absolute;left:13px;top:27px;width:282px;height:43px;">
-      <img alt="Staffordshire" src="wpimages/wpcad9ec68_06.png" style="position:absolute;left:925px;top:27px;width:267px;height:43px;">
-      <div style="position:absolute;left:0px;top:155px;width:1207px;height:45px;">
-        <a href="index.html" id="nav_3_B1" class="OBJ-1 ActiveButton Down OBJ-2" style="display:block;position:absolute;left:0px;top:7px;width:96px;height:30px;">
-          <span>Home</span>
-        </a>
-        <a href="history.html" id="nav_3_B2" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:100px;top:7px;width:96px;height:30px;">
-          <span>History</span>
-        </a>
-        <a href="inside.html" id="nav_3_B3" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:201px;top:7px;width:96px;height:30px;">
-          <span>Inside</span>
-        </a>
-        <a href="outside.html" id="nav_3_B4" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:301px;top:7px;width:96px;height:30px;">
-          <span>Outside</span>
-        </a>
-        <a href="virtual-tour.html" id="nav_3_B5" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:402px;top:7px;width:96px;height:30px;">
-          <span>Virtual&nbsp;Tour</span>
-        </a>
-        <a href="events.html" id="nav_3_B6" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:502px;top:7px;width:96px;height:30px;">
-          <span>Events</span>
-        </a>
-        <a href="weddings.html" id="nav_3_B7" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:602px;top:7px;width:96px;height:30px;">
-          <span>Weddings</span>
-        </a>
-        <a href="educational.html" id="nav_3_B8" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:703px;top:7px;width:96px;height:30px;">
-          <span>Educational</span>
-        </a>
-        <a href="links.html" id="nav_3_B9" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:803px;top:7px;width:96px;height:30px;">
-          <span>Links</span>
-        </a>
-        <a href="visit.html" id="nav_3_B10" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:904px;top:7px;width:96px;height:30px;">
-          <span>Visit</span>
-        </a>
-        <a href="volunteers.html" id="nav_3_B11" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:1004px;top:7px;width:96px;height:30px;">
-          <span>Volunteers</span>
-        </a>
-        <a href="contact.html" id="nav_3_B12" class="OBJ-1 ActiveButton OBJ-2" style="display:block;position:absolute;left:1104px;top:7px;width:96px;height:30px;">
-          <span>Contact</span>
-        </a>
-      </div>
-      <div style="position:absolute;left:355px;top:130px;width:490px;height:30px;overflow:hidden;">
-        <h2 class="User-Details2 P-2"><span class="C-2">Ford Green Road, Smallthorne, Stoke-<wbr>on-<wbr>Trent, ST6 1NG</span></h2>
-      </div>
-      <div style="position:absolute;left:906px;top:130px;width:286px;height:30px;overflow:hidden;"><h2 class="User-Details2 P-3"><span class="C-2">fordgreenhall.museum@gmail.com</span></h2></div><div style="position:absolute;left:13px;top:130px;width:185px;height:30px;overflow:hidden;"><h2 class="User-Details2"><span class="C-2">Phone &nbsp;01782 537696</span></h2></div><a href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt="" src="wpimages/wp14b6419a_06.png" style="position:absolute;left:31px;top:923px;width:209px;height:58px;"></a><a href="https://twitter.com/fordgreenhall" target="_blank"><img alt="" src="wpimages/wpc6c948bf_06.png" style="position:absolute;left:959px;top:923px;width:209px;height:59px;"></a><img alt="" src="wpimages/wpfb5cc178_06.png" style="position:absolute;left:299px;top:25px;width:49px;height:49px;"><img alt="" src="wpimages/wpfb5cc178_06.png" style="position:absolute;left:848px;top:25px;width:49px;height:49px;"><img alt="Disabled access is situated at the front of the Hall, accessed from the main road." src="wpimages/wpa73c716d_06.png" style="position:absolute;left:232px;top:1020px;width:737px;height:23px;"><img alt="" src="wpimages/wp7e4454fd_05_06.jpg" style="position:absolute;left:534px;top:911px;width:132px;height:99px;"><img alt="1624 - 2019" src="wpimages/wped82d510_06.png" style="position:absolute;left:517px;top:80px;width:166px;height:38px;"><div id="slider_28" style="position:absolute;left:0px;top:232px;width:1200px;height:577px;overflow:hidden;"><div id="slider_28_P1" style="position:absolute;left:0px;right:0px;width:1200px;height:577px;"><img alt="" src="wpimages/wp553e73be_05_06.jpg" style="position:absolute;left:0px;top:1px;width:1200px;height:576px;"><img alt="Where History Comes Alive" src="wpimages/wpfcfc0ba4_06.png" style="position:absolute;left:214px;top:33px;width:778px;height:191px;"></div><div id="slider_28_P2" style="position:absolute;left:0px;right:0px;width:1200px;height:577px;visibility:hidden;display:none;"><img alt="" src="wpimages/wp60baa1af_05_06.jpg" style="position:absolute;left:0px;top:1px;width:1200px;height:576px;"><img alt="" src="wpimages/wp7c8eae79_06.png" style="position:absolute;left:1068px;top:397px;width:114px;height:164px;"></div></div><img alt="" src="wpimages/wp27e7413b_06.png" style="position:absolute;left:0px;top:811px;width:1200px;height:93px;"><div style="position:absolute;left:337px;top:817px;width:511px;height:81px;overflow:hidden;"><p class="Normal P-4"><span class="C-3">Ford Green Hall needs you, we are raising funds </span></p>
-        <p class="Normal P-4"><span class="C-3">to repair an oak beam at the front of the Hall.<br>Please click on the ‘Just Giving’ link, or donate at reception.</span></p>
-        <p class="Normal P-4"><span class="C-3">Any donation is gratefully received. Thank you!</span></p></div>
-      <img alt="" src="wpimages/wpf24f1971_06.png" style="position:absolute;left:17px;top:816px;width:293px;height:79px;">
-      <a href="https://www.justgiving.com/fordgreenhallmuseum" target="_blank">
-        <img alt="" src="wpimages/wp90621549_05_06.jpg" style="position:absolute;left:854px;top:818px;width:341px;height:80px;">
-      </a>
-      <div id="panel_1" class="OBJ-3" style="position:absolute;left:0px;top:193px;width:1200px;height:37px;">
-        <img alt="Ford Green Hall respects your privacy and does not use cookies on this website" src="wpimages/wpbdbf2dfe_06.png" style="position:absolute;left:279px;top:7px;width:642px;height:19px;">
-      </div>
-    </div>
-  </body>
-</html>
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Home</title>
+
+	<meta name="generator" content="Serif WebPlus X8">
+
+	<meta name="viewport" content="width=1200">
+
+	<link rel="stylesheet" type="text/css" href="wpscripts/wpstyles.css">
+
+	<style type="text/css">
+
+		.P-1 {
+			text-align: center;
+			line-height: 1px;
+			font-family: "Tahoma", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: #ffffff;
+			background-color: transparent;
+			font-variant: normal;
+			font-size: 11.0px;
+			vertical-align: 0;
+		}
+
+		.C-1 {
+			line-height: 13.00px;
+			font-family: "Tahoma", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			color: #ffffff;
+			background-color: transparent;
+			text-decoration: none;
+			font-variant: normal;
+			font-size: 10.7px;
+			vertical-align: 0;
+		}
+
+		.OBJ-1 span, .OBJ-1:link span, .OBJ-1:visited span {
+			color: #80502f;
+			font-family: Georgia, serif;
+			font-weight: normal;
+			text-decoration: none;
+			text-align: center;
+			text-transform: capitalize;
+			font-style: normal;
+			left: 0px;
+			top: 6px;
+			width: 96px;
+			height: 18px;
+			line-height: 18px;
+			font-size: 14px;
+			display: block;
+			position: absolute;
+			cursor: pointer;
+		}
+
+		#headerContainer {
+			min-width: 1207px;
+			height: 190px;
+		}
+
+		#header {
+			width: 1200px;
+			position: relative;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		#mainLogo {
+			height: 86px;
+			display: block;
+			padding-top: 2px;
+			margin-left: -3px;
+		}
+
+		#stokeLogo {
+			width: 282px;
+			height: 43px;
+			position: absolute;
+			left: 13px;
+			top: 27px;
+		}
+
+		#staffordshireLogo {
+			width: 267px;
+			height: 43px;
+			position: absolute;
+			right: 8px;
+			top: 27px;
+		}
+
+		#mainLogoImage, #mainLogoDecorLeft, #mainLogoDecorRight {
+			display: inline-block;
+			vertical-align: bottom;
+
+		}
+
+		#mainLogoDecorLeft, #mainLogoDecorRight {
+			margin-bottom: 14px;
+		}
+
+		#mainLogoDecorLeft {
+			margin-right: 7px;
+		}
+
+		#mainLogoDecorRight {
+			margin-left: 5px;
+		}
+
+		#dateLogo {
+			display: block;
+			width: 166px;
+			height: 38px;
+			margin: -8px auto 0 auto;
+		}
+
+		.headerSubtitle {
+			font-family: "Georgia", serif;
+			font-weight: 700;
+			color: #a1aea4;
+			font-size: 13.3px;
+			padding: 0;
+			margin: 0;
+		}
+
+		#emailHeader {
+			position: absolute;
+			right: 8px;
+			height: 30px;
+			bottom: 0;
+		}
+
+		#addressHeader {
+			height: 30px;
+			margin: 12px auto 0 auto;
+		}
+
+		#phoneHeader {
+			position: absolute;
+			left: 13px;
+			height: 30px;
+			bottom: 0;
+		}
+
+		#headerMenu {
+			width: 1207px;
+			margin: 2px auto 0 auto;
+			padding-bottom: 0px;
+		}
+
+		#headerMenu ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+
+		#headerMenu li {
+			display: inline-block;
+			width: 96px;
+			height: 30px;
+			margin: 0;
+			padding: 0;
+
+			background-image: url(wpimages/wp2d3d0871_06.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+
+			color: #80502f;
+			font-family: Georgia, serif;
+			font-weight: normal;
+			text-decoration: none;
+			text-align: center;
+			text-transform: capitalize;
+			font-style: normal;
+
+			line-height: 30px;
+			font-size: 14px;
+			cursor: pointer;
+		}
+
+		#headerMenu li a {
+			width: 96px;
+			height: 30px;
+			display: block;
+		}
+
+		#headerMenu li.active, #headerMenu li.active:hover, #headerMenu li:active {
+			background-position: 0 -30px;
+		}
+
+		#headerMenu li a, #headerMenu li a:hover, #headerMenu li a:active {
+			color: #80502f;
+			text-decoration: none;
+		}
+
+
+		#headerMenu li:hover {
+			background-position: 0 -60px;
+		}
+
+		#headerMenu li.active:hover {
+
+		}
+
+		#bodyContainer {
+			min-width: 1207px;
+			background: #000000;
+		}
+
+		#body {
+			width: 1200px;
+			margin: 0 auto;
+		}
+
+		#footerContainer {
+			min-width: 1207px;
+		}
+
+		#footer {
+			margin: 0 auto;
+			width: 1200px;
+			position: relative;
+			padding-top: 20px;
+		}
+
+
+		#disabledAccess {
+			width: 737px;
+			height: 23px;
+			margin: 0 auto;
+			display: block;
+		}
+
+		#rampAccess {
+			width: 132px;
+			height: 99px;
+			margin: 0 auto 10px auto;
+			display: block;
+		}
+
+		#facebookFollow {
+			width: 209px;
+			height: 58px;
+			position: absolute;
+			left: 31px;
+			top: 30px;
+		}
+
+		#twitterFollow {
+			width: 209px;
+			height: 59px;
+			position: absolute;
+			right: 31px;
+			top: 30px;
+		}
+
+		#footerRights {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		#cookieCourtesy {
+			font-size: 11px;
+			font-weight: bold;
+			color: #a1aea4;
+			font-family: "Arial", sans-serif;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		#slider_28 {
+			margin-top: 0px;
+		}
+
+		#pleaseHelpUs {
+			margin-left: 15px;
+			margin-right: 15px;
+			margin-top: 10px;
+			position: relative;
+			height: 80px;
+			margin-bottom: 10px;
+		}
+
+		#pleaseHelpUsText {
+			position: absolute;
+			left: 300px;
+			right: 300px;
+			top: 10px;
+
+			text-align: center;
+
+			line-height: 20.00px;
+			font-family: "Arial", sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			color: #a1aea4;
+			font-size: 16px;
+			text-decoration: none !important;
+		}
+
+		#justGivingWidget {
+			position: absolute;
+			right: 0;
+			top: 20px;
+		}
+
+		#christmasClosure {
+			color: gold;
+			font-family: "Verdana", sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			padding: 20px 0 20px 0;
+			position: relative;
+		}
+
+	</style>
+	<script type="text/javascript" src="wpscripts/jquery.js"></script>
+
+	<script type="text/javascript" src="wpscripts/jquery.event.move.js"></script>
+
+	<script type="text/javascript" src="wpscripts/jquery.event.swipe.js"></script>
+
+	<script type="text/javascript" src="wpscripts/jquery.wpslider.js"></script>
+
+	<script type="text/javascript" src="wpscripts/jquery.wpvisibility.js"></script>
+
+	<script type="text/javascript" src="wpscripts/jquery.wputils.js"></script>
+
+	<script type="text/javascript">
+
+        $(document).ready(function () {
+            $("a.ActiveButton").bind({
+                mousedown: function () {
+                    if ($(this).attr('disabled') === undefined) $(this).addClass('Activated');
+                }, mouseleave: function () {
+                    if ($(this).attr('disabled') === undefined) $(this).removeClass('Activated');
+                }, mouseup: function () {
+                    if ($(this).attr('disabled') === undefined) $(this).removeClass('Activated');
+                }
+            });
+
+            $('#slider_28').data('wpslider', new $.fn.wpslider({
+                g_nDivId: '#slider_28',
+                g_nTransitStyle: 3,
+                g_nLoopTime: 2000,
+                g_nAnimationTime: 1950,
+                g_bPlayAtStart: true,
+                g_bPlayAfterPress: true,
+                g_bHandleMouseWheel: false,
+                g_bHandleMouseSweep: false,
+                g_nLoopAround: 3,
+                g_strEasing: "swing"
+            }));
+            $('#slider_28').data('wpslider').restrictSlides();
+        });
+	</script>
+
+</head>
+
+<body style="background: #000000;">
+
+<div id="headerContainer">
+
+	<div id="header">
+		<img id="stokeLogo" alt="Stoke-on-Trent" src="wpimages/wp4d8680c8_06.png">
+		<div id="mainLogo">
+			<img id="mainLogoDecorLeft" alt="" src="wpimages/wpfb5cc178_06.png">
+			<img id="mainLogoImage" alt="Ford Green Hall" src="wpimages/wp84213026_06.png">
+			<img id="mainLogoDecorRight" alt="" src="wpimages/wpfb5cc178_06.png">
+		</div>
+		<img id="staffordshireLogo" alt="Staffordshire" src="wpimages/wpcad9ec68_06.png">
+		<img id="dateLogo" alt="1624 - 2019" src="wpimages/wped82d510_06.png">
+
+		<div id="addressHeader">
+			<h2 class="headerSubtitle">Ford Green Road, Smallthorne, Stoke-on-Trent, ST6 1NG
+			</h2>
+		</div>
+		<div id="emailHeader">
+			<h2 class="headerSubtitle">fordgreenhall.museum@gmail.com</h2>
+		</div>
+		<div id="phoneHeader">
+			<h2 class="headerSubtitle">Phone &nbsp;01782 537696</h2>
+		</div>
+	</div>
+	<div id="headerMenu">
+		<ul>
+			<li style="margin-right: 4px" class="active">
+				Home
+			</li><li style="margin-right: 5px">
+				<a href="history.html">History</a>
+			</li><li style="margin-right: 4px">
+				<a href="inside.html">Inside</a>
+			</li><li style="margin-right: 5px">
+				<a href="outside.html">Outside</a>
+			</li><li style="margin-right: 4px">
+				<a href="virtual-tour.html">Virtual Tour</a>
+			</li><li style="margin-right: 4px">
+				<a href="events.html">Events</a>
+			</li><li style="margin-right: 5px">
+				<a href="weddings.html">Weddings</a>
+			</li><li style="margin-right: 4px">
+				<a href="educational.html">Educational</a>
+			</li><li style="margin-right: 5px">
+				<a href="links.html">Links</a>
+			</li><li style="margin-right: 4px">
+				<a href="visit.html">Visit</a>
+			</li><li style="margin-right: 4px">
+				<a href="volunteers.html">Volunteers</a>
+			</li><li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div id="bodyContainer">
+	<div id="body">
+		<div id="christmasClosure">
+			The Hall will be closed over Christmas from Sunday 22nd December 3:30pm reopening Sunday 5th Januarary at
+			1:00pm!
+		</div>
+
+		<div id="slider_28" style="width:1200px;height:577px;overflow:hidden; position: relative;">
+			<div id="slider_28_P1" style="width:1200px;height:577px;position: absolute;">
+				<img alt="" src="wpimages/wp553e73be_05_06.jpg" style="top:0px;width:1200px;height:576px;">
+				<img alt="Where History Comes Alive" src="wpimages/wpfcfc0ba4_06.png"
+					 style="position:absolute;left:214px;top:33px;width:778px;height:191px;">
+			</div>
+			<div id="slider_28_P2" style="position:absolute;width:1200px;height:577px;visibility:hidden;display:none;">
+				<img alt="" src="wpimages/wp60baa1af_05_06.jpg"
+					 style="position:absolute;top:0px;width:1200px;height:576px;">
+				<img alt="" src="wpimages/wp7c8eae79_06.png"
+					 style="position:absolute;left:1068px;top:397px;width:114px;height:164px;">
+			</div>
+		</div>
+
+		<div id="pleaseHelpUs">
+			<a target="_blank" href="https://www.justgiving.com/fordgreenhallmuseum">
+				<img alt="" src="wpimages/wpf24f1971_06.png" style="width:293px;height:79px;">
+			</a>
+			<a id="pleaseHelpUsText" target="_blank" href="https://www.justgiving.com/fordgreenhallmuseum">
+				Ford Green Hall needs you! We are raising funds<br/>
+				to repair an oak beam at the front of the Hall.<br/>
+				Please click on the ‘Just Giving’ link, or donate at reception.<br/>
+				Any donation is gratefully received. Thank you!
+			</a>
+
+			<a target="_blank" id="justGivingWidget"
+			   href="//widgets.justgiving.com/Button/Redirect?p=eyJJZCI6IjI1NGI4M2Q1LWYwN2QtNDc5Mi05MzY2LTIwYWUxN2YwYTM2ZCIsIkNoYXJpdHlJZCI6MjY5ODI5MSwiU2l6ZSI6ImwiLCJSZWZlcmVuY2UiOiJGR0hVS0xhbmRpbmciLCJUeXBlIjoiRG9uYXRlIn0="><img
+					src="images/justgiving.png"/></a>
+		</div>
+	</div>
+</div>
+
+<div id="footerContainer">
+	<div id="footer">
+		<img id="rampAccess" alt="" src="wpimages/wp7e4454fd_05_06.jpg">
+		<img id="disabledAccess"
+			 alt="Disabled access is situated at the front of the Hall, accessed from the main road."
+			 src="wpimages/wpa73c716d_06.png">
+
+		<a id="facebookFollow" href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt=""
+																								  src="wpimages/wp14b6419a_06.png"></a>
+		<a id="twitterFollow" href="https://twitter.com/fordgreenhall" target="_blank"><img alt=""
+																							src="wpimages/wpc6c948bf_06.png"></a>
+
+
+		<div id="cookieCourtesy">
+			Ford Green Hall respects your privacy and does not use cookies on this website
+		</div>
+		<div id="footerRights">
+			<p class="Body-1 P-1"><span class="C-1">Copyright © Ford Green Hall -<wbr> All rights reserved</span></p>
+		</div>
+
+	</div>
+</div>
+
+</body>
+
+<script>
+    (function () {
+        var COUNT = 30;
+        var masthead = document.querySelector('#christmasClosure');
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        var width = masthead.clientWidth;
+        var height = masthead.clientHeight;
+        var i = 0;
+        var active = false;
+
+        function onResize() {
+            width = masthead.clientWidth;
+            height = masthead.clientHeight;
+            canvas.width = width;
+            canvas.height = height;
+            ctx.fillStyle = '#FFF';
+
+            var wasActive = active;
+            active = width > 600;
+
+            if (!wasActive && active)
+                requestAnimFrame(update);
+        }
+
+        var Snowflake = function () {
+            this.x = 0;
+            this.y = 0;
+            this.vy = 0;
+            this.vx = 0;
+            this.r = 0;
+
+            this.reset();
+        };
+
+        Snowflake.prototype.reset = function () {
+            this.x = Math.random() * width;
+            this.y = Math.random() * -height;
+            this.vy = 0.1 + Math.random() * 3;
+            this.vx = 0.1 - Math.random();
+            this.r = 1 + Math.random() * 2;
+            this.o = 0.5 + Math.random() * 0.5;
+        };
+
+        canvas.style.position = 'absolute';
+        canvas.style.left = canvas.style.top = '0';
+
+        var snowflakes = [], snowflake;
+        for (i = 0; i < COUNT; i++) {
+            snowflake = new Snowflake();
+            snowflake.reset();
+            snowflakes.push(snowflake);
+        }
+
+        function update() {
+
+            ctx.clearRect(0, 0, width, height);
+
+            if (!active){
+                return;
+			}
+
+            for (i = 0; i < COUNT; i++) {
+                snowflake = snowflakes[i];
+                snowflake.y += snowflake.vy;
+                snowflake.x += snowflake.vx;
+
+                ctx.globalAlpha = snowflake.o;
+                ctx.beginPath();
+                ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false);
+                ctx.closePath();
+                ctx.fill();
+
+                if (snowflake.y > height) {
+                    snowflake.reset();
+                }
+            }
+
+            requestAnimFrame(update);
+        }
+
+        // shim layer with setTimeout fallback
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+
+        onResize();
+        window.addEventListener('resize', onResize, false);
+
+        masthead.appendChild(canvas);
+    })();
+</script>
+
+</html>
+
