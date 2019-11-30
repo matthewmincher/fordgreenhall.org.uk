@@ -197,7 +197,14 @@
 
 		#headerContainer {
 			min-width: 1207px;
-			background: url('wpimages/wp1c169f54_06.png') repeat-x scroll center top, url('wpimages/wp094ba8f8_06.png') repeat-x scroll 0 197px, #8f8f6e;
+
+			background-image: url('wpimages/wp1c169f54_06.png'), url('wpimages/wp094ba8f8_06.png');
+			background-attachment: scroll, scroll;
+			background-repeat: repeat-x, repeat-x;
+			background-size: auto, auto;
+			background-position: center top, 0 197px;
+			background-color: #8f8f6e;
+
 			height: 200px;
 		}
 
@@ -357,50 +364,72 @@
 
 		#footerContainer {
 			min-width: 1207px;
-			background: url('wpimages/wp1e6da57c_06.png') repeat-x scroll center bottom;
+
+			background-image: url('wpimages/wp1e6da57c_06.png');
+			background-attachment: scroll;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center bottom;
+			padding-top: 16px;
+			margin-top: 40px;
+			padding-bottom: 10px;
 		}
 
 		#footer {
 			margin: 0 auto;
 			width: 1200px;
 			position: relative;
-			padding-top: 20px;
+			padding-top: 108px;
+			padding-bottom:10px;
 		}
 
 
 		#disabledAccess {
-			width: 737px;
-			height: 23px;
-			margin: 0 auto;
+			width: 160px;
+			position: absolute;
+			right:160px;
+			top:13px;
 			display: block;
+			font-family: "Arial", sans-serif;
+			color: #027ffd;
+			font-size: 16px;
+			font-weight: bold;
 		}
 
 		#rampAccess {
-			width: 132px;
-			height: 99px;
-			margin: 0 auto 10px auto;
+			position: absolute;
+			right: 15px;
+			top:0px;
 			display: block;
 		}
 
 		#facebookFollow {
-			width: 209px;
-			height: 58px;
 			position: absolute;
-			left: 31px;
-			top: 30px;
+			left: 0px;
+			top: 0px;
 		}
 
 		#twitterFollow {
-			width: 209px;
-			height: 59px;
 			position: absolute;
-			right: 31px;
-			top: 30px;
+			left: 0px;
+			top: 53px;
 		}
 
 		#footerRights {
-			padding-top: 15px;
+			padding-top: 5px;
 			padding-bottom: 5px;
+		}
+
+		#cookieCourtesy, #footerRights {
+			font-size: 11px;
+			font-weight: bold;
+			color: #a1aea4;
+			font-family: "Arial", sans-serif;
+			text-align: left;
+			margin-top: 0px;
+		}
+		#footerRights {
+			color: #dddddd;
 		}
 
 		#eventsHeader {
@@ -422,7 +451,7 @@
 			text-align: left;
 			margin-top: 20px;
 			margin-bottom: 10px;
-			padding: 5px;
+			padding: 15px;
 			position: relative;
 		}
 
@@ -611,7 +640,7 @@
 				<span class="header">Wedding Open Day</span>
 				<img alt="" src="images/events/wedding_open_day_2020_1.jpg" style="position: absolute;top:20px;right:30px">
 				<img alt="" src="images/events/wedding_open_day_2020_2.jpg" style="position: absolute;top:20px;right:220px">
-				<div class="textAligner" style="margin-right: 400px; padding-top: 10px; padding-bottom: 30px">
+				<div class="textAligner" style="margin-right: 400px; padding-top: 10px; padding-bottom: 20px">
 					<p class="copy">Visit the hall and see it prepared for a Wedding.</p>
 					<p class="emph">Sunday 9th February</p>
 					<p class="copy">2 rooms available for 15 or 30 guests. A beautiful intimate wedding venue.</p>
@@ -750,19 +779,24 @@
 
 <div id="footerContainer">
 	<div id="footer">
-		<img id="rampAccess" alt="" src="wpimages/wp7e4454fd_05_06.jpg">
-		<img id="disabledAccess"
-			 alt="Disabled access is situated at the front of the Hall, accessed from the main road."
-			 src="wpimages/wpa73c716d_06.png">
+		<img id="rampAccess" alt="Ramp Access" src="wpimages/wp7e4454fd_05_06.jpg">
+		<div id="disabledAccess">
+			Disabled access is situated at the front of the Hall, accessed from the main road.
+		</div>
 
-		<a id="facebookFollow" href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt=""
-																								  src="wpimages/wp14b6419a_06.png"></a>
-		<a id="twitterFollow" href="https://twitter.com/fordgreenhall" target="_blank"><img alt=""
-																							src="wpimages/wpc6c948bf_06.png"></a>
+		<a id="facebookFollow" href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt="Find us on Facebook"
+																								  srcset="images/social/facebook@1x.png, images/social/facebook@2x.png 2x, images/social/facebook@3x.png 3x"
+																								  src="images/social/facebook@1x.png"></a>
+		<a id="twitterFollow" href="https://twitter.com/fordgreenhall" target="_blank"><img alt="Follow us on Twitter"
+																							srcset="images/social/twitter@1x.png, images/social/twitter@2x.png 2x, images/social/twitter@3x.png 3x"
+																							src="images/social/twitter@1x.png"></a>
 
 
+		<div id="cookieCourtesy">
+			Ford Green Hall respects your privacy and does not use cookies on this website
+		</div>
 		<div id="footerRights">
-			<p class="Body-1 P-1"><span class="C-1">Copyright © Ford Green Hall -<wbr> All rights reserved</span></p>
+			Copyright © Ford Green Hall - All rights reserved
 		</div>
 
 	</div>

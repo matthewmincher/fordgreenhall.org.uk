@@ -15,52 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="wpscripts/wpstyles.css">
 
 	<style type="text/css">
-
-		.P-1 {
-			text-align: center;
-			line-height: 1px;
-			font-family: "Tahoma", sans-serif;
-			font-style: normal;
-			font-weight: normal;
-			color: #ffffff;
-			background-color: transparent;
-			font-variant: normal;
-			font-size: 11.0px;
-			vertical-align: 0;
-		}
-
-		.C-1 {
-			line-height: 13.00px;
-			font-family: "Tahoma", sans-serif;
-			font-style: normal;
-			font-weight: normal;
-			color: #ffffff;
-			background-color: transparent;
-			text-decoration: none;
-			font-variant: normal;
-			font-size: 10.7px;
-			vertical-align: 0;
-		}
-
-		.OBJ-1 span, .OBJ-1:link span, .OBJ-1:visited span {
-			color: #80502f;
-			font-family: Georgia, serif;
-			font-weight: normal;
-			text-decoration: none;
-			text-align: center;
-			text-transform: capitalize;
-			font-style: normal;
-			left: 0px;
-			top: 6px;
-			width: 96px;
-			height: 18px;
-			line-height: 18px;
-			font-size: 14px;
-			display: block;
-			position: absolute;
-			cursor: pointer;
-		}
-
 		#headerContainer {
 			min-width: 1207px;
 			height: 190px;
@@ -222,44 +176,51 @@
 
 		#footerContainer {
 			min-width: 1207px;
+
+			background-color: #060606;
+			padding-top: 16px;
+			margin-top: 40px;
+			padding-bottom: 10px;
 		}
 
 		#footer {
 			margin: 0 auto;
 			width: 1200px;
 			position: relative;
-			padding-top: 20px;
+			padding-top: 108px;
+			padding-bottom:10px;
 		}
 
 
 		#disabledAccess {
-			width: 737px;
-			height: 23px;
-			margin: 0 auto;
+			width: 160px;
+			position: absolute;
+			right:160px;
+			top:13px;
 			display: block;
+			font-family: "Arial", sans-serif;
+			color: #027ffd;
+			font-size: 16px;
+			font-weight: bold;
 		}
 
 		#rampAccess {
-			width: 132px;
-			height: 99px;
-			margin: 0 auto 10px auto;
+			position: absolute;
+			right: 15px;
+			top:0px;
 			display: block;
 		}
 
 		#facebookFollow {
-			width: 209px;
-			height: 58px;
 			position: absolute;
-			left: 31px;
-			top: 30px;
+			left: 0px;
+			top: 0px;
 		}
 
 		#twitterFollow {
-			width: 209px;
-			height: 59px;
 			position: absolute;
-			right: 31px;
-			top: 30px;
+			left: 0px;
+			top: 53px;
 		}
 
 		#footerRights {
@@ -267,13 +228,16 @@
 			padding-bottom: 5px;
 		}
 
-		#cookieCourtesy {
+		#cookieCourtesy, #footerRights {
 			font-size: 11px;
 			font-weight: bold;
 			color: #a1aea4;
 			font-family: "Arial", sans-serif;
-			text-align: center;
-			margin-top: 10px;
+			text-align: left;
+			margin-top: 0px;
+		}
+		#footerRights {
+			color: #dddddd;
 		}
 
 		#slider_28 {
@@ -308,7 +272,7 @@
 
 		#justGivingWidget {
 			position: absolute;
-			right: 0;
+			right: 15px;
 			top: 20px;
 		}
 
@@ -445,7 +409,7 @@
 
 		<div id="pleaseHelpUs">
 			<a target="_blank" href="https://www.justgiving.com/fordgreenhallmuseum">
-				<img alt="" src="wpimages/wpf24f1971_06.png" style="width:293px;height:79px;">
+				<img alt="Please Help!" src="wpimages/wpf24f1971_06.png" style="width:293px;height:79px;margin-top:4px;margin-left:17px;">
 			</a>
 			<a id="pleaseHelpUsText" target="_blank" href="https://www.justgiving.com/fordgreenhallmuseum">
 				Ford Green Hall needs you! We are raising funds<br/>
@@ -463,22 +427,24 @@
 
 <div id="footerContainer">
 	<div id="footer">
-		<img id="rampAccess" alt="" src="wpimages/wp7e4454fd_05_06.jpg">
-		<img id="disabledAccess"
-			 alt="Disabled access is situated at the front of the Hall, accessed from the main road."
-			 src="wpimages/wpa73c716d_06.png">
+		<img id="rampAccess" alt="Ramp Access" src="wpimages/wp7e4454fd_05_06.jpg">
+		<div id="disabledAccess">
+			Disabled access is situated at the front of the Hall, accessed from the main road.
+		</div>
 
-		<a id="facebookFollow" href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt=""
-																								  src="wpimages/wp14b6419a_06.png"></a>
-		<a id="twitterFollow" href="https://twitter.com/fordgreenhall" target="_blank"><img alt=""
-																							src="wpimages/wpc6c948bf_06.png"></a>
+		<a id="facebookFollow" href="https://www.facebook.com/fordgreenhall" target="_blank"><img alt="Find us on Facebook"
+																								  srcset="images/social/facebook@1x.png, images/social/facebook@2x.png 2x, images/social/facebook@3x.png 3x"
+																								  src="images/social/facebook@1x.png"></a>
+		<a id="twitterFollow" href="https://twitter.com/fordgreenhall" target="_blank"><img alt="Follow us on Twitter"
+																							srcset="images/social/twitter@1x.png, images/social/twitter@2x.png 2x, images/social/twitter@3x.png 3x"
+																							src="images/social/twitter@1x.png"></a>
 
 
 		<div id="cookieCourtesy">
 			Ford Green Hall respects your privacy and does not use cookies on this website
 		</div>
 		<div id="footerRights">
-			<p class="Body-1 P-1"><span class="C-1">Copyright © Ford Green Hall -<wbr> All rights reserved</span></p>
+			Copyright © Ford Green Hall - All rights reserved
 		</div>
 
 	</div>
