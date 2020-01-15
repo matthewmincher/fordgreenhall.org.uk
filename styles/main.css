@@ -1,0 +1,270 @@
+#headerContainer {
+	min-width: 1207px;
+	height: 190px;
+}
+
+#header {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#mainLogo {
+	height: 86px;
+	display: block;
+	padding-top: 2px;
+	margin-left: -3px;
+}
+
+#stokeLogo {
+	width: 282px;
+	height: 43px;
+	position: absolute;
+	left: 13px;
+	top: 27px;
+}
+
+#staffordshireLogo {
+	width: 267px;
+	height: 43px;
+	position: absolute;
+	right: 8px;
+	top: 27px;
+}
+
+#mainLogoImage, #mainLogoDecorLeft, #mainLogoDecorRight {
+	display: inline-block;
+	vertical-align: bottom;
+
+}
+
+#mainLogoDecorLeft, #mainLogoDecorRight {
+	margin-bottom: 14px;
+}
+
+#mainLogoDecorLeft {
+	margin-right: 7px;
+}
+
+#mainLogoDecorRight {
+	margin-left: 5px;
+}
+
+#dateLogo {
+	display: block;
+	width: 166px;
+	height: 38px;
+	margin: -8px auto 0 auto;
+}
+
+.headerSubtitle {
+	font-family: "Georgia", serif;
+	font-weight: 700;
+	color: #a1aea4;
+	font-size: 13.3px;
+	padding: 0;
+	margin: 0;
+}
+
+#emailHeader {
+	position: absolute;
+	right: 8px;
+	height: 30px;
+	bottom: 0;
+}
+
+#addressHeader {
+	height: 30px;
+	margin: 12px auto 0 auto;
+}
+
+#phoneHeader {
+	position: absolute;
+	left: 13px;
+	height: 30px;
+	bottom: 0;
+}
+
+#headerMenu {
+	width: 1207px;
+	margin: 2px auto 0 auto;
+	padding-bottom: 0px;
+}
+
+#headerMenu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#headerMenu li {
+	display: inline-block;
+	width: 96px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+
+	background-image: url(../wpimages/wp2d3d0871_06.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	color: #80502f;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	text-transform: capitalize;
+	font-style: normal;
+
+	line-height: 30px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#headerMenu li a {
+	width: 96px;
+	height: 30px;
+	display: block;
+}
+
+#headerMenu li.active, #headerMenu li.active:hover, #headerMenu li:active {
+	background-position: 0 -30px;
+}
+
+#headerMenu li a, #headerMenu li a:hover, #headerMenu li a:active {
+	color: #80502f;
+	text-decoration: none;
+}
+
+
+#headerMenu li:hover {
+	background-position: 0 -60px;
+}
+
+#headerMenu li.active:hover {
+
+}
+
+#bodyContainer {
+	min-width: 1207px;
+	background: #000000;
+}
+
+#body {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#footerContainer {
+	min-width: 1207px;
+
+	background-color: #060606;
+	padding-top: 16px;
+	margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+#footer {
+	margin: 0 auto;
+	width: 1200px;
+	position: relative;
+	padding-top: 108px;
+	padding-bottom:10px;
+}
+
+
+#disabledAccess {
+	width: 160px;
+	position: absolute;
+	right:160px;
+	top:13px;
+	display: block;
+	font-family: "Arial", sans-serif;
+	color: #027ffd;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#rampAccess {
+	position: absolute;
+	right: 15px;
+	top:0px;
+	display: block;
+}
+
+#facebookFollow {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#twitterFollow {
+	position: absolute;
+	left: 0px;
+	top: 53px;
+}
+
+#footerRights {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#cookieCourtesy, #footerRights {
+	font-size: 11px;
+	font-weight: bold;
+	color: #a1aea4;
+	font-family: "Arial", sans-serif;
+	text-align: left;
+	margin-top: 0px;
+}
+#footerRights {
+	color: #dddddd;
+}
+
+
+
+.light-page #headerContainer {
+	background-image: url('../wpimages/wp1c169f54_06.png'), url('../wpimages/wp094ba8f8_06.png');
+	background-attachment: scroll, scroll;
+	background-repeat: repeat-x, repeat-x;
+	background-size: auto, auto;
+	background-position: center top, 0 197px;
+	background-color: #8f8f6e;
+	height: 200px;
+}
+.light-page #bodyContainer {
+	background: #8f8f6e;
+}
+
+.light-page #footerContainer {
+	min-width: 1207px;
+
+	background-image: url('../wpimages/wp1e6da57c_06.png');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	padding-top: 16px;
+	margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+
+.imageAttribution-KateScott {
+	position:relative;
+	display:inline-block;
+}
+.imageAttribution-KateScott::after {
+	content: '© Kate Scott Photography 2015';
+	position:absolute;
+	bottom: 5px;
+	right:5px;
+	font-size: 10px;
+	color:white;
+	font-family: "Arial", sans-serif;
+	user-select: none;
+	line-height: 10px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
