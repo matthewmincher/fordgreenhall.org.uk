@@ -14,3 +14,9 @@
     max-width: 1280px;
   }
 }
+
+
+.gatsby-image-wrapper [data-main-image] {
+  opacity: 1 !important;
+  transition: none !important;
+}

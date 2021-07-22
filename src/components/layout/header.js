@@ -1,12 +1,12 @@
 import * as React from "react";
 import * as Styles from "./header.module.scss"
 import {StaticImage} from "gatsby-plugin-image";
+import NavBar from "./navbar";
 
 const Header = () => {
 	return (
 		<header className={Styles.main}>
 			<div className={Styles.logoContainer}>
-				<div className={Styles.spacer} />
 				<div className={Styles.item}>
 					<StaticImage
 						src="../../images/layout/header_box.png"
@@ -36,7 +36,6 @@ const Header = () => {
 						layout="fixed"
 						alt="" />
 				</div>
-				<div className={Styles.spacer} />
 			</div>
 			<div className={Styles.datesContainer}>
 				<StaticImage
@@ -49,6 +48,10 @@ const Header = () => {
 					alt="1624 - 2019" />
 			</div>
 
+
+			<div className={Styles.navBar}>
+				<NavBar />
+			</div>
 		</header>
 	)
 }

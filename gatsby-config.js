@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/dev`,
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Ford Green Hall",
@@ -17,6 +18,6 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
-    },
+	},
   ],
 };

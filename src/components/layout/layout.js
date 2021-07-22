@@ -1,10 +1,10 @@
 import * as React from "react";
+import Header from "./header";
 import Footer from "./footer";
 
 import "normalize.css"
 import '../../css/global.scss';
 import * as Styles from './layout.module.scss';
-import Header from "./header";
 
 const Layout = ({ pageTitle, children }) => {
 	return (
