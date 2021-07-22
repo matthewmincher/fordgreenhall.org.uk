@@ -1,0 +1,49 @@
+.main {
+  background-image: url(../../images/layout/header_gradient_strip.png), url(../../images/layout/header_gradient_main.png);
+  background-attachment: scroll, scroll;
+  background-repeat: repeat-x, repeat-x;
+  background-size: auto, auto;
+  background-position: center bottom, center top;
+  background-color: #8f8f6e;
+  padding-bottom: 15px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .logo, .item {
+    flex: 0 0 auto;
+  }
+
+  .logo {
+    margin: 0 15px;
+  }
+}
+
+.datesContainer {
+  margin: 0 auto;
+  display: block;
+  width: 166px;
+}
+
+@media all and (max-width: 640px) {
+  .logoContainer {
+    .item {
+      display: none;
+    }
+
+    .logo {
+      margin: 0;
+    }
+  }
+
+  .datesContainer {
+    display: none;
+  }
+}
