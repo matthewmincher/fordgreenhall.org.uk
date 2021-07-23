@@ -1,0 +1,79 @@
+.visitContainer {
+  position: relative;
+
+  padding: 0 25px;
+}
+.mapContainer {
+  background-image: url("../images/thirdparties/static_map.png");
+  background-size: 1196px 346px;
+  background-position: center;
+}
+.interactiveMap {
+  margin: 10px auto 0 auto;
+  display: block;
+}
+.tripadvisorFrame {
+  width: 160px;
+  height: 94px;
+  overflow: hidden;
+}
+.visitContainer .clear {
+  clear: both;
+}
+.visitContainer .clear-r {
+  clear: right;
+}
+.visitContainer .openingDetails {
+  display: flex;
+  padding: 0 25px;
+}
+.visitContainer .openingDetails p {
+  font-family: "Georgia", serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.visitContainer .openingDetailsCenter {
+  flex: 1 0 content;
+  align-self: start;
+  padding-top: 40px;
+}
+.visitContainer .openingDetailsLeft {
+  text-align: right;
+  flex: 1 1 auto;
+  padding-right: 40px;
+}
+.visitContainer .openingDetailsRight {
+  flex: 1 1 auto;
+  padding-left: 40px;
+}
+.visitContainer .emph {
+  color: #ffff00;
+}
+
+@media all and (max-width: 1195px) {
+  .visitContainer {
+    padding: 0;
+  }
+}
+@media all and (max-width: 640px) {
+  .visitContainer .openingDetails
+  {
+    flex-direction: column;
+  }
+
+  .visitContainer .openingDetailsLeft {
+    padding-right: 0;
+    text-align: left;
+    order: 1;
+  }
+  .visitContainer .openingDetailsRight {
+    padding-left: 0;
+    order: 1;
+  }
+  .visitContainer .openingDetailsCenter {
+    order: 0;
+    align-self: center;
+    padding-top: 25px
+  }
+}

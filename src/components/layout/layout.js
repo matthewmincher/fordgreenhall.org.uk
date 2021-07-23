@@ -6,14 +6,16 @@ import "normalize.css"
 import '../../css/global.scss';
 import * as Styles from './layout.module.scss';
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, contentBackgroundColor }) => {
+	const style = typeof contentBackgroundColor !== "undefined" ? {backgroundColor: contentBackgroundColor} : {}
+
 	return (
 		<main className={Styles.main}>
 			<title>{pageTitle}</title>
 
 			<Header />
 
-			<div className={Styles.content}>
+			<div className={Styles.content} style={style}>
 				{children}
 			</div>
 

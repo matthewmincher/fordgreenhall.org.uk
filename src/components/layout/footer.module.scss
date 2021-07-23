@@ -1,7 +1,105 @@
+.bottom {
+}
+
 .main {
   background-color: #060606;
 
   padding: 20px;
+}
+
+.container {
+  max-width: 1196px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact {
+  background-image: url(../../images/layout/header_gradient_strip.png), url(../../images/layout/header_gradient_main.png);
+  background-attachment: scroll, scroll;
+  background-repeat: repeat-x, repeat;
+  background-size: auto, auto;
+  background-position: center top, center top;
+  background-color: #8f8f6e;
+
+  border-bottom: 2px solid #2f2f2f;
+
+  .container {
+
+    padding: 14px 20px 10px 20px;
+
+    text-align: left;
+
+    user-select: none;
+  }
+
+
+  svg {
+    margin-right: 5px;
+  }
+
+  .address, .phone, .email {
+    font-size: 16px;
+    font-weight: bold;
+    color: #dddddd;
+    font-family: "Arial", sans-serif;
+  }
+
+  .address {
+    user-select: text;
+    margin-bottom: 5px;
+  }
+  .addressPosition {
+    display: inline-block;
+  }
+  .addressLines {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .phone, .email {
+    user-select: all;
+    color: #a1aea4;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .phone {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .contact {
+    .container {
+      text-align: center;
+    }
+
+    .address {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .addressPosition {
+      display: block;
+    }
+    svg {
+      margin: 0;
+    }
+    span {
+      display: block;
+    }
+    .phone, .email {
+      display: block;
+      font-size: 21px;
+    }
+    .phone {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .email {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .social {
@@ -41,6 +139,24 @@
   color: #dddddd;
 }
 
+.visitEngland {
+  position: absolute;
+  top:0;
+  right:0;
+  opacity: 0.8;
+}
+
+.visitEngland:hover {
+  opacity: 1;
+}
+
+
+
+@media all and (max-width: 1195px) {
+  .main {
+
+  }
+}
 
 @media all and (max-width: 640px) {
   .main {
@@ -49,13 +165,15 @@
 
   .social {
     margin-bottom: 20px;
+    margin-right: 130px;
   }
 
   .social a {
-    width: 230px;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 18px;
     padding: 10px;
-    margin: 0 auto;
+
 
     background-color: #1f1f1f;
     border-radius: 10px;
@@ -66,5 +184,7 @@
   .social a .icon {
     margin-right: 10px;
   }
+
+
 }
 

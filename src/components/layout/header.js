@@ -7,6 +7,27 @@ const Header = () => {
 	return (
 		<header className={Styles.main}>
 			<div className={Styles.logoContainer}>
+				<div className={Styles.townContainer}>
+					<StaticImage
+						src="../../images/layout/header_town.png"
+						width={224}
+						height={26}
+						placeholder="none"
+						loading="eager"
+						layout="fixed"
+						alt="" />
+				</div>
+				<div className={Styles.countyContainer}>
+					<StaticImage
+						src="../../images/layout/header_county.png"
+						width={194}
+						height={26}
+						placeholder="none"
+						loading="eager"
+						layout="fixed"
+						alt="" />
+				</div>
+
 				<div className={Styles.item}>
 					<StaticImage
 						src="../../images/layout/header_box.png"

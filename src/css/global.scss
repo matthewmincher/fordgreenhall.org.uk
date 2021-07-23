@@ -1,10 +1,25 @@
+body {
+  background: #060606;
+
+}
+
 .constrainedContent {
   width: 100%;
   margin: 0 auto;
+
+  max-width: 1246px;
+
+  box-sizing: border-box;
+}
+
+@media (max-width: 1195px) {
+  .constrainedContent {
+
+  }
 }
 
 
-@media all and (max-width: 1280px) {
+/*@media all and (max-width: 1280px) {
   .constrainedContent {
     max-width: 960px;
   }
@@ -13,7 +28,7 @@
   .constrainedContent {
     max-width: 1280px;
   }
-}
+}*/
 
 
 .gatsby-image-wrapper [data-main-image] {

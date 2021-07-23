@@ -26,19 +26,23 @@ class NavBar extends React.Component {
 		return (
 			<div>
 				<div className={Styles.main}>
-					<Link to="/" activeClassName={Styles.active}>Home</Link>
-					<Link to="/visit" activeClassName={Styles.active}>Visit</Link>
-					<Link to="/history" className={Styles.overflow} activeClassName={Styles.active}>History</Link>
-					<Link to="/inside" className={Styles.overflow} activeClassName={Styles.active}>Inside</Link>
-					<Link to="/outside" className={Styles.overflow} activeClassName={Styles.active}>Outside</Link>
-					<Link to="/virtual-tour" className={Styles.overflow} activeClassName={Styles.active}>Virtual Tour</Link>
-					<Link to="/events" className={Styles.overflow} activeClassName={Styles.active}>Events</Link>
-					<Link to="/weddings" className={Styles.overflow} activeClassName={Styles.active}>Weddings</Link>
-					<Link to="/educational" className={Styles.overflow} activeClassName={Styles.active}>Educational</Link>
-					<Link to="/links" className={Styles.overflow} activeClassName={Styles.active}>Links</Link>
-					<Link to="/volunteers" className={Styles.overflow} activeClassName={Styles.active}>Volunteers</Link>
-					<Link to="/contact" className={Styles.overflow} activeClassName={Styles.active}>Contact</Link>
-					<a className={`${moreButtonClassName} ${Styles.more}`} onClick={this.onMoreButtonClicked}>More...</a>
+					<div className={Styles.column}>
+						<Link to="/" state={{ internal: true }} partiallyActive={false} activeClassName={Styles.active}>Home</Link>
+						<Link to="/visit" partiallyActive={true} activeClassName={Styles.active}>Visit</Link>
+						<Link to="/history" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>History</Link>
+						<Link to="/inside" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Inside</Link>
+						<Link to="/outside" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Outside</Link>
+						<Link to="/virtual-tour" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Virtual Tour</Link>
+						<a className={`${moreButtonClassName} ${Styles.more}`} onClick={this.onMoreButtonClicked}>More...</a>
+					</div>
+					<div className={Styles.column}>
+						<Link to="/events" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Events</Link>
+						<Link to="/weddings" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Weddings</Link>
+						<Link to="/educational" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Educational</Link>
+						<Link to="/links" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Links</Link>
+						<Link to="/volunteers" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Volunteers</Link>
+						<Link to="/contact" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Contact</Link>
+					</div>
 				</div>
 				<div className={`${secondaryMenuClassName} ${Styles.secondary}`}>
 					<Link to="/history" activeClassName={Styles.active}>History</Link>
@@ -49,7 +53,7 @@ class NavBar extends React.Component {
 					<Link to="/weddings" activeClassName={Styles.active}>Weddings</Link>
 					<Link to="/educational" activeClassName={Styles.active}>Educational</Link>
 					<Link to="/links" activeClassName={Styles.active}>Links</Link>
-					<Link to="/visit" activeClassName={Styles.active}>Volunteers</Link>
+					<Link to="/volunteers" activeClassName={Styles.active}>Volunteers</Link>
 					<Link to="/contact" activeClassName={Styles.active}>Contact</Link>
 				</div>
 			</div>

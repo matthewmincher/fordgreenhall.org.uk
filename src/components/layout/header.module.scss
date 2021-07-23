@@ -1,17 +1,19 @@
 .main {
-  background-image: url(../../images/layout/header_gradient_strip.png), url(../../images/layout/header_gradient_main.png);
-  background-attachment: scroll, scroll;
-  background-repeat: repeat-x, repeat;
-  background-size: auto, auto;
-  background-position: center bottom, center top;
+  background-image: /*url(../../images/layout/header_gradient_strip.png), */url(../../images/layout/header_gradient_main.png);
+  background-attachment: /*scroll, */scroll;
+  background-repeat: /*repeat-x, */repeat;
+  background-size: /*auto, */auto;
+  background-position: /*center bottom, */center top;
   background-color: #8f8f6e;
 
   padding-bottom: 5px;
+
 }
 
 .logoContainer {
   width: 608px;
   margin: 0 auto;
+  position: relative;
 
   .logo, .item {
     display: inline-block;
@@ -21,8 +23,26 @@
     margin: 0 15px;
   }
 
-
+  .townContainer {
+    position: absolute;
+    top: 30px;
+    left: -260px;
+  }
+  .countyContainer {
+    position: absolute;
+    top: 31px;
+    right: -240px;
+  }
 }
+
+@media all and (max-width: 1145px) {
+  .logoContainer {
+    .townContainer, .countyContainer {
+      display: none;
+    }
+  }
+}
+
 
 .datesContainer {
   margin: 0 auto;
