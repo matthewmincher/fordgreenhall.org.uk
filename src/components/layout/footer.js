@@ -8,7 +8,7 @@ import { faEnvelope, faPhone, faMapMarkedAlt } from '@fortawesome/free-solid-svg
 
 const Footer = () => {
 	return (
-		<footer className={Styles.bottom}>
+		<footer>
 			<div className={Styles.contact}>
 				<div className={Styles.container}>
 					<div className={Styles.address}>

@@ -1,0 +1,15 @@
+.itemContainer {
+  position: relative;
+  display: inline-block;
+}
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 10px;
+  color: white;
+  font-family: "Arial", sans-serif;
+  user-select: none;
+  line-height: 10px;
+  text-shadow: 1px 1px 0px rgb(0 0 0);
+}

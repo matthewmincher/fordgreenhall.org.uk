@@ -10,7 +10,7 @@ const Layout = ({ pageTitle, children, contentBackgroundColor }) => {
 	const style = typeof contentBackgroundColor !== "undefined" ? {backgroundColor: contentBackgroundColor} : {}
 
 	return (
-		<main className={Styles.main}>
+		<main>
 			<title>{pageTitle}</title>
 
 			<Header />

@@ -1,13 +1,12 @@
 body {
   background: #060606;
-
 }
 
 .constrainedContent {
   width: 100%;
   margin: 0 auto;
 
-  max-width: 1246px;
+  max-width: 1196px;
 
   box-sizing: border-box;
 }
@@ -16,6 +15,10 @@ body {
   .constrainedContent {
 
   }
+}
+
+.clear {
+  clear: both;
 }
 
 

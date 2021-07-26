@@ -1,0 +1,28 @@
+.container {
+  font-family: "Georgia", serif;
+  color: #dddddd;
+  text-align: center;
+
+  h1 {
+  }
+
+  p {
+    color: white;
+  }
+
+  a {
+    color: white;
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .subcontainer {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
