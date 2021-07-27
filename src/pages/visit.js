@@ -12,6 +12,7 @@ const VisitPage = () => {
 					<div className={Styles.mapContainer}>
 						<iframe
 							className={Styles.interactiveMap}
+							title="Google Map"
 							width="100%"
 							height="346"
 							frameBorder="0" style={{border: 0}}
@@ -34,6 +35,7 @@ const VisitPage = () => {
 								className={Styles.tripadvisorFrame}
 								width="160px"
 								height="97px"
+								title="Tripadvisor"
 								frameBorder="0" style={{border: 0}}
 								sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
 								src="/html/tripadvisor_visit_widget.html"></iframe>

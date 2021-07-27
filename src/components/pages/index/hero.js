@@ -16,7 +16,7 @@ const Hero = ({ skipAnimation }) => {
 
 				setTimeout(() => {
 					setIsDone(true)
-				}, 3000)
+				}, 6000)
 			}, 3000);
 		} else {
 			setIsShown(true);

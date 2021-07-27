@@ -1,0 +1,40 @@
+
+.container {
+  h1 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .image {
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+}
+
+.warning {
+  color: red;
+}
+.emph {
+  font-weight: bold;
+}
+
+.moreInfo {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  color: yellow;
+
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1212px){
+  .container {
+    h1 {
+      margin: 20px 0 20px 20px;
+    }
+  }
+}

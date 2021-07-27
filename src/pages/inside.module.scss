@@ -1,0 +1,75 @@
+.container {
+  h1, h2 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+.planContainer {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    background-image : linear-gradient(to right,
+            rgba(143,143,110, 0),
+            rgba(143,143,110, 90%));
+    height: 100%;
+    width: 25px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image : linear-gradient(to left,
+            rgba(143,143,110, 0),
+            rgba(143,143,110, 90%));
+    height: 100%;
+    width: 25px;
+  }
+}
+.planScroller {
+  width: 100%;
+  overflow-x: auto;
+  overflow-scrolling: touch;
+  box-sizing: border-box;
+
+  & > * {
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
+.thumb {
+  position: absolute;
+  cursor: pointer;
+}
+
+.copy {
+  font-family: Georgia, serif;
+
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 1212px){
+ .padded {
+   padding: 0 20px;
+ }
+}

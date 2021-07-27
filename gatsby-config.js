@@ -32,6 +32,14 @@ module.exports = {
 					  fontDisplay: 'block',
 					  //strategy: 'selfHosted' // 'base64' || 'cdn'
 				  },
+				  {
+					  family: "Fredericka the Great",
+					  variants: ["400"],
+					  //subsets: ['latin']
+					  //text: 'Hello'
+					  fontDisplay: 'block',
+					  //strategy: 'selfHosted' // 'base64' || 'cdn'
+				  },
 			  ],
 		  },
 		  // formatAgents: {

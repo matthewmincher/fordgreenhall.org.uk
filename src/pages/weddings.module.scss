@@ -1,0 +1,185 @@
+.container {
+  h1 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+  }
+}
+.hero {
+  text-align: center;
+}
+.heroPositioner{
+  display: inline-block;
+  position: relative;
+
+  padding-left: 70px;
+  padding-right: 70px;
+
+  .left, .right {
+    display: inline-block;
+  }
+
+  .left {
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%) translateX(-30%);
+  }
+  .right {
+    position: absolute;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%) translateX(30%);
+  }
+}
+
+.heroAttribution {
+  text-align: center;
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  padding: 5px;
+  margin-bottom: 40px;
+}
+
+.copyContainer, .otherEventsContainer {
+  color: white;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+}
+
+.photographers {
+  max-width: 893px;
+  margin:40px auto 0 auto;
+
+  & > a {
+    display: block;
+  }
+
+  & > a + a {
+    margin-top: 10px;
+  }
+}
+
+.otherEventsContainer {
+  text-align: center;
+  line-height: 1.5;
+
+  background-color: #a1aea4;
+  padding: 20px;
+}
+
+.weddingPackContainer {
+  .content {
+    background-image: url(../images/layout/header_gradient_main.png);
+    border:2px solid #727259;
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin:0 auto 20px auto;
+
+    text-decoration: none;
+
+    padding: 10px;
+
+  }
+  .label {
+    color: white;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  &:hover {
+    .content {
+      border-color: #c8c89c;
+    }
+    .label {
+      text-decoration: underline;
+    }
+  }
+  .icon {
+    vertical-align: middle;
+  }
+}
+
+.gweddingContainer {
+  text-align: center;
+  margin: 20px auto;
+
+  max-width: 893px;
+  border-bottom:2px solid #727259;
+  border-top: 2px solid #727259;
+
+  padding: 0 2px;
+
+  --g-red: #d04b36;
+  --g-orange: #e36511;
+  --g-yellow: #ffba00;
+  --g-green: #00b180;
+  --g-blue: #147aab;
+  --g-indigo: #675997;
+  background-image: linear-gradient(to bottom,
+                  var(--g-red) 0%,
+                  var(--g-red) 16.6666%,
+                  var(--g-orange) 16.6666%,
+                  var(--g-orange) 33.333%,
+                  var(--g-yellow) 33.333%,
+                  var(--g-yellow) 50%,
+                  var(--g-green) 50%,
+                  var(--g-green) 66.6666%,
+                  var(--g-blue) 66.6666%,
+                  var(--g-blue) 83.3333%,
+                  var(--g-indigo) 83.3333%,
+                  var(--g-indigo) 100%
+  );
+
+  .inner {
+    background-color: #858567;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .icon {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .label {
+    color: white;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 1212px){
+  .heroPositioner {
+    padding: 0;
+
+    .left, .right {
+      max-width: 25%;
+      transform: translateY(-50%);
+    }
+  }
+  .copyContainer {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 640px) {
+  .heroAttribution {
+    font-size: 12px;
+  }
+  .otherEventsContainer {
+    font-size: 16px;
+  }
+}

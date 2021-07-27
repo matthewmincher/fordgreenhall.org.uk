@@ -1,5 +1,17 @@
 .container {
 
+  h1 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+}
+
+.main {
+  position: relative;
+  min-height: 461px;
 }
 
 .copy {
@@ -8,6 +20,8 @@
   color: white;
   font-size: 18px;
   text-align: left;
+
+  margin-right: 327px;
 }
 
 .gallery {
@@ -27,24 +41,40 @@
 .hero {
   float: right;
   margin-left: 20px;
+
+  position: absolute;
+  top:0;
+  right:0;
 }
 
-@media all and (max-width: 1195px) {
+@media all and (max-width: 1212px) {
   .copy {
     margin-left: 20px;
+    margin-right: 0;
+  }
+  .container {
+    h1 {
+      margin-left: 20px;
+      float:none;
+    }
   }
   .hero {
     margin-right: 20px;
-  }
-  .gallery {
-    
+    position: relative;
   }
 }
 
 @media all and (max-width: 640px) {
   .container {
     text-align: center;
+
+    h1 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
+
   .hero {
     float: none;
     margin:0 auto;
@@ -52,28 +82,5 @@
 }
 
 .gallery {
-  &::-webkit-scrollbar {
-    width: 14px;
-    height: 18px;
-  }
 
-  &::-webkit-scrollbar-thumb {
-    height: 6px;
-    border: 4px solid rgba(0, 0, 0, 0);
-    background-clip: padding-box;
-    background-color: rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 7px;
-    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
-    inset 1px 1px 0px rgba(0, 0, 0, 0.05);
-  }
-
-  &::-webkit-scrollbar-button {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-
-  &::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
 }

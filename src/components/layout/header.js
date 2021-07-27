@@ -8,24 +8,14 @@ const Header = () => {
 		<header className={Styles.main}>
 			<div className={Styles.logoContainer}>
 				<div className={Styles.townContainer}>
-					<StaticImage
-						src="../../images/layout/header_town.png"
-						width={224}
-						height={26}
-						placeholder="none"
-						loading="eager"
-						layout="fixed"
-						alt="" />
+					<div className={Styles.townType}>
+						Stoke-on-Trent
+					</div>
 				</div>
 				<div className={Styles.countyContainer}>
-					<StaticImage
-						src="../../images/layout/header_county.png"
-						width={194}
-						height={26}
-						placeholder="none"
-						loading="eager"
-						layout="fixed"
-						alt="" />
+					<div className={Styles.countyType}>
+						Staffordshire
+					</div>
 				</div>
 
 				<div className={Styles.item}>
@@ -38,15 +28,7 @@ const Header = () => {
 						layout="fixed"
 						alt="" />
 				</div>
-				<StaticImage
-					className={Styles.logo}
-					src="../../images/layout/header_logo.png"
-					width={480}
-					height={86}
-					placeholder="none"
-					loading="eager"
-					layout="fixed"
-					alt="" />
+				<div className={Styles.logoType}>F<span>ORD</span> G<span>REEN</span> H<span>ALL</span></div>
 				<div className={Styles.item}>
 					<StaticImage
 						src="../../images/layout/header_box.png"
@@ -59,14 +41,7 @@ const Header = () => {
 				</div>
 			</div>
 			<div className={Styles.datesContainer}>
-				<StaticImage
-					src="../../images/layout/header_dates.png"
-					width={166}
-					height={38}
-					placeholder="none"
-					loading="eager"
-					layout="fixed"
-					alt="1624 - 2019" />
+				<div className={Styles.datesType}>1624 - {new Date().getFullYear()}</div>
 			</div>
 
 

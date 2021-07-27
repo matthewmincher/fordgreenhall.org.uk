@@ -11,15 +11,29 @@
 }
 
 .logoContainer {
-  width: 608px;
+  width: 623px;
   margin: 0 auto;
+  padding-top: 10px;
   position: relative;
 
-  .logo, .item {
+  .logoType {
+    font-family: "Fredericka the Great", serif;
+    font-size: 60px;
+    color: #a1aea4;
+    font-weight: 400;
+    letter-spacing: -2px;
+    white-space: nowrap;
+
+    span {
+      font-size: 46px;
+    }
+  }
+
+  .logoType, .item {
     display: inline-block;
     vertical-align: middle;
   }
-  .logo {
+  .logoType {
     margin: 0 15px;
   }
 
@@ -27,11 +41,27 @@
     position: absolute;
     top: 30px;
     left: -260px;
+
+    .townType {
+      font-family: "Fredericka the Great", serif;
+      margin: 0;
+      font-size: 32px;
+      color: #a1aea4;
+      font-weight: 400;
+    }
   }
   .countyContainer {
     position: absolute;
     top: 31px;
     right: -240px;
+
+    .countyType {
+      font-family: "Fredericka the Great", serif;
+      margin: 0;
+      font-size: 32px;
+      color: #a1aea4;
+      font-weight: 400;
+    }
   }
 }
 
@@ -45,9 +75,14 @@
 
 
 .datesContainer {
-  margin: 0 auto;
+  text-align: center;
   display: block;
-  width: 166px;
+
+  .datesType {
+    font-family: Georgia, serif;
+    font-size: 33px;
+    color: #a1aea4;
+  }
 }
 
 .navBar {
@@ -63,16 +98,14 @@
     .item {
       display: none;
     }
-    .logo {
+    .logoType {
       margin: 0;
-      width: 100% !important;
-    }
 
-    .logo img {
-      width: 100% !important;
-      padding: 0 10px;
-      box-sizing: border-box;
-      object-fit: contain !important;
+      font-size: 58px;
+
+      span {
+        font-size: 40px;
+      }
     }
   }
   .datesContainer {
