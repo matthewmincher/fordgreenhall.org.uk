@@ -12,7 +12,7 @@ const JustGivingBar = () => {
 					   rel="noreferrer">
 						<StaticImage
 							src="./../../images/fundraising/help.png"
-							alt="TODO"
+							alt="Please help"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"

@@ -21,7 +21,7 @@ const WeddingsPage = () => {
 						<div className={Styles.heroPositioner}>
 							<StaticImage
 								src="./../images/copy/weddings/hero.jpg"
-								alt="TODO"
+								alt="A happy wedding party throwing confetti outside the hall"
 								placeholder="none"
 								layout="constrained"
 								loading="eager"
@@ -30,7 +30,7 @@ const WeddingsPage = () => {
 							<div className={Styles.left}>
 								<StaticImage
 									src="./../images/copy/weddings/hero_left.png"
-									alt="TODO"
+									alt="A couple next to their wedding car"
 									placeholder="none"
 									layout="constrained"
 									loading="eager"
@@ -39,7 +39,7 @@ const WeddingsPage = () => {
 							<div className={Styles.right}>
 								<StaticImage
 									src="./../images/copy/weddings/hero_right.png"
-									alt="TODO"
+									alt="Two members of a wedding party outside the hall"
 									placeholder="none"
 									layout="constrained"
 									loading="eager"
@@ -72,7 +72,7 @@ const WeddingsPage = () => {
 							<StaticImage
 								className={Styles.icon}
 								src="./../images/copy/weddings/gwedding.png"
-								alt="TODO"
+								alt="LGBTQ+ Weddings"
 								placeholder="none"
 								width={75}
 								layout="fixed"
@@ -97,7 +97,7 @@ const WeddingsPage = () => {
 						<a href="http://www.neilhulsephotography.co.uk" target="_blank" rel="noreferrer">
 							<StaticImage
 								src="./../images/copy/weddings/neilhulse.png"
-								alt="TODO"
+								alt="A photo of a bride in a wedding dress. Neil Hulse photography."
 								placeholder="none"
 								layout="constrained"
 							/>
@@ -105,7 +105,7 @@ const WeddingsPage = () => {
 						<a href="http://www.katescottphotography.co.uk" target="_blank" rel="noreferrer">
 							<StaticImage
 								src="./../images/copy/weddings/katescott.png"
-								alt="TODO"
+								alt="Kate Scott Photography"
 								placeholder="none"
 								layout="constrained"
 							/>

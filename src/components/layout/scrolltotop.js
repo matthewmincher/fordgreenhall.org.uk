@@ -14,7 +14,7 @@ const ScrollToTop = () => {
 		}} role="button" tabIndex={0}>
 			<StaticImage
 				src="./../../images/layout/scrollup.png"
-				alt="TODO"
+				alt="Scroll to top"
 				placeholder="none"
 				layout="fixed"
 				loading="eager"

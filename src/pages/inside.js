@@ -112,7 +112,7 @@ const InsidePage = () => {
 						<div style={{position: "relative"}}>
 							<StaticImage
 								src="./../images/copy/inside/ground_floor.png"
-								alt="TODO"
+								alt="A plan of the ground floor of the hall"
 								placeholder="none"
 								layout="fixed"
 								loading="eager"
@@ -122,7 +122,7 @@ const InsidePage = () => {
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/parlour_thumb.png"
-									alt="TODO"
+									alt="The Parlour"
 									placeholder="none"
 									layout="fixed"
 									loading="eager"
@@ -133,7 +133,7 @@ const InsidePage = () => {
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/hall_thumb.png"
-									alt="TODO"
+									alt="The main hall"
 									placeholder="none"
 									layout="fixed"
 									loading="eager"
@@ -144,7 +144,7 @@ const InsidePage = () => {
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/kitchen_thumb.png"
-									alt="TODO"
+									alt="The kitchen"
 									placeholder="none"
 									layout="fixed"
 									loading="eager"
@@ -155,7 +155,7 @@ const InsidePage = () => {
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/exhibition_thumb.png"
-									alt="TODO"
+									alt="The exhibition room"
 									placeholder="none"
 									layout="fixed"
 									loading="eager"
@@ -178,7 +178,7 @@ const InsidePage = () => {
 						<div style={{position: "relative"}}>
 							<StaticImage
 								src="./../images/copy/inside/first_floor.png"
-								alt="TODO"
+								alt="A plan of the first floor of the hall"
 								placeholder="none"
 								layout="fixed"
 								loading="eager"
@@ -188,7 +188,7 @@ const InsidePage = () => {
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/buttery_thumb.png"
-									alt="TODO"
+									alt="The buttery"
 									placeholder="none"
 									layout="fixed"
 									loading="eager"
@@ -199,7 +199,7 @@ const InsidePage = () => {
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/parlour_chamber_thumb.png"
-									alt="TODO"
+									alt="The parlour chamber"
 									placeholder="none"
 									layout="fixed"
 									loading="eager"
@@ -210,7 +210,7 @@ const InsidePage = () => {
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/hall_chamber_thumb.png"
-									alt="TODO"
+									alt="The hall chamber"
 									placeholder="none"
 									layout="fixed"
 									loading="eager"

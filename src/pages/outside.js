@@ -16,7 +16,7 @@ const OutsidePage = () => {
 				<AttributedItem attribution={kateScottAttribution} display="block">
 					<StaticImage
 						src="./../images/copy/outside/1.jpg"
-						alt="TODO"
+						alt="The hall and gardens exterior shot"
 						placeholder="none"
 						layout="fullWidth"
 						loading="eager"
@@ -27,7 +27,7 @@ const OutsidePage = () => {
 						<AttributedItem attribution={kateScottAttribution} display="block">
 							<StaticImage
 								src="./../images/copy/outside/2.jpg"
-								alt="TODO"
+								alt="Looking upwards outside the hall at a chimney stack"
 								placeholder="none"
 								layout="fullWidth"
 								loading="eager"
@@ -38,7 +38,7 @@ const OutsidePage = () => {
 						<AttributedItem attribution={kateScottAttribution} display="block">
 							<StaticImage
 								src="./../images/copy/outside/3.jpg"
-								alt="TODO"
+								alt="Close up of the wooden exterior of the hall"
 								placeholder="none"
 								layout="fullWidth"
 								loading="eager"
@@ -49,7 +49,7 @@ const OutsidePage = () => {
 				<AttributedItem attribution={kateScottAttribution} display="block">
 					<StaticImage
 						src="./../images/copy/outside/4.jpg"
-						alt="TODO"
+						alt="Close up of the wooden exterior of the hall"
 						placeholder="none"
 						layout="fullWidth"
 						loading="eager"

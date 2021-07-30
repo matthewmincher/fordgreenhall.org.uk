@@ -17,7 +17,7 @@ const HistoryPage = () => {
 					<AttributedItem className={Styles.hero} attribution={kateScottAttribution}>
 						<StaticImage
 							src="./../images/copy/history/history_hero.jpg"
-							alt="TODO"
+							alt="Wooden exterior of the hall"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"
@@ -37,7 +37,7 @@ const HistoryPage = () => {
 					<AttributedItem className={Styles.item} attribution={kateScottAttribution}>
 						<StaticImage
 							src="./../images/copy/history/history_gallery_1.jpg"
-							alt="TODO"
+							alt="Wooden exterior of the hall"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"
@@ -46,7 +46,7 @@ const HistoryPage = () => {
 					<AttributedItem className={Styles.item} attribution={kateScottAttribution}>
 						<StaticImage
 							src="./../images/copy/history/history_gallery_2.jpg"
-							alt="TODO"
+							alt="Wooden exterior of the hall"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"
@@ -55,7 +55,7 @@ const HistoryPage = () => {
 					<AttributedItem className={Styles.item} attribution={kateScottAttribution}>
 						<StaticImage
 							src="./../images/copy/history/history_gallery_3.jpg"
-							alt="TODO"
+							alt="Wooden exterior of the hall"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"
@@ -64,7 +64,7 @@ const HistoryPage = () => {
 					<AttributedItem className={Styles.item} attribution={kateScottAttribution}>
 						<StaticImage
 							src="./../images/copy/history/history_gallery_4.jpg"
-							alt="TODO"
+							alt="Wooden exterior of the hall"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"

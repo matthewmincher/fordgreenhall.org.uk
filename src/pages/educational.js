@@ -28,7 +28,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/1.jpg"
-								alt="TODO"
+								alt="House Tour"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -41,7 +41,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/2.png"
-								alt="TODO"
+								alt="Fire of London House Tour"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -54,7 +54,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/3.png"
-								alt="TODO"
+								alt="Samuel Pepys"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -67,7 +67,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/4.png"
-								alt="TODO"
+								alt="Rich and Poor"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -80,7 +80,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/5.png"
-								alt="TODO"
+								alt="Food and Drink"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -93,7 +93,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/6.jpg"
-								alt="TODO"
+								alt="Handling Objects"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -106,7 +106,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/7.jpg"
-								alt="TODO"
+								alt="Shakespeare School"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -119,7 +119,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/8.png"
-								alt="TODO"
+								alt="Shakespearean Objects"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -132,7 +132,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/9.png"
-								alt="TODO"
+								alt="The Gingerbread Man"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />
@@ -145,7 +145,7 @@ const EducationPage = () => {
 						<HoverBox children={
 							<StaticImage
 								src="../images/copy/educational/10.jpg"
-								alt="TODO"
+								alt="Hour Tour in progress"
 								placeholder="none"
 								layout="constrained"
 								loading="eager" />

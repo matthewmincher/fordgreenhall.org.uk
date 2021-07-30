@@ -109,7 +109,7 @@ const LinksPage = () => {
 								<a href="http://www.neilhulsephotography.co.uk" target="_blank" rel="noreferrer">
 									<StaticImage
 										src="./../images/copy/weddings/neilhulse.png"
-										alt="TODO"
+										alt="A photo of a bride in a wedding dress. Neil Hulse photography."
 										placeholder="none"
 										layout="constrained"
 									/>
@@ -117,7 +117,7 @@ const LinksPage = () => {
 								<a href="http://www.katescottphotography.co.uk" target="_blank" rel="noreferrer">
 									<StaticImage
 										src="./../images/copy/weddings/katescott.png"
-										alt="TODO"
+										alt="Kate Scott Photography"
 										placeholder="none"
 										layout="constrained"
 									/>

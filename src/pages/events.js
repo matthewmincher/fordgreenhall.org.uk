@@ -25,7 +25,7 @@ const EventsPage = () => {
 						<StaticImage
 							className={Styles.image}
 							src="./../images/copy/events/knitandnatter.png"
-							alt="TODO"
+							alt="Basket with balls of yarn and knitting needles"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"
@@ -43,7 +43,7 @@ const EventsPage = () => {
 						<StaticImage
 							className={Styles.image}
 							src="./../images/copy/events/spring_craft_fair_2020.jpg"
-							alt="TODO"
+							alt="Various craft goods and jewellery"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"
