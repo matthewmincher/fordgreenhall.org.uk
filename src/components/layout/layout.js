@@ -6,14 +6,14 @@ import "normalize.css"
 import '../../css/global.scss';
 import * as Styles from './layout.module.scss';
 
-const Layout = ({ pageTitle, children, contentBackgroundColor }) => {
+const Layout = ({ pageTitle, children, contentBackgroundColor, isPrimaryPage = false }) => {
 	const style = typeof contentBackgroundColor !== "undefined" ? {backgroundColor: contentBackgroundColor} : {}
 
 	return (
 		<main>
 			<title>{pageTitle}</title>
 
-			<Header />
+			<Header isPrimaryPage={isPrimaryPage} />
 
 			<div className={Styles.content} style={style}>
 				{children}

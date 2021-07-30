@@ -7,78 +7,34 @@
 
   position: relative;
 
-  .text {
+
+  .label {
     position: absolute;
-    top: 0;
+    top:0;
     left: 0;
-    right: 0;
+    right:0;
+    margin: 0 auto;
 
-    resize: both;
-
-
-
-    transform: translateZ(0);
-    transition: top 1.5s ease-in, left 1.5s ease-in, right 1.5s ease-in, transform 1.5s ease-in;
-  }
-  .text h1 {
-    margin: 0;
-    white-space: nowrap;
-
-    padding: 30px;
-
-    font-family: "Meddon";
-    text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #fff;
-
-    transition: text-shadow 1.5s ease-in, color 1.5s ease-in;
+    transition: filter 1.5s ease-in, top 1.5s ease-in, transform 1.5s ease-in;
   }
 }
+
 
 .container.active {
   filter: unset;
 
-  .text {
+  .label {
     top: 100%;
-    transform: translateY(-100%);
-    left: 20%;
-    right: 20%;
+    transform: translateY(-100%) scale(0.7);
 
-
-    h1 {
-      color: #eeeeee;
-      text-shadow:
-            0 0 7px #000000,
-            0 0 10px #000000,
-            0 0 21px #000000,
-            0 0 42px #000000;
-    }
-
-  }
-  .text h1 {
-
+    filter: invert(1);
   }
 }
 
 .container.done {
   transition: none;
 
-  .text {
+  .label {
     transition: none;
-  }
-  .text h1 {
-    transition: none;
-  }
-}
-
-
-@media all and (max-width: 640px) {
-  .container.active {
-    .text {
-      left: 10%;
-      right: 10%;
-    }
   }
 }

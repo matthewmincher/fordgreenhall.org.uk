@@ -3,7 +3,7 @@ import * as Styles from "./header.module.scss"
 import {StaticImage} from "gatsby-plugin-image";
 import NavBar from "./navbar";
 
-const Header = () => {
+const Header = ({ isPrimaryPage }) => {
 	return (
 		<header className={Styles.main}>
 			<div className={Styles.logoContainer}>
@@ -46,7 +46,7 @@ const Header = () => {
 
 
 			<div className={Styles.navBar}>
-				<NavBar />
+				<NavBar isPrimaryPage={isPrimaryPage} />
 			</div>
 		</header>
 	)

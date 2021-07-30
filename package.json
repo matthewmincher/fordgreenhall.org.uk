@@ -24,6 +24,7 @@
     "gatsby": "^3.9.1",
     "gatsby-plugin-global-styles": "^1.0.17",
     "gatsby-plugin-image": "^1.10.0",
+    "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-react-helmet": "^4.10.0",
     "gatsby-plugin-sass": "^4.10.0",
     "gatsby-plugin-sharp": "^3.10.0",
@@ -35,6 +36,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-scale-text": "^1.2.2",
+    "react-textfit": "^1.1.1",
     "sass": "^1.35.2"
   }
 }

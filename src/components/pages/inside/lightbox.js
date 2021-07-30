@@ -31,20 +31,32 @@ const Lightbox = ({ image, onCloseAction, onNextAction, onPrevAction }) => {
 
 	if(image !== null){
 		return (
-			<div className={Styles.overlay} onClick={() => onOverlayClicked()}>
-				<div className={Styles.container} onClick={(e) => onContentClicked(e)}>
-					<div className={Styles.closeButton} onClick={() => onCloseAction()}>
+			<div className={Styles.overlay} onClick={() => onOverlayClicked()} role="none">
+				<div className={Styles.container} onClick={(e) => onContentClicked(e)} role="none">
+					<div className={Styles.closeButton} onClick={() => onCloseAction()} onKeyPress={(e) => {
+						if(e.key === 'Enter'){
+							onCloseAction();
+						}
+					}} role="button" tabIndex={0}>
 						<FontAwesomeIcon icon={faTimes} size="2x" inverse />
 					</div>
 
 					{next &&
-						<div className={Styles.nextButton} onClick={() => onNextAction(next)}>
+						<div className={Styles.nextButton} onClick={() => onNextAction(next)} onKeyPress={(e) => {
+							if(e.key === 'Enter'){
+								onNextAction(next);
+							}
+						}} role="button" tabIndex={0}>
 							<FontAwesomeIcon icon={faArrowRight} size="2x" inverse />
 						</div>
 					}
 
 					{prev &&
-						<div className={Styles.prevButton} onClick={() => onPrevAction(prev)}>
+						<div className={Styles.prevButton} onClick={() => onPrevAction(prev)} onKeyPress={(e) => {
+							if(e.key === 'Enter'){
+								onPrevAction(next);
+							}
+						}} role="button" tabIndex={0}>
 							<FontAwesomeIcon icon={faArrowLeft} size="2x" inverse />
 						</div>
 					}
@@ -53,7 +65,7 @@ const Lightbox = ({ image, onCloseAction, onNextAction, onPrevAction }) => {
 						? <div className={Styles.loading} style={{width: width+"px", height: height+"px"}}>
 							<FontAwesomeIcon icon={faSpinner} spin size="2x" />
 						</div>
-						: <img style={{width: width+"px", height: height+"px"}} src={src} />
+						: <img style={{width: width+"px", height: height+"px"}} src={src} alt="" />
 					}
 
 					{label &&

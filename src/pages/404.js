@@ -13,7 +13,7 @@ const NotFoundPage = () => {
 				<div className={Styles.subcontainer}>
 					<p>Sorry, we could not find the page you are looking for. Please double check the address, or choose a page to visit above.</p>
 
-					<a href="javascript:window.history.back();">&laquo; Go back</a>
+					<button className="linkButton" onClick={() => window.history.back()}>&laquo; Go back</button>
 					<Link to="/">&raquo; Go home</Link>
 				</div>
 			</div>

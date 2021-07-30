@@ -1,10 +1,16 @@
 .visitContainer {
   position: relative;
 
-}
-.mapContainer {
+  h1 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    margin-top: 0;
+  }
 
 }
+
 .interactiveMap {
   margin: 10px auto 0 auto;
   display: block;
@@ -51,6 +57,10 @@
 @media all and (max-width: 1195px) {
   .visitContainer {
     padding: 0;
+
+    h1 {
+      margin-left: 20px;
+    }
   }
 }
 @media all and (max-width: 640px) {

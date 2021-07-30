@@ -10,7 +10,6 @@ const Event = ({title, date, image, children }) => {
 			{children}
 
 			<div className={Styles.date}>{date}</div>
-			<div className={Styles.clear} />
 		</div>
 	)
 }

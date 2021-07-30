@@ -10,13 +10,13 @@
     color: white;
   }
 
-  a {
+  a, button {
     color: white;
     display: block;
     padding: 5px 0;
     text-decoration: none;
   }
-  a:hover {
+  a:hover, button:hover {
     text-decoration: underline;
   }
 

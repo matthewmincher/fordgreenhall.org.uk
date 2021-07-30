@@ -43,7 +43,7 @@ const Footer = () => {
 								layout="fixed"
 								loading="eager"
 								alt="Find us on Facebook" />
-							Find us on Facebook
+							<span><span className={Styles.extended}>Find us on </span>Facebook</span>
 						</a>
 						<a
 							href="https://twitter.com/fordgreenhall"
@@ -58,7 +58,7 @@ const Footer = () => {
 								layout="fixed"
 								loading="eager"
 								alt="Follow us on Twitter" />
-							Follow us on Twitter
+							<span><span className={Styles.extended}>Follow us on </span>Twitter</span>
 						</a>
 						<a
 							href="https://www.youtube.com/channel/UCNgNqHYmtsuhSeWXDwJT8Mg"
@@ -73,8 +73,25 @@ const Footer = () => {
 								layout="fixed"
 								loading="eager"
 								alt="Watch on Youtube" />
-							Watch on Youtube
+							<span><span className={Styles.extended}>Watch on </span>Youtube</span>
 						</a>
+						<a
+							href="https://www.instagram.com/ford_green_hall_museum/"
+							target="_blank"
+							rel="noreferrer">
+							<StaticImage
+								src="../../images/social/instagram_square.png"
+								className={Styles.icon}
+								placeholder="none"
+								width={32}
+								height={32}
+								layout="fixed"
+								loading="eager"
+								alt="See us on Instagram" />
+							<span><span className={Styles.extended}>See us on </span>Instagram</span>
+						</a>
+
+
 					</div>
 
 					<StaticImage
@@ -94,13 +111,17 @@ const Footer = () => {
 					</div>
 
 					<div className={Styles.visitEngland}>
-						<StaticImage
-							src="../../images/thirdparties/visit_england.png"
-							width={98}
-							placeholder="none"
-							loading="eager"
-							layout="fixed"
-							alt="" />
+						<a href="https://www.visitenglandassessmentservices.com/establishments/ford-green-hall/"
+						   target="_blank"
+						   rel="noreferrer">
+							<StaticImage
+								src="../../images/thirdparties/visit_england.png"
+								width={98}
+								placeholder="none"
+								loading="eager"
+								layout="fixed"
+								alt="" />
+						</a>
 					</div>
 				</div>
 			</div>

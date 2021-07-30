@@ -12,12 +12,18 @@ const EducationPage = () => {
 		<Layout pageTitle="Educational">
 			<div className="constrainedContent">
 				<div className={Styles.container}>
-					<h1>Workshops and Loans Boxes</h1>
+					<div className={Styles.padded}>
+						<h1>Workshops and Loans Boxes</h1>
 
-					<p>Suitable for KS1 and KS2 pupils.</p>
-					<p>Workshops available for half day or full day visits.</p>
-					<p>1/2 day visit includes House Tour with single Workshop and costs £4.50 per child.</p>
-					<p>Full day visit includes House Tour with three workshops and costs £7.00 per child.</p>
+						<p>Suitable for KS1 and KS2 pupils.</p>
+						<p>Workshops available for half day or full day visits.</p>
+						<p>1/2 day visit includes House Tour with single Workshop and costs £4.50 per child.</p>
+						<p>Full day visit includes House Tour with three workshops and costs £7.00 per child.</p>
+					</div>
+				</div>
+			</div>
+			<div className={Styles.galleryContainer}>
+				<div className="constrainedContent">
 					<div className={Styles.gallery}>
 						<HoverBox children={
 							<StaticImage
@@ -149,6 +155,29 @@ const EducationPage = () => {
 							</div>
 						} />
 					</div>
+				</div>
+			</div>
+			<div className="constrainedContent">
+				<div className={Styles.container}>
+					<div className={Styles.hireCallout}>
+						A Tudor and Stuart Loans Box is available for hire at a cost of £20 per half term.
+					</div>
+
+					<div className={Styles.padded}>
+						<p>Ford Green Hall has a friendly atmosphere soaked in history. Our experienced staff bring the past to life through a variety of enjoyable workshops and tours. Take a tour of the hall and garden (weather willing!) and discover all about everyday lives of the Tudors and Stuarts through hands on learning and opportunities for students to practice historical enquiry skills.</p>
+						<p>Over many year we have developed an exciting range of themed workshops for Foundation and Primary Stage pupils. These practical sessions are all led by a facilitator and are ever popular with visiting schools.</p>
+						<p>Ford Green Hall is an inspirational setting for all manner of visits from history through to arts, design and creative writing. Book a guided tour or arrange a self-guided tour today to explore a rare and valuable educational resource.</p>
+					</div>
+
+					<div style={{textAlign: "center"}}>
+						<div className={Styles.bookingCallToAction}>
+							<h3>Booking</h3>
+							<p>Post: Ford Green Road, Smallthorne, Stoke-on-Trent, ST6 1NG</p>
+							<p>Telephone: 01782 537696</p>
+							<p>Email: fordgreenhall.museum@gmail.com</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</Layout>

@@ -20,8 +20,12 @@ class NavBar extends React.Component {
 	}
 
 	render(){
-		const moreButtonClassName = this.state.secondaryVisible ? Styles.expanded : undefined;
+		let moreButtonClassName = this.state.secondaryVisible ? Styles.expanded : undefined;
 		const secondaryMenuClassName = this.state.secondaryVisible ? Styles.expanded : undefined;
+
+		if(!this.props.isPrimaryPage){
+			moreButtonClassName += ` ${Styles.active}`
+		}
 
 		return (
 			<div>
@@ -33,7 +37,7 @@ class NavBar extends React.Component {
 						<Link to="/inside" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Inside</Link>
 						<Link to="/outside" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Outside</Link>
 						<Link to="/virtual-tour" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Virtual Tour</Link>
-						<a className={`${moreButtonClassName} ${Styles.more}`} onClick={this.onMoreButtonClicked}>More...</a>
+						<button className={`${moreButtonClassName} ${Styles.more}`} onClick={this.onMoreButtonClicked}>More...</button>
 					</div>
 					<div className={Styles.column}>
 						<Link to="/events" partiallyActive={true} className={Styles.overflow} activeClassName={Styles.active}>Events</Link>

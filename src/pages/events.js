@@ -12,7 +12,9 @@ const EventsPage = () => {
 	return (
 		<Layout pageTitle="Events">
 			<div className="constrainedContent">
-				<CovidMessage />
+				<div style={{maxWidth: "850px", marginLeft: "auto", marginRight: "auto"}}>
+					<CovidMessage />
+				</div>
 
 				<div className={Styles.container}>
 					<h1>Events</h1>

@@ -78,6 +78,12 @@ const InsidePage = () => {
 	const onThumbnailClicked = (imageKey) => {
 		setLightboxImage(LargeImages[imageKey])
 	};
+	const onThumbnailKeyUp = (e, imageKey) => {
+		console.log(e);
+		if(e.key === 'Enter'){
+			setLightboxImage(LargeImages[imageKey]);
+		}
+	}
 	const onCloseAction = () => {
 		setLightboxImage(null)
 	}
@@ -112,7 +118,7 @@ const InsidePage = () => {
 								loading="eager"
 							/>
 
-							<div className={Styles.thumb} style={{top: "270px", left: "395px"}} onClick={() => onThumbnailClicked("parlour")}>
+							<div className={Styles.thumb} style={{top: "270px", left: "395px"}} onClick={() => onThumbnailClicked("parlour")} onKeyPress={(e) => { onThumbnailKeyUp(e, "parlour")}} role="button" tabIndex={0}>
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/parlour_thumb.png"
@@ -123,7 +129,7 @@ const InsidePage = () => {
 
 								/>
 							</div>
-							<div className={Styles.thumb} style={{top: "204px", left: "670px"}} onClick={() => onThumbnailClicked("hall")}>
+							<div className={Styles.thumb} style={{top: "204px", left: "670px"}} onClick={() => onThumbnailClicked("hall")} onKeyPress={(e) => { onThumbnailKeyUp(e, "hall")}} role="button" tabIndex={0}>
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/hall_thumb.png"
@@ -134,7 +140,7 @@ const InsidePage = () => {
 
 								/>
 							</div>
-							<div className={Styles.thumb} style={{top: "186px", left: "926px"}} onClick={() => onThumbnailClicked("kitchen")}>
+							<div className={Styles.thumb} style={{top: "186px", left: "926px"}} onClick={() => onThumbnailClicked("kitchen")} onKeyPress={(e) => { onThumbnailKeyUp(e, "kitchen")}} role="button" tabIndex={0}>
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/kitchen_thumb.png"
@@ -145,7 +151,7 @@ const InsidePage = () => {
 
 								/>
 							</div>
-							<div className={Styles.thumb} style={{top: "345px", left: "926px"}} onClick={() => onThumbnailClicked("exhibition")}>
+							<div className={Styles.thumb} style={{top: "345px", left: "926px"}} onClick={() => onThumbnailClicked("exhibition")} onKeyPress={(e) => { onThumbnailKeyUp(e, "exhibition")}} role="button" tabIndex={0}>
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/exhibition_thumb.png"
@@ -178,7 +184,7 @@ const InsidePage = () => {
 								loading="eager"
 							/>
 
-							<div className={Styles.thumb} style={{top: "10px", left: "90px"}} onClick={() => onThumbnailClicked("buttery")}>
+							<div className={Styles.thumb} style={{top: "10px", left: "90px"}} onClick={() => onThumbnailClicked("buttery")} onKeyPress={(e) => { onThumbnailKeyUp(e, "buttery")}} role="button" tabIndex={0}>
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/buttery_thumb.png"
@@ -189,7 +195,7 @@ const InsidePage = () => {
 
 								/>
 							</div>
-							<div className={Styles.thumb} style={{top: "238px", left: "145px"}} onClick={() => onThumbnailClicked("parlour_chamber")}>
+							<div className={Styles.thumb} style={{top: "238px", left: "145px"}} onClick={() => onThumbnailClicked("parlour_chamber")} onKeyPress={(e) => { onThumbnailKeyUp(e, "parlour_chamber")}} role="button" tabIndex={0}>
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/parlour_chamber_thumb.png"
@@ -200,7 +206,7 @@ const InsidePage = () => {
 
 								/>
 							</div>
-							<div className={Styles.thumb} style={{top: "158px", left: "433px"}} onClick={() => onThumbnailClicked("hall_chamber")}>
+							<div className={Styles.thumb} style={{top: "158px", left: "433px"}} onClick={() => onThumbnailClicked("hall_chamber")} onKeyPress={(e) => { onThumbnailKeyUp(e, "hall_chamber")}} role="button" tabIndex={0}>
 								<StaticImage
 									className={Styles.thumb}
 									src="./../images/copy/inside/hall_chamber_thumb.png"

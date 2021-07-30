@@ -7,7 +7,11 @@ const ScrollToTop = () => {
 	}
 
 	return (
-		<div style={{margin: "20px auto", width: "46px", cursor: "pointer"}} onClick={() => scrollAction()}>
+		<div style={{margin: "20px auto", width: "46px", cursor: "pointer"}} onClick={() => scrollAction()} onKeyPress={(e) => {
+			if(e.key === 'Enter'){
+				scrollAction();
+			}
+		}} role="button" tabIndex={0}>
 			<StaticImage
 				src="./../../images/layout/scrollup.png"
 				alt="TODO"

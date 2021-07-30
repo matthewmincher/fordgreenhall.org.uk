@@ -2,6 +2,15 @@
   position: relative;
 
   display: inline-block;
+  cursor: pointer;
+}
+
+.hint {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+
+  filter: drop-shadow(1px 1px 0px #000000);
 }
 
 .overlay{
@@ -18,8 +27,11 @@
   transition: opacity 0.2s linear;
 }
 
-.active {
+.container:hover, .container:active  {
   .overlay {
     opacity: 1;
+  }
+  .hint {
+    display: none;
   }
 }

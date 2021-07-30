@@ -2,14 +2,17 @@ import * as React from "react"
 import Layout from "../components/layout/layout";
 
 import * as Styles from "./visit.module.scss"
+import {withPrefix} from "gatsby";
 
 
 const VisitPage = () => {
 	return (
-		<Layout pageTitle="Visit">
+		<Layout pageTitle="Visit" isPrimaryPage={true}>
 			<div className="constrainedContent">
 				<div className={Styles.visitContainer}>
-					<div className={Styles.mapContainer}>
+					<h1>Visit Us</h1>
+
+					<div>
 						<iframe
 							className={Styles.interactiveMap}
 							title="Google Map"
@@ -38,7 +41,7 @@ const VisitPage = () => {
 								title="Tripadvisor"
 								frameBorder="0" style={{border: 0}}
 								sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
-								src="/html/tripadvisor_visit_widget.html"></iframe>
+								src={withPrefix("/html/tripadvisor_visit_widget.html")} />
 						</div>
 						<div className={Styles.openingDetailsRight}>
 							<p><span className={Styles.emph}>£13.00</span> family admission (2 adults + 2 children)</p>

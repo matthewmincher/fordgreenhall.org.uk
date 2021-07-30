@@ -55,7 +55,15 @@
   }
 
   .phone, .email {
-    user-select: all;
+    a {
+      color: #a1aea4;
+      text-decoration: none
+
+    }
+    span {
+      user-select: all;
+      color: #a1aea4;
+    }
     color: #a1aea4;
     font-size: 14px;
     font-weight: bold;
@@ -74,7 +82,7 @@
     }
 
     .address {
-      font-size: 24px;
+      font-size: 21px;
       margin-bottom: 20px;
     }
     .addressPosition {
@@ -88,7 +96,7 @@
     }
     .phone, .email {
       display: block;
-      font-size: 21px;
+      font-size: 18px;
     }
     .phone {
       margin-right: 0;
@@ -113,6 +121,10 @@
   font-size: 13px;
   margin-bottom: 5px;
   opacity: 0.75;
+
+  & > span {
+    vertical-align: middle;
+  }
 }
 .social a:hover {
   opacity: 1;
@@ -122,6 +134,7 @@
   vertical-align: middle;
   margin-right: 5px;
 }
+
 
 .cookieCourtesy, .footerRights {
   font-size: 11px;
@@ -163,7 +176,7 @@
 
   .social {
     margin-bottom: 20px;
-    margin-right: 130px;
+    margin-right: 120px;
   }
 
   .social a {
@@ -171,18 +184,23 @@
     box-sizing: border-box;
     font-size: 18px;
     padding: 10px;
-
+    margin-top: 10px;
 
     background-color: #1f1f1f;
     border-radius: 10px;
+
   }
-  .social a + a {
-    margin-top: 10px;
+  .social a:first-child {
+    margin-top: 0;
   }
   .social a .icon {
     margin-right: 10px;
   }
 
-
 }
 
+@media all and (max-width: 399px) {
+  .social a .extended {
+    display: none;
+  }
+}

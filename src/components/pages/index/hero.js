@@ -36,19 +36,14 @@ const Hero = ({ skipAnimation }) => {
 					layout="fullWidth"
 					alt="" />
 
-				<div className={Styles.text}>
-					<svg
-						width="100%"
-						height="100%"
-						viewBox="0 0 600 100"
-						preserveAspectRatio="xMinYMin meet">
-						<foreignObject width="100%" height="100%" xmlns="http://www.w3.org/1999/xhtml">
-							<div xmlns="http://www.w3.org/1999/xhtml">
-								<h1>Where History Comes Alive</h1>
-							</div>
-						</foreignObject>
-					</svg>
-				</div>
+					<div className={Styles.label}>
+						<StaticImage
+							src="../../../images/copy/index/hero.png"
+							placeholder="none"
+							loading="eager"
+							layout="constrained"
+							alt="Where History Comes Alive" />
+					</div>
 			</div>
 		</div>
 	)

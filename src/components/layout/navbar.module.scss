@@ -1,4 +1,4 @@
-.main a, .secondary a {
+.main a, .secondary a, .main button, .secondary button {
   user-select: none;
 
   color: #a4aca7;
@@ -8,7 +8,12 @@
   white-space: nowrap;
 
 
-  a {
+  a, button {
+
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     display: inline-block;
     width: 96px;
 
@@ -30,17 +35,15 @@
     transition: border-color 0.2s ease-in-out;
   }
 
-  a:hover {
-    padding-bottom: 0;
+  a:hover, button:hover {
     border-bottom: 3px solid #c5c697;
   }
 
-  a.active {
-    padding-bottom: 0;
+  a.active, button.active {
     border-bottom: 3px solid #edeeb6;
   }
 
-  a + a {
+  a + a, a + button {
     margin-left: 4px;
   }
 
@@ -78,11 +81,11 @@
     background-color: #2f2f2f;
   }
 
-  a {
+  a, button {
     width: 100%;
     display: block;
 
-   color: #a4aca7;
+    color: #a4aca7;
 
     font-family: "Georgia", serif;
 
@@ -101,19 +104,19 @@
     font-size: 16px;
   }
 
-  a::before {
+  a::before, button::before {
     content: '»';
     margin-right: 5px;
   }
 
-  a:hover {
+  a:hover, button:hover {
     border-left-color: #c5c697;
   }
-  a.active {
+  a.active, button.active {
     border-left-color: #edeeb6;
   }
 
-  a + a {
+  a + a, a + button {
     margin-top:3px;
   }
 }
@@ -136,14 +139,10 @@
       margin-left: 0;
     }
 
-    a {
+    a, button {
       width: 16%;
     }
 
-
-    a + a {
-
-    }
   }
 }
 
@@ -154,7 +153,7 @@
       display: flex;
     }
 
-    a {
+    a, button {
       flex: 1 1 0;
       line-height: 30px;
       font-size: 21px;
@@ -162,7 +161,7 @@
       padding-top: 4px;
     }
 
-    a + a {
+    a + a, a + button {
       margin-left: 5px;
     }
 

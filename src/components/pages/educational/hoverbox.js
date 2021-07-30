@@ -1,22 +1,21 @@
 import * as React from "react";
 import * as Styles from "./hoverbox.module.scss"
-import {useState} from "react";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const HoverBox = ({children, overlayChildren }) => {
-	const [isActive, setIsActive] = useState(false);
-
-	let containerClasses = Styles.container
-	if(isActive){
-		containerClasses += " " + Styles.active;
-	}
 
 	return (
-		<div className={containerClasses} onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
+		<div className={Styles.container} >
 			{children}
 
 			<div className={Styles.overlay}>
 				{overlayChildren}
 			</div>
+
+			<FontAwesomeIcon className={Styles.hint} icon={faSearch} inverse />
 		</div>
 	)
 }
