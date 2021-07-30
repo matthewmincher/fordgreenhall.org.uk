@@ -90,6 +90,11 @@
 
     padding: 10px;
 
+    &:hover {
+      .label {
+        text-decoration: underline;
+      }
+    }
   }
 
 
@@ -102,14 +107,11 @@
     margin-right: 10px;
     font-weight: bold;
   }
-  &:hover {
-    .content {
 
+  &:active {
+    .content {
       border:2px solid #b5b58d;
       border-top: 2px solid #727259;
-    }
-    .label {
-      text-decoration: underline;
     }
   }
   .icon {
