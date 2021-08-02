@@ -161,6 +161,16 @@
   opacity: 1;
 }
 
+.tripAdvisor {
+  position: absolute;
+  top:160px;
+  right: 0;
+  opacity: 0.8;
+}
+.tripAdvisor:hover {
+  opacity: 1;
+}
+
 
 
 @media all and (max-width: 1195px) {

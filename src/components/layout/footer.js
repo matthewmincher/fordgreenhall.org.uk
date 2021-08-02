@@ -123,6 +123,19 @@ const Footer = () => {
 								alt="" />
 						</a>
 					</div>
+					<div className={Styles.tripAdvisor}>
+						<a href="https://www.tripadvisor.co.uk/Attraction_Review-g186378-d1647083-Reviews-Ford_Green_Hall-Stoke_on_Trent_Staffordshire_England.html"
+						   target="_blank"
+						   rel="noreferrer">
+							<StaticImage
+								src="../../images/thirdparties/tripadvisor_footer.png"
+								width={98}
+								placeholder="none"
+								loading="eager"
+								layout="fixed"
+								alt="" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</footer>
