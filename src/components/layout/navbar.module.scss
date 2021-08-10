@@ -71,6 +71,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.1s ease-in-out, margin 0.1s ease-in-out;
+  visibility: hidden;
 
   background-color: black;
 
@@ -124,6 +125,7 @@
 .secondary.expanded {
   max-height: 400px;
   margin: 5px 0 0 0;
+  visibility: visible;
 }
 
 @media all and (max-width: 1212px) {
