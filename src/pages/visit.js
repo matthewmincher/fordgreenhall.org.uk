@@ -3,6 +3,7 @@ import Layout from "../components/layout/layout";
 
 import * as Styles from "./visit.module.scss"
 import {withPrefix} from "gatsby";
+import CovidMessage from "../components/global/covidmessage";
 
 
 const VisitPage = () => {
@@ -25,6 +26,9 @@ const VisitPage = () => {
 						</iframe>
 					</div>
 
+					<div style={{maxWidth: "850px", marginLeft: "auto", marginRight: "auto"}}>
+						<CovidMessage />
+					</div>
 
 					<div className={Styles.openingDetails}>
 						<div className={Styles.openingDetailsLeft}>
