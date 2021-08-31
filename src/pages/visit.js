@@ -5,6 +5,10 @@ import * as Styles from "./visit.module.scss"
 import {withPrefix} from "gatsby";
 import CovidMessage from "../components/global/covidmessage";
 
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
+
 
 const VisitPage = () => {
 	return (
@@ -13,7 +17,14 @@ const VisitPage = () => {
 				<div className={Styles.visitContainer}>
 					<h1>Visit Us</h1>
 
-					<div>
+					<div className={Styles.interactiveMapContainer}>
+						<Loader
+							className={Styles.interactiveMapLoader}
+							type="TailSpin"
+							color="#B5B5A0"
+							height={100}
+							width={100}
+						/>
 						<iframe
 							className={Styles.interactiveMap}
 							title="Google Map"
@@ -40,7 +51,7 @@ const VisitPage = () => {
 							<h2>Facilities</h2>
 							<p>Shop and Tea Room: open to non-museum visitors</p>
 							<p>A free car park is available on site</p>
-							<p>Ramp access is situated at the front of the Hall, accessed from the main road. TODO: VE Accessibility guide</p>
+							<p>Ramp access is situated at the front of the Hall, accessed from the main road.</p>
 						</div>
 					</div>
 					<div className={Styles.openingPrices}>
@@ -74,7 +85,7 @@ const VisitPage = () => {
 										Concessions
 
 										<div className={Styles.sub}>
-											TODO: What's a concession?
+											Adults over 60
 										</div>
 									</td>
 									<td className={Styles.priceColumn}>£3.50</td>
@@ -84,7 +95,7 @@ const VisitPage = () => {
 									<td className={`${Styles.roundBl} ${Styles.annotationColumn}`}>
 										Children
 										<div className={Styles.sub}>
-											Age 5 - TODO: ??. Under 5s free.
+											Age 5 - 16. Under 5s free.
 										</div>
 									</td>
 									<td className={Styles.priceColumn}>£3.50</td>

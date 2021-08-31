@@ -8,6 +8,7 @@ import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 
 import { ics } from "calendar-link";
 import format from 'date-fns/format';
+import {useEffect, useState} from "react";
 
 const Event = ({title, description, startDate, endDate, date, image, children }) => {
 	const event = {
@@ -17,23 +18,32 @@ const Event = ({title, description, startDate, endDate, date, image, children })
 		end: endDate
 	}
 
+	const hideFrom = endDate ? new Date(endDate.getTime() + 43200000) : null;
+	const [isVisible, setIsVisible] = useState(!hideFrom || hideFrom >= Date.now());
+
+	useEffect(() => {
+		setIsVisible(!hideFrom || hideFrom >= Date.now());
+	}, []);
+
 	const dateString = startDate && endDate ? format(startDate, 'EEEE do MMMM h:mmaaa') + ' - ' + format(endDate, 'h:mmaaa') : date;
 
 	return (
-		<div className={Styles.container}>
-			{image}
-			<h2>{title}</h2>
+		isVisible ?
+			<div className={Styles.container}>
+				{image}
+				<h2>{title}</h2>
 
-			{children}
+				{children}
 
-			<div className={Styles.date}>
-				{startDate && endDate ?
-					(<a download={`${title}.ics`} href={ics(event)}>{dateString} <FontAwesomeIcon icon={faCalendarAlt} /></a>)
-					:
-					(<span>{dateString}</span>)
-				}
+				<div className={Styles.date}>
+					{startDate && endDate ?
+						(<a download={`${title}.ics`} href={ics(event)}>{dateString} <FontAwesomeIcon icon={faCalendarAlt} /></a>)
+						:
+						(<span>{dateString}</span>)
+					}
+				</div>
 			</div>
-		</div>
+		: null
 	)
 }
 
