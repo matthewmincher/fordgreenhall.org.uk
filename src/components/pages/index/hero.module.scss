@@ -1,0 +1,40 @@
+.container {
+  user-select: none;
+
+  filter: saturate(0);
+
+  transition: filter 2s ease-in-out;
+
+  position: relative;
+
+
+  .label {
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+
+    transition: filter 1.5s ease-in, top 1.5s ease-in, transform 1.5s ease-in;
+  }
+}
+
+
+.container.active {
+  filter: unset;
+
+  .label {
+    top: 100%;
+    transform: translateY(-100%) scale(0.7);
+
+    filter: invert(1);
+  }
+}
+
+.container.done {
+  transition: none;
+
+  .label {
+    transition: none;
+  }
+}

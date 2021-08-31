@@ -1,0 +1,84 @@
+.container {
+  h1 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+  p {
+    box-sizing: border-box;
+    text-align: left;
+    color:white;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+  }
+}
+
+.galleryContainer {
+
+  background-color: #808062;
+}
+.gallery {
+  user-select: none;
+
+  h2 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .label {
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+
+    margin:0 10px;
+
+    text-align: center;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hireCallout {
+  text-align: center;
+  font-size: 26px;
+  color:white;
+  font-family: "Georgia", serif;
+  margin: 10px 10px 40px 10px;
+}
+
+@media (max-width: 1212px){
+  .padded {
+    padding: 0 20px;
+  }
+}
+
+.bookingCallToAction {
+  display: inline-block;
+  text-align: left;
+
+  background-color: #a1aea4;
+  padding: 20px;
+
+  border-left: 5px solid #828d85;
+  border-right: 5px solid #828d85;
+
+  h3 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

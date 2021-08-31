@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+
+  h1 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+    margin-top: 0;
+  }
+
+  p {
+    color:white;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+  }
+}
+
+.contactMethods {
+  display: inline-block;
+  text-align: left;
+}
+.contactMethod {
+  color:white;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  text-align: left;
+  display: inline-block;
+
+  margin: 15px 0;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1212px){
+  .padded {
+    padding: 0 20px;
+  }
+}

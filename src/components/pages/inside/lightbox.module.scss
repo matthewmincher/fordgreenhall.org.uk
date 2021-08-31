@@ -1,0 +1,87 @@
+.overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+}
+.container {
+  background-color: white;
+  display: inline-block;
+  padding: 5px;
+  flex: 0 0 content;
+  position: relative;
+
+  box-sizing: border-box;
+  max-width: calc(90% - 80px);
+
+  border-radius: 5px;
+
+  img {
+   display: block;
+   max-width: 100%;
+   object-fit: cover;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.closeButton, .nextButton, .prevButton {
+  position: absolute;
+  cursor: pointer;
+}
+
+.closeButton {
+  top: -40px;
+  right: -0px;
+}
+.nextButton {
+  top: 0;
+  height: 100%;
+  right: -40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prevButton {
+  top: 0;
+  height: 100%;
+  left: -40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  box-sizing: border-box;
+
+  position: absolute;
+  bottom:-5px;
+  transform: translateY(100%);
+  border-radius: 5px;
+  left:0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  color:white;
+}

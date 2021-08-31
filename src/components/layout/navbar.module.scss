@@ -1,0 +1,178 @@
+.main a, .secondary a, .main button, .secondary button {
+  user-select: none;
+
+  color: #a4aca7;
+}
+
+.main {
+  white-space: nowrap;
+
+
+  a, button {
+
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    display: inline-block;
+    width: 96px;
+
+    font-family: "Georgia", serif;
+    font-size: 14px;
+
+    text-align: center;
+    text-decoration: none;
+
+
+    line-height: 24px;
+    padding-top: 3px;
+
+
+    border-bottom: 3px solid rgba(183, 186, 143, 0.2);
+
+    cursor: pointer;
+
+    transition: border-color 0.2s ease-in-out;
+  }
+
+  a:hover, button:hover {
+    border-bottom: 3px solid #c5c697;
+  }
+
+  a.active, button.active {
+    border-bottom: 3px solid #edeeb6;
+  }
+
+  a + a, a + button {
+    margin-left: 4px;
+  }
+
+  .column {
+    display: inline-block;
+  }
+  .column + .column {
+    margin-left: 4px;
+  }
+
+  .overflow {
+
+  }
+  .more {
+    display: none;
+  }
+
+  .more.expanded {
+    background-color: rgba(183, 186, 143, 0.4);
+    color: white;
+  }
+}
+
+.secondary {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-in-out, margin 0.1s ease-in-out;
+  visibility: hidden;
+
+  background-color: black;
+
+  &:after, &:before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #2f2f2f;
+  }
+
+  a, button {
+    width: 100%;
+    display: block;
+
+    color: #a4aca7;
+
+    font-family: "Georgia", serif;
+
+    text-align: left;
+    text-decoration: none;
+
+    padding-left: 6px;
+
+    border-left: 4px solid transparent;
+
+    cursor: pointer;
+
+    transition: none;
+
+    line-height: 34px;
+    font-size: 16px;
+  }
+
+  a::before, button::before {
+    content: '»';
+    margin-right: 5px;
+  }
+
+  a:hover, button:hover {
+    border-left-color: #c5c697;
+  }
+  a.active, button.active {
+    border-left-color: #edeeb6;
+  }
+
+  a + a, a + button {
+    margin-top:3px;
+  }
+}
+
+.secondary.expanded {
+  max-height: 400px;
+  margin: 5px 0 0 0;
+  visibility: visible;
+}
+
+@media all and (max-width: 1212px) {
+  .main {
+    white-space: normal;
+    text-align: center;
+    line-height: 32px;
+
+    .column {
+      display: block;
+    }
+    .column + .column {
+      margin-left: 0;
+    }
+
+    a, button {
+      width: 16%;
+    }
+
+  }
+}
+
+@media all and (max-width: 640px) {
+  .main {
+
+    .column {
+      display: flex;
+    }
+
+    a, button {
+      flex: 1 1 0;
+      line-height: 30px;
+      font-size: 21px;
+      padding-bottom: 4px;
+      padding-top: 4px;
+    }
+
+    a + a, a + button {
+      margin-left: 5px;
+    }
+
+    .overflow {
+      display: none;
+    }
+
+    .more {
+      display: inline-block;
+    }
+  }
+}

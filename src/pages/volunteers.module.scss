@@ -1,0 +1,97 @@
+.container {
+
+  h1 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+  p {
+    color: black;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1212px){
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.volunteersContainer {
+  background-color: white;
+  border: 5px solid #A6CFE8;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+
+  align-items: center;
+
+  .charitableTrust {
+    vertical-align: middle;
+    display: inline-block;
+
+    flex: 1 0 auto;
+    align-self: start;
+  }
+
+  .text {
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+    flex: 1 1 auto;
+  }
+}
+
+.queensAward {
+  display: flex;
+
+  margin-top: 20px;
+  border-top: 2px solid #727259;
+  border-bottom: 2px solid #727259;
+
+
+  .left {
+    flex: 1 1 auto;
+
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  }
+  .center {
+    flex: 0 0 auto;
+
+    background-color: white;
+  }
+  .right {
+    flex: 1 1 auto;
+
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  }
+}
+
+@media all and (max-width: 700px) {
+  .volunteersContainer {
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #A6CFE8;
+
+    .charitableTrust {
+      flex: 0 0 auto;
+      align-self: center;
+    }
+
+    .text {
+      background-color: white;
+      width: 290px;
+      padding: 10px;
+      box-sizing: border-box;
+      flex: 1 1 auto;
+
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
