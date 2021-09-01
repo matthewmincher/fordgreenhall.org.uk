@@ -85,7 +85,7 @@ const VisitPage = () => {
 										Concessions
 
 										<div className={Styles.sub}>
-											Adults over 60
+											Adults aged 60 or over
 										</div>
 									</td>
 									<td className={Styles.priceColumn}>£3.50</td>
