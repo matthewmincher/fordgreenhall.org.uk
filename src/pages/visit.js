@@ -40,7 +40,7 @@ const VisitPage = () => {
 							<h2>Facilities</h2>
 							<p>Shop and Tea Room: open to non-museum visitors</p>
 							<p>A free car park is available on site</p>
-							<p>Ramp access is situated at the front of the Hall, accessed from the main road. TODO: VE Accessibility guide</p>
+							<p>Ramp access is situated at the front of the Hall, accessed from the main road.</p>
 						</div>
 					</div>
 					<div className={Styles.openingPrices}>
@@ -74,7 +74,7 @@ const VisitPage = () => {
 										Concessions
 
 										<div className={Styles.sub}>
-											TODO: What's a concession?
+											Adults aged 60 or over
 										</div>
 									</td>
 									<td className={Styles.priceColumn}>£3.50</td>
@@ -84,7 +84,7 @@ const VisitPage = () => {
 									<td className={`${Styles.roundBl} ${Styles.annotationColumn}`}>
 										Children
 										<div className={Styles.sub}>
-											Age 5 - TODO: ??. Under 5s free.
+											Age 5 - 16. Under 5s free.
 										</div>
 									</td>
 									<td className={Styles.priceColumn}>£3.50</td>

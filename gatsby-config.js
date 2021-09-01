@@ -1,7 +1,6 @@
 module.exports = {
-  pathPrefix: `/dev`,
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.fordgreenhall.org.uk",
     title: "Ford Green Hall",
   },
   plugins: [
@@ -54,5 +53,17 @@ module.exports = {
 		  //usePreconnect: false,
 	  },
     },
+	{
+	  resolve: `gatsby-plugin-manifest`,
+	  options: {
+		  name: `Ford Green Hall`,
+		  short_name: `Ford Green Hall`,
+		  start_url: `/`,
+		  background_color: `#060606`,
+		  theme_color: `#8f8f6e`,
+		  display: `standalone`,
+		  icon: `src/images/icon.png`
+	  },
+	},
   ],
 };
