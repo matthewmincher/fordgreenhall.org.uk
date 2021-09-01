@@ -5,6 +5,10 @@ import * as Styles from "./visit.module.scss"
 import {withPrefix} from "gatsby";
 import CovidMessage from "../components/global/covidmessage";
 
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
+
 
 const VisitPage = () => {
 	return (
@@ -13,7 +17,14 @@ const VisitPage = () => {
 				<div className={Styles.visitContainer}>
 					<h1>Visit Us</h1>
 
-					<div>
+					<div className={Styles.interactiveMapContainer}>
+						<Loader
+							className={Styles.interactiveMapLoader}
+							type="TailSpin"
+							color="#B5B5A0"
+							height={100}
+							width={100}
+						/>
 						<iframe
 							className={Styles.interactiveMap}
 							title="Google Map"

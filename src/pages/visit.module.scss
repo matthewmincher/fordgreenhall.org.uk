@@ -13,9 +13,22 @@
 
 }
 
+.interactiveMapContainer {
+  position: relative;
+}
+.interactiveMapLoader {
+  position: absolute;
+  top:50%;
+  left:50%;
+
+  margin-left: -50px;
+  margin-top: -50px;
+}
 .interactiveMap {
   margin: 10px auto 0 auto;
   display: block;
+  z-index: 2;
+  position: relative;
 }
 .tripadvisorFrame {
   width: 160px;
