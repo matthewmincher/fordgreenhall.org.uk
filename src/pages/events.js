@@ -34,81 +34,24 @@ const EventsPage = () => {
 					</Event>
 
 					<Event
-						title="Tudor and Stuart Day"
-						description="Tudor and Stuart Day at Ford Green Hall. Meet various members of Tudor and Stuart society including a Cook, Wise woman, Soldier and surgeon. Children's trail and live music."
-						startDate={new Date(1629021600000)}
-						endDate={new Date(1629037800000)}
+						title="The Wisewoman in the 17th Century"
+						description="A talk looking at the role of the Wisewoman in the Stuart age."
+						date="Sunday 17th October - 2pm"
+						endDate={new Date(1634479200000)}
 						image={<StaticImage
 							className={Styles.image}
-							src="../images/copy/events/tudor_and_stuart_day.jpg"
-							alt="Black and white artwork depicting kitchen activities"
+							src="../images/copy/events/wise_women.jpg"
+							alt="Framed portrait of an older Stuart woman wearing a black hat with lace trim"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"
 							width={240}
 						/>}>
-						<p>Tudor and Stuart Day at Ford Green Hall. Meet various members of Tudor and Stuart society including a Cook, Wise woman, Soldier and surgeon.</p>
-						<p>Children's trail and live music.</p>
-						<p className={Styles.emph}>Adults £4.50. Children & Concessions £3.50. Family £13.00. Under 5s free.</p>
-						<p>Event subject to change in current climate.</p>
+						<p>A talk looking at the role of the Wisewoman in the Stuart age.</p>
+						<p className={Styles.emph}>Tickets only £9.</p>
+						<p>Available from the Hall fordgreenhall.museum@gmail.com<br />01782 537696.</p>
 					</Event>
 
-					<Event
-						title="Mr Ford's Farm"
-						description="Find out what life was like on a 17th century farm."
-						startDate={new Date(1629626400000)}
-						endDate={new Date(1629640800000)}
-						image={<StaticImage
-							className={Styles.image}
-							src="../images/copy/events/mr_fords_farm.jpg"
-							alt="A painting of two chickens"
-							placeholder="none"
-							layout="fixed"
-							loading="eager"
-							width={240}
-						/>}>
-						<p>Come and meet a selection of animals with the 'Farm on Wheels'.</p>
-						<p>Find out what life was like on a 17th century farm. Look around the Hall and do our Childrens trail.</p>
-						<p className={Styles.emph}>Adults £4.50. Children & Concessions £3.50. Under 5s free.</p>
-					</Event>
-
-					<Event
-						title="Heritage Open Day - Food and Drink in the 17th Century"
-						description="Find out what food and drink was consumed in Tudor and Stuart times."
-						startDate={new Date(1631440800000)}
-						endDate={new Date(1631455200000)}
-						image={<StaticImage
-							className={Styles.image}
-							src="../images/copy/events/food_and_drink.jpg"
-							alt="A selection of food and tools on a table"
-							placeholder="none"
-							layout="fixed"
-							loading="eager"
-							width={240}
-						/>}>
-						<p>Find out what food and drink was consumed in Tudor and Stuart times.</p>
-						<p>Explore tableware of the rich and poor and how was food cooked in an age before gas and electricity.</p>
-						<p className={Styles.emph}>Outdoor cookery (weather permitting).</p>
-					</Event>
-
-					<Event
-						title="Heritage Open Day - Stand and Deliver!"
-						description="Meet Royalist soldier turned highwayman, William Spragg."
-						startDate={new Date(1632045600000)}
-						endDate={new Date(1632060000000)}
-						image={<StaticImage
-							className={Styles.image}
-							src="../images/copy/events/stand_and_deliver.jpg"
-							alt="A highwayman with two sidearms"
-							placeholder="none"
-							layout="fixed"
-							loading="eager"
-							width={240}
-						/>}>
-						<p>Meet Royalist soldier turned highwayman, William Spragg as he recounts his exploits and shows you the 'tools of his trade'.</p>
-						<p className={Styles.emph}>Living history displays. (Outdoor event, weather permitting)</p>
-						<p>The Hall will be open to visitors to explore. <strong>Free Admission.</strong></p>
-					</Event>
 
 					<ScrollToTop />
 
