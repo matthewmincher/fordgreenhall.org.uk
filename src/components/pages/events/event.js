@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
 
-import { ics } from "calendar-link";
 import format from 'date-fns/format';
 import {useEffect, useState} from "react";
 
@@ -36,11 +35,7 @@ const Event = ({title, description, startDate, endDate, date, image, children })
 				{children}
 
 				<div className={Styles.date}>
-					{startDate && endDate ?
-						(<a download={`${title}.ics`} href={ics(event)}>{dateString} <FontAwesomeIcon icon={faCalendarAlt} /></a>)
-						:
-						(<span>{dateString}</span>)
-					}
+					<span>{dateString}</span>
 				</div>
 			</div>
 		: null
