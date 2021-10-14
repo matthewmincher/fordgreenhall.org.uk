@@ -48,8 +48,47 @@ const EventsPage = () => {
 							width={240}
 						/>}>
 						<p>A talk looking at the role of the Wisewoman in the Stuart age.</p>
-						<p className={Styles.emph}>Tickets only £9.</p>
+						<p className={Styles.emph}>Tickets only. £9 per person.</p>
 						<p>Available from the Hall fordgreenhall.museum@gmail.com<br />01782 537696.</p>
+					</Event>
+
+					<Event
+						title="Halloween Witch Hunt"
+						description="See one of the most haunted houses in Stoke on Trent decorated for Halloween!"
+						date="25th-28th & 31st October - 13:00 - 15:30"
+						endDate={new Date(1635694200000)}
+						image={<StaticImage
+							className={Styles.image}
+							src="../images/copy/events/halloween.jpg"
+							alt="Wooden door with metal studs and trimmings. A Haunted House sign with a skull on it hangs from the knocker."
+							placeholder="none"
+							layout="fixed"
+							loading="eager"
+							width={240}
+						/>}>
+						<p>Search out 17th century Witches around the Hall in our trail.</p>
+						<p className={Styles.emph}>See one of the most haunted houses in Stoke on Trent decorated for Halloween!</p>
+						<p>Normal admission applies (Adults £4.50, Children and Concessions £3.50, Family ticket £13.00, under 5's free.)</p>
+					</Event>
+
+					<Event
+						title="Christmas Craft Fair"
+						description="Browse craft stalls for that special Christmas gift inside our 17th century house!"
+						date="Sunday 21st November - 11:00 - 15:00"
+						startDate={new Date(1637492400000)}
+						endDate={new Date(1637506800000)}
+						image={<StaticImage
+							className={Styles.image}
+							src="../images/copy/events/christmas.jpg"
+							alt="An exterior shot of the Hall seen through the branches of a bare tree. Snow covers the roof and grassy garden."
+							placeholder="none"
+							layout="fixed"
+							loading="eager"
+							width={240}
+						/>}>
+						<p>Browse craft stalls for that special Christmas gift inside our 17th century house!</p>
+						<p className={Styles.emph}>FREE ADMISSION.</p>
+						<p>***All stalls fully booked***</p>
 					</Event>
 
 
