@@ -1,3 +1,4 @@
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.fordgreenhall.org.uk",
@@ -64,6 +65,6 @@ module.exports = {
 		  display: `standalone`,
 		  icon: `src/images/icon.png`
 	  },
-	},
+	}
   ],
 };

@@ -6,6 +6,8 @@
     font-weight: 400;
     font-size: 3em;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .image {
@@ -42,10 +44,10 @@
   text-align: center;
 }
 
-@media (max-width: 1212px){
+/*@media (max-width: 1212px){
   .container {
     h1 {
       margin: 20px 0 20px 20px;
     }
   }
-}
+}*/

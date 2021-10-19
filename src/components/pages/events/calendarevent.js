@@ -54,7 +54,9 @@ export default function CalendarEvent({ title, image, description, facebookUrl, 
 				}
 			</div>
 			<div className={Styles.right}>
-				<div className={Styles.title}>{title}</div>
+				<div className={Styles.title}>
+					{title}
+				</div>
 				{image &&
 					<div className={Styles.image}>
 						{image}

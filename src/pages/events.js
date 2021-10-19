@@ -3,7 +3,6 @@ import Layout from "../components/layout/layout";
 
 import * as Styles from "./events.module.scss"
 import CovidMessage from "../components/global/covidmessage";
-import Event from "../components/pages/events/event";
 import CalendarEvent from "../components/pages/events/calendarevent";
 import {StaticImage} from "gatsby-plugin-image";
 import ScrollToTop from "../components/layout/scrolltotop";
@@ -13,12 +12,14 @@ const EventsPage = () => {
 	return (
 		<Layout pageTitle="Events">
 			<div className="constrainedContent">
-				<div style={{maxWidth: "850px", marginLeft: "auto", marginRight: "auto"}}>
-					<CovidMessage />
-				</div>
+
 
 				<div className={Styles.container}>
 					<h1>Events</h1>
+
+					<div style={{maxWidth: "850px", marginLeft: "auto", marginRight: "auto", marginTop: "-10px", marginBottom: "10px"}}>
+						<CovidMessage />
+					</div>
 
 					<CalendarEvent
 						title={"Afternoon Knit and Natter Group"}
@@ -134,7 +135,7 @@ const EventsPage = () => {
 					<ScrollToTop />
 
 					<div className={Styles.moreInfo}>
-						For more information about any event, please telephone 01782 537696
+						For more information about any event, please telephone.
 					</div>
 				</div>
 			</div>
