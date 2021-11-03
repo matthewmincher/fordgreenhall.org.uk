@@ -12,8 +12,6 @@ const EventsPage = () => {
 	return (
 		<Layout pageTitle="Events">
 			<div className="constrainedContent">
-
-
 				<div className={Styles.container}>
 					<h1>Events</h1>
 
@@ -49,61 +47,6 @@ const EventsPage = () => {
 									<p>Bring along your knitting to our group. Enjoy a cup of tea and a natter.</p>
 									<p className={Styles.emph}>£2 per person, including refreshments</p>
 								</div>
-							</div>
-						}
-					/>
-
-					<CalendarEvent
-						title="The Wisewoman in the 17th Century"
-						facebookUrl="https://fb.me/e/24NXepnMG"
-						endDate={new Date(1634475600000)}
-						image={
-							<StaticImage
-								src="../images/copy/events/wise_women.jpg"
-								alt="Framed portrait of an older Stuart woman wearing a black hat with lace trim"
-								placeholder="none"
-								layout="fixed"
-								loading="eager"
-								width={200}
-							/>
-						}
-						description={
-							<div>
-								<p>A talk looking at the role of the Wisewoman in the Stuart age.</p>
-								<p className={Styles.emph}>Tickets only. £9 per person.</p>
-								<p>Available from the Hall fordgreenhall.museum@gmail.com<br />01782 537696.</p>
-							</div>
-						}
-					/>
-
-					<CalendarEvent
-						title="Halloween Witch Hunt"
-						facebookUrl="https://fb.me/e/2B4wu9vEO"
-						endDate={new Date(1635694200000)}
-						dateDayPart={
-							<span style={{
-								fontSize: "80%"
-							}}>
-								25th-28th, 31st
-							</span>
-						}
-						dateMonthPart="October"
-						dateTimePart="1:00pm - 3:30pm"
-						image={
-							<StaticImage
-								src="../images/copy/events/halloween.jpg"
-								alt="Wooden door with metal studs and trimmings. A Haunted House sign with a skull on it hangs from the knocker."
-								placeholder="none"
-								layout="fixed"
-								loading="eager"
-								width={200}
-							/>
-						}
-						description={
-							<div>
-								<p>Search out 17th century Witches around the Hall in our trail.</p>
-								<p className={Styles.emph}>See one of the most haunted houses in Stoke on Trent decorated for Halloween!</p>
-								<p>Normal admission applies (Adults £4.50, Children and Concessions £3.50, Family ticket £13.00, under 5's free.)</p>
 							</div>
 						}
 					/>

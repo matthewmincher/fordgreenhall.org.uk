@@ -2,7 +2,6 @@ import * as React from "react";
 import * as Styles from "./calendarevent.module.scss"
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {  } from '@fortawesome/free-regular-svg-icons'
 
@@ -17,7 +16,7 @@ export default function CalendarEvent({ title, image, description, facebookUrl, 
 
 	useEffect(() => {
 		setIsVisible(!hideFrom || hideFrom >= Date.now());
-	}, []);
+	}, [hideFrom]);
 
 	if(!dateDayPart && (startDate || endDate)){
 		dateDayPart = format(startDate ?? endDate, 'do');
