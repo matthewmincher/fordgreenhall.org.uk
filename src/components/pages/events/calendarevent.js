@@ -1,10 +1,6 @@
 import * as React from "react";
 import * as Styles from "./calendarevent.module.scss"
 
-
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import {  } from '@fortawesome/free-regular-svg-icons'
-
 import {useEffect, useState} from "react";
 import {StaticImage} from "gatsby-plugin-image";
 import format from "date-fns/format";
@@ -72,6 +68,7 @@ export default function CalendarEvent({ title, image, description, facebookUrl, 
 					<a target="_blank" rel="noreferrer" href={facebookUrl} className={Styles.facebookLink} title="See this event on Facebook">
 						<StaticImage
 							src="../../../images/social/f_logo_RGB-Black_100.png"
+							alt="Facebook logo"
 							placeholder="none"
 							layout="fixed"
 							loading="eager"

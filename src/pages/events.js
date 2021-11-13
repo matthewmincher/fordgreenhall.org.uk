@@ -75,6 +75,58 @@ const EventsPage = () => {
 						}
 					/>
 
+					<CalendarEvent
+						title="Tudor and Stuart Christmas"
+						facebookUrl="https://fb.me/e/1XrzGdPjA"
+						startDate={new Date(1639306800000)}
+						endDate={new Date(1639324800000)}
+						image={
+							<StaticImage
+								src="../images/copy/events/tudor_christmas.jpg"
+								alt="The hall decorated for Christmas, with candles, wreathes and a feast of fruit and meats."
+								placeholder="none"
+								layout="fixed"
+								loading="eager"
+								width={200}
+							/>
+						}
+						description={
+							<div>
+								<p>See the Hall decorated for a Tudor Christmas.</p>
+								<p>Pomander making</p>
+								<p>Mulled wine, mince pies, soup & roll</p>
+								<p className={Styles.emph}>Normal admission. Last entry 3:30pm.</p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
+						title="Candlelight Evening and Story telling"
+						facebookUrl="https://fb.me/e/OAiEXXlY"
+						endDate={new Date(1639872000000)}
+						dateDayPart="17th & 18th"
+						dateMonthPart="December"
+						dateTimePart="7pm start"
+						image={
+							<StaticImage
+								src="../images/copy/events/christmas_stories.jpg"
+								alt="A fireplace with a log and multiple candles. Cosy yet spooky!"
+								placeholder="none"
+								layout="fixed"
+								loading="eager"
+								width={200}
+							/>
+						}
+						description={
+							<div>
+								<p>Refreshments Included</p>
+								<p className={Styles.emph}><strong>Admission by pre-bookable ticket only</strong></p>
+								<p className={Styles.emph}>** £15 per person **</p>
+								<p>Please contact Ford Green Hall to book.</p>
+							</div>
+						}
+					/>
+
 					<ScrollToTop />
 
 					<div className={Styles.moreInfo}>
