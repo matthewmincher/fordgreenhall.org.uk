@@ -9,6 +9,8 @@ class NavBar extends React.Component {
 		super(props);
 
 		this.onMoreButtonClicked = this.onMoreButtonClicked.bind(this);
+		this.onResize = this.onResize.bind(this);
+
 		this.state = {
 			secondaryVisible: false
 		}
@@ -17,6 +19,19 @@ class NavBar extends React.Component {
 	onMoreButtonClicked(e) {
 		const secondaryVisible = !this.state.secondaryVisible;
 		this.setState({ secondaryVisible })
+	}
+
+	onResize(){
+		if(this.state.secondaryVisible && window.innerWidth > 640){
+			this.setState({ secondaryVisible: false });
+		}
+	}
+
+	componentDidMount(){
+		window.addEventListener('resize', this.onResize)
+	}
+	componentWillUnmount(){
+		window.removeEventListener('resize', this.onResize);
 	}
 
 	render(){

@@ -22,7 +22,14 @@ class Snowflake {
 	}
 }
 
-function renderSnow(ctx, width, height, snowflakes){
+function renderSnow(canvasRef, snowflakes, frameRef, time){
+	let width = canvasRef.current.width,
+		height = canvasRef.current.height,
+		maxSnowflakes = snowflakeCountForDimensions(width, height),
+		canvas = canvasRef.current,
+		ctx = canvas.getContext('2d');
+
+	ctx.fillStyle = '#FFFFFF';
 	ctx.clearRect(0, 0, width, height);
 
 	for(let i = 0; i < snowflakes.length; i++){
@@ -40,30 +47,47 @@ function renderSnow(ctx, width, height, snowflakes){
 		if(snowflake.y > height){
 			snowflake.reset(width, height);
 		}
+
+		if(i >= maxSnowflakes){
+			break;
+		}
 	}
 
-	requestAnimationFrame(() => renderSnow(ctx, width, height, snowflakes));
+	frameRef.current = requestAnimationFrame(() => renderSnow(canvasRef, snowflakes, frameRef, time));
+}
+function onCanvasContainerChanged(containerRef, canvasRef){
+	canvasRef.current.width = containerRef.current.clientWidth;
+	canvasRef.current.height = containerRef.current.clientHeight;
+}
+function snowflakeCountForDimensions(width, height){
+	return Math.ceil((width * height) / 2000);
 }
 
-const SnowflakeProvider = ({ count, children }) => {
+const SnowflakeProvider = ({ children }) => {
 	const container = useRef();
 	const canvas = useRef();
+	const frameRef = useRef(null);
 
 	useEffect(function(){
-		let ctx = canvas.current.getContext('2d'),
-			width = container.current.clientWidth,
-			height = container.current.clientHeight;
+		let width = container.current.clientWidth,
+			height = container.current.clientHeight,
+			count = snowflakeCountForDimensions(width, height);
 
-		canvas.current.width = width;
-		canvas.current.height = height;
-		ctx.fillStyle = '#FFFFFF';
-
-		var snowflakes = [];
+		let snowflakes = [];
 		for(let i = 0; i < count; i++){
 			snowflakes.push(new Snowflake(width, height));
 		}
 
-		requestAnimationFrame(() => renderSnow(ctx, width, height, snowflakes))
+		onCanvasContainerChanged(container, canvas);
+
+		frameRef.current = requestAnimationFrame(() => renderSnow(canvas, snowflakes, frameRef, new Date()));
+		const onResize = () => onCanvasContainerChanged(container, canvas);
+
+		window.addEventListener('resize', onResize);
+		return () => {
+			window.removeEventListener('resize', onResize);
+			window.cancelAnimationFrame(frameRef.current);
+		}
 	});
 
 	return (

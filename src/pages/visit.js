@@ -61,7 +61,7 @@ const VisitPage = () => {
 								<tr>
 									<th><h2 style={{margin: 0}}>Admissions</h2></th>
 									<th className={Styles.priceColumn}>Price</th>
-									<th />
+									<th> </th>
 								</tr>
 								</thead>
 								<tbody>

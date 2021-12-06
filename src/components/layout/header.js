@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as Styles from "./header.module.scss"
-import {StaticImage} from "gatsby-plugin-image";
 import NavBar from "./navbar";
 
 import HeaderBoxImage from "../../images/layout/header_box.png"
@@ -9,7 +8,7 @@ import SnowflakeProvider from "../global/snowflakeprovider";
 const Header = ({ isPrimaryPage }) => {
 	return (
 		<header className={Styles.main}>
-			<SnowflakeProvider count={100}>
+			<SnowflakeProvider>
 				<div className={Styles.logoContainer}>
 					<div className={Styles.townContainer}>
 						<div className={Styles.townType}>

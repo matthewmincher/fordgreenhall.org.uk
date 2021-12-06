@@ -1,13 +1,13 @@
 import * as React from "react";
 import * as Styles from "./calendarevent.module.scss"
 
-import {useEffect, useState} from "react";
+import {useEffect, useState, useMemo} from "react";
 import {StaticImage} from "gatsby-plugin-image";
 import format from "date-fns/format";
 
 export default function CalendarEvent({ title, image, description, facebookUrl, startDate, endDate, datePrefix, dateDayPart, dateMonthPart, dateTimePart }) {
 
-	const hideFrom = endDate ? new Date(endDate.getTime() + 43200000) : null;
+	const hideFrom = useMemo(() => endDate ? new Date(endDate.getTime() + 43200000) : null, [endDate]);
 	const [isVisible, setIsVisible] = useState(!hideFrom || hideFrom >= Date.now());
 
 	useEffect(() => {
