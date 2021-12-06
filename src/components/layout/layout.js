@@ -24,7 +24,6 @@ const Layout = ({ pageTitle, children, contentBackgroundColor, isPrimaryPage = f
 				<div className={Styles.content} style={style}>
 					{children}
 				</div>
-
 				<Footer />
 			</main>
 		</>
