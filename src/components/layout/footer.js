@@ -5,28 +5,41 @@ import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faEnvelope, faPhone, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
+import SnowflakeProvider from "../global/snowflakeprovider";
+import ChristmasGarland from "../../images/layout/christmas_garland.png"
 
 const Footer = () => {
 	return (
-		<footer>
-			<div className={Styles.contact}>
-				<div className={Styles.container}>
-					<div className={Styles.address}>
-						<FontAwesomeIcon icon={faMapMarkedAlt} />
-						<div className={Styles.addressPosition}>
-							<div className={Styles.addressLines}>
-								<span>Ford Green Road, </span>
-								<span>Smallthorne, </span>
-								<span>Stoke-on-Trent, </span>
-								<span>ST6 1NG</span>
+		<footer style={{position: 'relative'}}>
+			<SnowflakeProvider pixelsPerFlake={10000}>
+				<div className={Styles.contact} style={{paddingBottom: '15px'}}>
+					<div className={Styles.container}>
+						<div className={Styles.address}>
+							<FontAwesomeIcon icon={faMapMarkedAlt} />
+							<div className={Styles.addressPosition}>
+								<div className={Styles.addressLines}>
+									<span>Ford Green Road, </span>
+									<span>Smallthorne, </span>
+									<span>Stoke-on-Trent, </span>
+									<span>ST6 1NG</span>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div className={Styles.phone}><FontAwesomeIcon icon={faPhone} /><span>01782 537696</span></div>
+						<div className={Styles.phone}><FontAwesomeIcon icon={faPhone} /><span>01782 537696</span></div>
 
-					<div className={Styles.email}><FontAwesomeIcon icon={faEnvelope} /><span>fordgreenhall.museum@gmail.com</span></div>
+						<div className={Styles.email}><FontAwesomeIcon icon={faEnvelope} /><span>fordgreenhall.museum@gmail.com</span></div>
+					</div>
 				</div>
-			</div>
+			</SnowflakeProvider>
+			<div style={{
+				backgroundImage: `url(${ChristmasGarland})`,
+				backgroundSize: '200px 50px',
+				backgroundRepeat: 'repeat-x',
+				height: '50px',
+				width: '100%',
+				position: 'relative',
+				top: '-20px'
+			}} />
 			<div className={Styles.main}>
 				<div className={Styles.container}>
 					<div className={Styles.social}>

@@ -22,10 +22,10 @@ class Snowflake {
 	}
 }
 
-function renderSnow(canvasRef, snowflakes, frameRef, time){
+function renderSnow(canvasRef, snowflakes, density, frameRef){
 	let width = canvasRef.current.width,
 		height = canvasRef.current.height,
-		maxSnowflakes = snowflakeCountForDimensions(width, height),
+		maxSnowflakes = snowflakeCountForDimensions(width, height, density),
 		canvas = canvasRef.current,
 		ctx = canvas.getContext('2d');
 
@@ -53,25 +53,27 @@ function renderSnow(canvasRef, snowflakes, frameRef, time){
 		}
 	}
 
-	frameRef.current = requestAnimationFrame(() => renderSnow(canvasRef, snowflakes, frameRef, time));
+	frameRef.current = requestAnimationFrame(() => renderSnow(canvasRef, snowflakes, density, frameRef));
 }
 function onCanvasContainerChanged(containerRef, canvasRef){
 	canvasRef.current.width = containerRef.current.clientWidth;
 	canvasRef.current.height = containerRef.current.clientHeight;
 }
-function snowflakeCountForDimensions(width, height){
-	return Math.ceil((width * height) / 2000);
+function snowflakeCountForDimensions(width, height, density){
+	return Math.ceil((width * height) / density);
 }
 
-const SnowflakeProvider = ({ children }) => {
+const SnowflakeProvider = ({ children, pixelsPerFlake }) => {
 	const container = useRef();
 	const canvas = useRef();
 	const frameRef = useRef(null);
 
+	pixelsPerFlake = pixelsPerFlake ?? 2000;
+
 	useEffect(function(){
 		let width = container.current.clientWidth,
 			height = container.current.clientHeight,
-			count = snowflakeCountForDimensions(width, height);
+			count = snowflakeCountForDimensions(width, height, pixelsPerFlake);
 
 		let snowflakes = [];
 		for(let i = 0; i < count; i++){
@@ -80,7 +82,7 @@ const SnowflakeProvider = ({ children }) => {
 
 		onCanvasContainerChanged(container, canvas);
 
-		frameRef.current = requestAnimationFrame(() => renderSnow(canvas, snowflakes, frameRef, new Date()));
+		frameRef.current = requestAnimationFrame(() => renderSnow(canvas, snowflakes, pixelsPerFlake, frameRef));
 		const onResize = () => onCanvasContainerChanged(container, canvas);
 
 		window.addEventListener('resize', onResize);
@@ -92,7 +94,7 @@ const SnowflakeProvider = ({ children }) => {
 
 	return (
 		<div ref={container}>
-			<canvas ref={canvas} style={{ position: 'absolute', left: 0, top: 0, pointerEvents: 'none', zIndex: 999 }} />
+			<canvas ref={canvas} style={{ position: 'absolute', left: 0, top: 0, pointerEvents: 'none', zIndex: 100 }} />
 			{children}
 		</div>
 	)
