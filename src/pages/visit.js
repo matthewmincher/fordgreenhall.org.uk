@@ -17,6 +17,10 @@ const VisitPage = () => {
 				<div className={Styles.visitContainer}>
 					<h1>Visit Us</h1>
 
+					<div className={Styles.christmasClosure}>
+						Ford Green Hall closes for Christmas on the 21st of December and reopens on the 3rd of January!
+					</div>
+
 					<div className={Styles.interactiveMapContainer}>
 						<Loader
 							className={Styles.interactiveMapLoader}
