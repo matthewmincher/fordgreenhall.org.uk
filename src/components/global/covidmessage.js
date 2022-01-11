@@ -15,7 +15,7 @@ const CovidMessage = ({ className }) => {
 					height={100}
 					alt="Visit England - Good to Go!" />
 				<div className={Styles.message}>
-					<p>You no longer have to book to visit Ford Green Hall. Masks are no longer mandatory but are always appreciated. See you soon!</p>
+					<p>You no longer have to book to visit Ford Green Hall. Covid restrictions are in place and face masks must be worn. See you soon!</p>
 				</div>
 			</div>
 		</div>

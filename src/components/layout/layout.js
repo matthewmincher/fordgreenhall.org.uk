@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 import "normalize.css"
 import '../../css/global.scss';
 import * as Styles from './layout.module.scss';
+import {ThemeContextProvider} from "../../context/ThemeContext";
 
 const Layout = ({ pageTitle, children, contentBackgroundColor, isPrimaryPage = false }) => {
 	const style = typeof contentBackgroundColor !== "undefined" ? {backgroundColor: contentBackgroundColor} : {}
@@ -16,16 +17,18 @@ const Layout = ({ pageTitle, children, contentBackgroundColor, isPrimaryPage = f
 			<Helmet>
 				<title>{title}</title>
 			</Helmet>
-			<main>
-				<title>{pageTitle}</title>
+			<ThemeContextProvider>
+				<main>
+					<title>{pageTitle}</title>
 
-				<Header isPrimaryPage={isPrimaryPage} />
+					<Header isPrimaryPage={isPrimaryPage} />
 
-				<div className={Styles.content} style={style}>
-					{children}
-				</div>
-				<Footer />
-			</main>
+					<div className={Styles.content} style={style}>
+						{children}
+					</div>
+					<Footer />
+				</main>
+			</ThemeContextProvider>
 		</>
 	)
 }
