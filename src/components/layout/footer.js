@@ -7,11 +7,15 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faEnvelope, faPhone, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons'
 import SnowflakeProvider from "../global/snowflakeprovider";
 import ChristmasGarland from "../../images/layout/christmas_garland.png"
+import ConditionalWrapper from "../global/conditionalwrapper";
+import {ThemeContext} from "../../context/ThemeContext";
 
 const Footer = () => {
+	const {isChristmas} = React.useContext(ThemeContext);
+
 	return (
 		<footer style={{position: 'relative'}}>
-			<SnowflakeProvider pixelsPerFlake={10000}>
+			<ConditionalWrapper condition={isChristmas} wrapper={children => <SnowflakeProvider pixelsPerFlake={10000}>{children}</SnowflakeProvider>}>
 				<div className={Styles.contact} style={{paddingBottom: '15px'}}>
 					<div className={Styles.container}>
 						<div className={Styles.address}>
@@ -30,16 +34,20 @@ const Footer = () => {
 						<div className={Styles.email}><FontAwesomeIcon icon={faEnvelope} /><span>fordgreenhall.museum@gmail.com</span></div>
 					</div>
 				</div>
-			</SnowflakeProvider>
-			<div style={{
-				backgroundImage: `url(${ChristmasGarland})`,
-				backgroundSize: '200px 50px',
-				backgroundRepeat: 'repeat-x',
-				height: '50px',
-				width: '100%',
-				position: 'relative',
-				top: '-20px'
-			}} />
+			</ConditionalWrapper>
+
+			{isChristmas &&
+				<div style={{
+					backgroundImage: `url(${ChristmasGarland})`,
+					backgroundSize: '200px 50px',
+					backgroundRepeat: 'repeat-x',
+					height: '50px',
+					width: '100%',
+					position: 'relative',
+					top: '-20px'
+				}} />
+			}
+
 			<div className={Styles.main}>
 				<div className={Styles.container}>
 					<div className={Styles.social}>
