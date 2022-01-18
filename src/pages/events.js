@@ -52,80 +52,30 @@ const EventsPage = () => {
 					/>
 
 					<CalendarEvent
-						title="Christmas Craft Fair"
-						facebookUrl="https://fb.me/e/2PNwFbmgv"
-						startDate={new Date(1637492400000)}
-						endDate={new Date(1637506800000)}
+						title="King George commands and we obey!"
+						facebookUrl="https://fb.me/e/1fcE8gNTs"
+						startDate={new Date(1655632800000)}
+						endDate={new Date(1655649000000)}
 						image={
 							<StaticImage
-								src="../images/copy/events/christmas.jpg"
-								alt="An exterior shot of the Hall seen through the branches of a bare tree. Snow covers the roof and grassy garden."
+								src="./../images/copy/events/king_george_day.jpg"
+								alt="The 95th Rifles at the Battle of the Pyrenees, 1813"
 								placeholder="none"
 								layout="fixed"
+								width={300}
 								loading="eager"
-								width={200}
 							/>
 						}
 						description={
 							<div>
-								<p>Browse craft stalls for that special Christmas gift inside our 17th century house!</p>
-								<p className={Styles.emph}>FREE ADMISSION.</p>
-								<p>***All stalls fully booked***</p>
+								<p>Meet a rifleman from the 95th regiment of foot, made famous by Bernard Cornwell's 'Sharpe' series.</p>
+								<p>Learn about life in Wellington's army, and handle replica weapons from the Napoleonic wars.</p>
+								<p>Normal admission price! <strong>Adults £4.50, children & concessions £3.50. Family £13.00</strong></p>
+								<p className={Styles.emph} style={{clear: 'both'}}>The perfect treat for father's day on the anniversary weekend of the Battle of Waterloo!</p>
 							</div>
 						}
 					/>
 
-					<CalendarEvent
-						title="Tudor and Stuart Christmas"
-						facebookUrl="https://fb.me/e/1XrzGdPjA"
-						startDate={new Date(1639306800000)}
-						endDate={new Date(1639324800000)}
-						image={
-							<StaticImage
-								src="../images/copy/events/tudor_christmas.jpg"
-								alt="The hall decorated for Christmas, with candles, wreathes and a feast of fruit and meats."
-								placeholder="none"
-								layout="fixed"
-								loading="eager"
-								width={200}
-							/>
-						}
-						description={
-							<div>
-								<p>See the Hall decorated for a Tudor Christmas.</p>
-								<p>Pomander making</p>
-								<p>Mulled wine, mince pies, soup & roll</p>
-								<p className={Styles.emph}>Normal admission. Last entry 3:30pm.</p>
-							</div>
-						}
-					/>
-
-					<CalendarEvent
-						title="Candlelight Evening and Story telling"
-						facebookUrl="https://fb.me/e/OAiEXXlY"
-						endDate={new Date(1639872000000)}
-						dateDayPart="17th & 18th"
-						dateMonthPart="December"
-						dateTimePart="7pm start"
-						image={
-							<StaticImage
-								src="../images/copy/events/christmas_stories.jpg"
-								alt="A fireplace with a log and multiple candles. Cosy yet spooky!"
-								placeholder="none"
-								layout="fixed"
-								loading="eager"
-								width={200}
-							/>
-						}
-						description={
-							<div>
-								<p>Refreshments Included</p>
-								<p className={Styles.emph}><strong>Admission by pre-bookable ticket only</strong></p>
-								<p className={Styles.emph}>** £15 per person **</p>
-								<p>Please contact Ford Green Hall to book.</p>
-							</div>
-						}
-					/>
 
 					<ScrollToTop />
 
