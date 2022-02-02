@@ -84,10 +84,10 @@ const EventsPage = () => {
 						image={
 							<StaticImage
 								src="./../images/copy/events/summer_craft_fair.jpg"
-								alt="The 95th Rifles at the Battle of the Pyrenees, 1813"
+								alt="The exterior of the hall, with a foxglove in the foreground."
 								placeholder="none"
 								layout="fixed"
-								width={150}
+								width={200}
 								loading="eager"
 							/>
 						}
@@ -95,6 +95,31 @@ const EventsPage = () => {
 							<div>
 								<p>Pop down to our Summer Craft Fair and browse for that special something!</p>
 								<p>Craft stalls inside and outside the Hall.</p>
+								<br />
+								<p>Email fordgreenhall.museum@gmail.com or call 01782 537696 for more info.</p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
+						title="Christmas Frost Fair"
+						facebookUrl="https://fb.me/e/1WXRct75h"
+						startDate={new Date(1668942000000)}
+						endDate={new Date(1668915000000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/christmas_fair.jpg"
+								alt="A festive Christmas stall laden with gifts and crafts inside the hall."
+								placeholder="none"
+								layout="fixed"
+								width={300}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Browse craft stalls at our Christmas Frost Fair. Get that perfect handmade Christmas pressie!</p>
+								<p>Outdoor and indoor stalls.</p>
 								<br />
 								<p>Email fordgreenhall.museum@gmail.com or call 01782 537696 for more info.</p>
 							</div>
