@@ -76,6 +76,31 @@ const EventsPage = () => {
 						}
 					/>
 
+					<CalendarEvent
+						title="Summer Craft Fair"
+						facebookUrl="https://fb.me/e/1Wq9uOVbp"
+						startDate={new Date(1658052000000)}
+						endDate={new Date(1658068200000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/summer_craft_fair.jpg"
+								alt="The 95th Rifles at the Battle of the Pyrenees, 1813"
+								placeholder="none"
+								layout="fixed"
+								width={150}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Pop down to our Summer Craft Fair and browse for that special something!</p>
+								<p>Craft stalls inside and outside the Hall.</p>
+								<br />
+								<p>Email fordgreenhall.museum@gmail.com or call 01782 537696 for more info.</p>
+							</div>
+						}
+					/>
+
 
 					<ScrollToTop />
 
