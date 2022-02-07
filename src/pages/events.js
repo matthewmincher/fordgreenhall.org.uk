@@ -52,6 +52,31 @@ const EventsPage = () => {
 					/>
 
 					<CalendarEvent
+						title="February Half Term - Fairy Tails & Nursery Rhymes"
+						facebookUrl="https://fb.me/e/65H9MSIWx"
+						dateDayPart={"21st, 23rd, 24th"}
+						dateTimePart={"11:00 am - 3:30pm"}
+						endDate={new Date(1645716600000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/humpty_dumpty.jpg"
+								alt="Humpty Dumpty - an anthropomorphic egg - sat on a wall"
+								placeholder="none"
+								layout="fixed"
+								width={300}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Follow our Nursey Rhyme and Fairy Tale trail and learn about some of their origins.</p>
+								<p>Children's craft activity, plus explore the Hall and have a cuppa in the tea room!</p>
+								<p><strong>Adults £4.50, Children and concessions £3.50, family £13.00.</strong> Small charges for activities</p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
 						title="King George commands and we obey!"
 						facebookUrl="https://fb.me/e/1fcE8gNTs"
 						startDate={new Date(1655632800000)}
