@@ -52,15 +52,15 @@ const EventsPage = () => {
 					/>
 
 					<CalendarEvent
-						title="February Half Term - Fairy Tails & Nursery Rhymes"
-						facebookUrl="https://fb.me/e/65H9MSIWx"
-						dateDayPart={"21st, 23rd, 24th"}
-						dateTimePart={"11:00 am - 3:30pm"}
-						endDate={new Date(1645716600000)}
+						title="Easter Hunt and activities"
+						facebookUrl="https://fb.me/e/3xy1vRgw6"
+						dateDayPart={"11th - 14th & 17th - 18th"}
+						dateTimePart={"1:00pm - 3:30pm"}
+						endDate={new Date(1650292200000)}
 						image={
 							<StaticImage
-								src="./../images/copy/events/humpty_dumpty.jpg"
-								alt="Humpty Dumpty - an anthropomorphic egg - sat on a wall"
+								src="./../images/copy/events/easter.jpg"
+								alt="Five eggs in a decorated ceramic holder. One of the eggs is covered in brightly coloured paper and has a ribbon on the top"
 								placeholder="none"
 								layout="fixed"
 								width={300}
@@ -69,9 +69,9 @@ const EventsPage = () => {
 						}
 						description={
 							<div>
-								<p>Follow our Nursey Rhyme and Fairy Tale trail and learn about some of their origins.</p>
-								<p>Children's craft activity, plus explore the Hall and have a cuppa in the tea room!</p>
-								<p><strong>Adults £4.50, Children and concessions £3.50, family £13.00.</strong> Small charges for activities</p>
+								<p>Search for Easter eggs and chicks throughout the Hall and garden.</p>
+								<p>Play with period toys and games and have a go at our Easter craft activity.</p>
+								<p><strong>Normal admission plus small charges for trail and craft activity.</strong></p>
 							</div>
 						}
 					/>
