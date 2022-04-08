@@ -37,10 +37,6 @@ const VisitPage = () => {
 						</iframe>
 					</div>
 
-					<div style={{maxWidth: "850px", marginLeft: "auto", marginRight: "auto"}}>
-						<CovidMessage />
-					</div>
-
 					<div className={Styles.openingDetails}>
 						<div className={Styles.openingDetailsLeft}>
 							<h2>Visiting</h2>

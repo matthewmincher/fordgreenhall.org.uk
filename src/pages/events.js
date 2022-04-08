@@ -15,10 +15,6 @@ const EventsPage = () => {
 				<div className={Styles.container}>
 					<h1>Events</h1>
 
-					<div style={{maxWidth: "850px", marginLeft: "auto", marginRight: "auto", marginTop: "-10px", marginBottom: "10px"}}>
-						<CovidMessage />
-					</div>
-
 					<CalendarEvent
 						title={"Afternoon Knit and Natter Group"}
 						datePrefix="Every"
