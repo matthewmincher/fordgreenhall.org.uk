@@ -15,6 +15,8 @@ const EventsPage = () => {
 				<div className={Styles.container}>
 					<h1>Events</h1>
 
+					<br />
+
 					<CalendarEvent
 						title={"Afternoon Knit and Natter Group"}
 						datePrefix="Every"
@@ -68,6 +70,30 @@ const EventsPage = () => {
 								<p>Search for Easter eggs and chicks throughout the Hall and garden.</p>
 								<p>Play with period toys and games and have a go at our Easter craft activity.</p>
 								<p><strong>Normal admission plus small charges for trail and craft activity.</strong></p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
+						title="May Day"
+						facebookUrl="https://fb.me/e/2aB450r3O"
+						startDate={new Date(1651406400000)}
+						endDate={new Date(1651415400000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/may_day.jpg"
+								alt="A view of the side of the hall, peering through green foliage and yellow flowers."
+								placeholder="none"
+								layout="fixed"
+								width={200}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Explore The Hall on Staffordshire May Day with costumed interpreters..</p>
+								<p>Listen to live period music from the Drumblebys. Discover weapons from the 17th century and try your hand at toys and games from 400 years ago.</p>
+								<p><strong>Adults £4.50, children & concessions £3.50. Family £13.00.</strong></p>
 							</div>
 						}
 					/>
