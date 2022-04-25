@@ -50,31 +50,6 @@ const EventsPage = () => {
 					/>
 
 					<CalendarEvent
-						title="Easter Hunt and activities"
-						facebookUrl="https://fb.me/e/3xy1vRgw6"
-						dateDayPart={"11th - 14th & 17th - 18th"}
-						dateTimePart={"1:00pm - 3:30pm"}
-						endDate={new Date(1650292200000)}
-						image={
-							<StaticImage
-								src="./../images/copy/events/easter.jpg"
-								alt="Five eggs in a decorated ceramic holder. One of the eggs is covered in brightly coloured paper and has a ribbon on the top"
-								placeholder="none"
-								layout="fixed"
-								width={300}
-								loading="eager"
-							/>
-						}
-						description={
-							<div>
-								<p>Search for Easter eggs and chicks throughout the Hall and garden.</p>
-								<p>Play with period toys and games and have a go at our Easter craft activity.</p>
-								<p><strong>Normal admission plus small charges for trail and craft activity.</strong></p>
-							</div>
-						}
-					/>
-
-					<CalendarEvent
 						title="May Day"
 						facebookUrl="https://fb.me/e/2aB450r3O"
 						startDate={new Date(1651406400000)}
@@ -144,6 +119,79 @@ const EventsPage = () => {
 								<p>Craft stalls inside and outside the Hall.</p>
 								<br />
 								<p>Email fordgreenhall.museum@gmail.com or call 01782 537696 for more info.</p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
+						title="Pirate Day!"
+						facebookUrl="https://fb.me/e/1IIGhsUUm"
+						startDate={new Date(1658829600000)}
+						endDate={new Date(1658845800000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/pirate_day.jpg"
+								alt="A dingy pirate flag with a skull and crossed rapiers"
+								placeholder="none"
+								layout="fixed"
+								width={200}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Set sail for our Pirate day, come dressed as a Pirate.</p>
+								<p>Meet a pirate and handle replica weapons and learn about life under the black flag.</p>
+								<p><strong>Children's trail, craft activity.<br /> **** More info about activities to follow****</strong></p>
+								<p>Adults £4.50, Children and concessions £3.50, Family £13.50</p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
+						title="Teddy Bears Picnic"
+						facebookUrl="https://fb.me/e/2rwpaXffO"
+						startDate={new Date(1660039200000)}
+						endDate={new Date(1660055400000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/teddy_bears.jpg"
+								alt="A group of teddy bear dolls sat together at a picnic table enjoying food and drinks"
+								placeholder="none"
+								layout="fixed"
+								width={200}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Time for our Teddy Bears Picnic. Bring a Teddy bear, bring a picnic have a brew from our tea room.</p>
+								<p>The Farm on wheels will be here with a selection of animals.</p>
+								<p><strong>Childrens craft activity, Childrens trail.<br />*****More info and activities to follow******</strong></p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
+						title="Vikings, Princesses, Knights, and Shieldmaidens"
+						facebookUrl="https://fb.me/e/1UVlEsqXS"
+						startDate={new Date(1660730400000)}
+						endDate={new Date(1660746600000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/vikings.jpg"
+								alt="Several viking raiders stand in front of a tent equipped with roundshields"
+								placeholder="none"
+								layout="fixed"
+								width={200}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Meet fearsome Vikings demonstrating battle techniques.</p>
+								<p>Explore replica Medieval weapons and armour and learn what it was like to be a Knight.</p>
+								<p><strong>Come dressed up. Craft activity and viking riddle trail. *****More info to follow****</strong></p>
 							</div>
 						}
 					/>
