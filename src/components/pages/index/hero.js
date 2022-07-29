@@ -30,7 +30,7 @@ const Hero = ({ skipAnimation }) => {
 		<div className="constrainedContent">
 			<div className={`${Styles.container} ${containerClasses}`}>
 				<StaticImage
-					src="../../../images/copy/index/interior_large.jpg"
+					src="../../../images/copy/index/exterior_large.jpg"
 					placeholder="none"
 					loading="eager"
 					layout="fullWidth"
