@@ -50,6 +50,57 @@ const EventsPage = () => {
 					/>
 
 					<CalendarEvent
+						title="Half Term - Crazy Kings and Quirky Queens"
+						facebookUrl="https://fb.me/e/3p02x83Fm"
+						dateDayPart={"30th May, 1st & 2nd June"}
+						dateTimePart={"1:00pm - 3:30pm"}
+						dateMonthPart={" "}
+						endDate={new Date(1654180200000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/crazy_monarchs.jpg"
+								alt="The family of Henry VIII"
+								placeholder="none"
+								layout="fixed"
+								width={200}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Find out the lesser known facts about our Monarchs with our trail.</p>
+								<p>Make a royal crown. Come dressed as a King, Queen, Prince, or Princess!</p>
+								<p><strong>Adults £4.50, children & concessions £3.50. Family £13.00.</strong></p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
+						title="Jubilee afternoon tea!!"
+						facebookUrl="https://fb.me/e/3b3mkrFnf"
+						startDate={new Date(1654430400000)}
+						endDate={new Date(1654180200000)}
+						image={
+							<StaticImage
+								src="./../images/copy/events/jubilee.jpg"
+								alt="Union Jack in the shape of a heart with a silhouette of Queen Elizabeth overlaid."
+								placeholder="none"
+								layout="fixed"
+								width={200}
+								loading="eager"
+							/>
+						}
+						description={
+							<div>
+								<p>Book Jubilee afternoon tea at Ford Green Hall and celebrate with Her Majesty in style!</p>
+								<p className={Styles.warning}><strong>BOOKING ESSENTIAL</strong></p>
+								<p><strong>£12.50 per person spaces limited call 01782 537696 to book or email fordgreenhall.museum@gmail.com</strong></p>
+								<p>* Please inform us of special dietary requirements *<br/>£5 non refundable deposit required.</p>
+							</div>
+						}
+					/>
+
+					<CalendarEvent
 						title="May Day"
 						facebookUrl="https://fb.me/e/2aB450r3O"
 						startDate={new Date(1651406400000)}
