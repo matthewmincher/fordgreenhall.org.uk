@@ -7,7 +7,6 @@ import ScrollToTop from "../components/layout/scrolltotop";
 import {graphql} from "gatsby";
 
 const EventsPage = ({ data }) => {
-	console.log(data.allMarkdownRemark)
 	return (
 		<Layout pageTitle="Events">
 			<div className="constrainedContent">
