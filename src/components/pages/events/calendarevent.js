@@ -2,10 +2,16 @@ import * as React from "react";
 import * as Styles from "./calendarevent.module.scss"
 
 import {useEffect, useState, useMemo} from "react";
-import {StaticImage} from "gatsby-plugin-image";
+import {GatsbyImage, StaticImage, getImage} from "gatsby-plugin-image";
 import format from "date-fns/format";
 
-export default function CalendarEvent({ title, image, description, facebookUrl, startDate, endDate, datePrefix, dateDayPart, dateMonthPart, dateTimePart }) {
+export default function CalendarEvent({ title, image, imageAlt, facebookUrl, startDate, endDate, datePrefix, dateDayPart, dateMonthPart, dateTimePart, children }) {
+	if (startDate) {
+		startDate = new Date(startDate);
+	}
+	if (endDate) {
+		endDate = new Date(endDate);
+	}
 
 	const hideFrom = useMemo(() => endDate ? new Date(endDate.getTime() + 43200000) : null, [endDate]);
 	const [isVisible, setIsVisible] = useState(!hideFrom || hideFrom >= Date.now());
@@ -29,7 +35,7 @@ export default function CalendarEvent({ title, image, description, facebookUrl, 
 	}
 
 	return (
-		isVisible ?
+		isVisible || true ?
 		<div className={Styles.container}>
 			<div className={Styles.left}>
 				{datePrefix &&
@@ -54,12 +60,12 @@ export default function CalendarEvent({ title, image, description, facebookUrl, 
 				</div>
 				{image &&
 					<div className={Styles.image}>
-						{image}
+						<GatsbyImage alt={imageAlt ?? ""} image={getImage(image)} objectFit={"scale-down"} />
 					</div>
 				}
 
 				<div className={Styles.description}>
-					{description}
+					{children}
 				</div>
 
 				<div className={Styles.facebookSpacer} />
