@@ -11,6 +11,14 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+	{
+	  resolve: "gatsby-source-filesystem",
+	  options: {
+	    name: "events",
+	    path: `./src/content/`,
+	  },
+      __key: "events"
+	},
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -19,6 +27,10 @@ module.exports = {
       },
       __key: "images",
 	},
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {}
+    },
     {
 	  resolve: `gatsby-plugin-webfonts`,
 	  options: {

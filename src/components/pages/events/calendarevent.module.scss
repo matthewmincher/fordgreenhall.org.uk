@@ -96,7 +96,7 @@
   .image {
     float: left;
     margin: 3px 10px 10px 10px;
-
+    max-width: 250px;
   }
 
   .facebookSpacer {
@@ -143,11 +143,12 @@
 
     .image {
       float: none;
-      margin: 0 0 10px 0;
+      margin: 0 auto 1em auto;
 
       :global {
         .gatsby-image-wrapper {
           margin: 0 auto;
+          display: block;
         }
       }
     }
