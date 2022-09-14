@@ -7,6 +7,7 @@ import CovidMessage from "../components/global/covidmessage";
 
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import TemporaryMessage from "../components/global/temporarymessage";
 
 
 
@@ -16,6 +17,12 @@ const VisitPage = () => {
 			<div className="constrainedContent">
 				<div className={Styles.visitContainer}>
 					<h1>Visit Us</h1>
+
+					<TemporaryMessage className="elizabeth-ii">
+						<p>
+							As a mark of respect, Ford Green Hall will be closed on Monday the 19<sup>th</sup> of September to give our staff the opportunity to pay tribute to her majesty Queen Elizabeth II.
+						</p>
+					</TemporaryMessage>
 
 					<div className={Styles.interactiveMapContainer}>
 						<Loader
