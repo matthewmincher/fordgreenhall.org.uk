@@ -19,7 +19,7 @@ const EventsPage = ({ data }) => {
 					<div style={{maxWidth: '850px', margin: 'auto'}}>
 						<TemporaryMessage className="elizabeth-ii">
 							<p>
-								Please note that Ford Green Hall will be closed on Monday the 19<sup>th</sup> of September.
+								As a mark of respect, Ford Green Hall will be closed on Monday the 19<sup>th</sup> of September to give our staff the opportunity to pay tribute to her majesty Queen Elizabeth II.
 							</p>
 						</TemporaryMessage>
 					</div>
