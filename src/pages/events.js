@@ -5,6 +5,7 @@ import * as Styles from "./events.module.scss"
 import CalendarEvent from "../components/pages/events/calendarevent";
 import ScrollToTop from "../components/layout/scrolltotop";
 import {graphql} from "gatsby";
+import TemporaryMessage from "../components/global/temporarymessage";
 
 const EventsPage = ({ data }) => {
 	return (
@@ -15,6 +16,13 @@ const EventsPage = ({ data }) => {
 
 					<br />
 
+					<div style={{maxWidth: '850px', margin: 'auto'}}>
+						<TemporaryMessage className="elizabeth-ii">
+							<p>
+								Please note that Ford Green Hall will be closed on Monday the 19<sup>th</sup> of September.
+							</p>
+						</TemporaryMessage>
+					</div>
 					{data.allMarkdownRemark.nodes.map(({ id, html, frontmatter }) => (
 						<CalendarEvent
 							{...frontmatter}
