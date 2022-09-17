@@ -4,6 +4,7 @@ image: ../../images/copy/events/knitandnatter.png
 datePrefix: Every
 dateDayPart: Thursday
 dateTimePart: 1:00pm - 3:30pm
+dateMonthPart: ' '
 type: event
 published: true
 startDate: 0
