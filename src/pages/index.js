@@ -10,10 +10,8 @@ const IndexPage = ({location}) => {
   return (
     <Layout pageTitle="" contentBackgroundColor="black" isPrimaryPage={true} >
 
-		<TemporaryMessage className="elizabeth-ii">
-			<p>
-				As a mark of respect, Ford Green Hall will be closed on Monday the 19<sup>th</sup> of September to give our staff the opportunity to pay tribute to her majesty Queen Elizabeth II.
-			</p>
+		<TemporaryMessage className="notification-general">
+			Please note that the Hall is closed on Monday 26<sup>th</sup> of September due to staff training.
 		</TemporaryMessage>
 
 		<div className={Styles.heroContainer}>
