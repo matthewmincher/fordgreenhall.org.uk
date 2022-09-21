@@ -76,12 +76,11 @@ body {
   outline: inherit;
 }
 
-.elizabeth-ii {
-  background-color: black;
-  border-bottom: 2px solid #eeeeee;
-  border-top: 2px solid #eeeeee;
+.notification-general {
+  background-color: rgba(99, 146, 224, 0.6);
+  border-bottom: 1px solid rgba(62, 91, 140, 0.9);
+  border-top: 1px solid rgba(62, 91, 140, 0.9);
   color: white;
-  font-weight: bold;
   margin: 0 auto 1em auto;
   text-align: center;
 }
