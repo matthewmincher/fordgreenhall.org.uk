@@ -16,11 +16,6 @@ const EventsPage = ({ data }) => {
 
 					<br />
 
-					<div style={{maxWidth: '850px', margin: 'auto'}}>
-						<TemporaryMessage className="notification-general">
-							Please note that the Hall is closed on Monday 26<sup>th</sup> of September due to staff training.
-						</TemporaryMessage>
-					</div>
 					{data.allMarkdownRemark.nodes.map(({ id, html, frontmatter }) => (
 						<CalendarEvent
 							{...frontmatter}
