@@ -10,10 +10,6 @@ const IndexPage = ({location}) => {
   return (
     <Layout pageTitle="" contentBackgroundColor="black" isPrimaryPage={true} >
 
-		<TemporaryMessage className="notification-general">
-			Please note that the Hall is closed on Monday 26<sup>th</sup> of September due to staff training.
-		</TemporaryMessage>
-
 		<div className={Styles.heroContainer}>
 			<Hero skipAnimation={location?.state?.internal ?? false} />
 		</div>
