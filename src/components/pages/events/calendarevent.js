@@ -35,7 +35,7 @@ export default function CalendarEvent({ title, image, imageAlt, facebookUrl, sta
 	}
 
 	return (
-		isVisible || true ?
+		isVisible ?
 		<div className={Styles.container}>
 			<div className={Styles.left}>
 				{datePrefix &&
