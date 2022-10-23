@@ -22,7 +22,6 @@
   border-bottom: 2px solid #2f2f2f;
 
   .container {
-
     padding: 14px 20px 10px 20px;
 
     text-align: left;
@@ -150,24 +149,28 @@
   color: #dddddd;
 }
 
-.visitEngland {
+.visitEngland, .tripAdvisor, .hiddenGem {
   position: absolute;
-  top:0;
-  right:0;
   opacity: 0.8;
 }
 
-.visitEngland:hover {
-  opacity: 1;
+.visitEngland {
+  top:0;
+  right:80px;
 }
 
 .tripAdvisor {
-  position: absolute;
   top:160px;
   right: 0;
-  opacity: 0.8;
 }
-.tripAdvisor:hover {
+
+.hiddenGem {
+  top: 0;
+  right: 0;
+}
+
+
+.tripAdvisor:hover, .visitEngland:hover, .hiddenGem:hover {
   opacity: 1;
 }
 
@@ -186,7 +189,7 @@
 
   .social {
     margin-bottom: 20px;
-    margin-right: 120px;
+    margin-right: 200px;
   }
 
   .social a {
@@ -206,7 +209,60 @@
   .social a .icon {
     margin-right: 10px;
   }
+}
 
+@media all and (max-width: 480px) {
+  .main {
+
+  }
+
+  .social {
+    margin-right: 0;
+  }
+
+  .visitEngland, .tripAdvisor, .hiddenGem {
+    position: static;
+    top: auto;
+    right: auto;
+
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    vertical-align: top;
+
+  }
+
+  .tripAdvisor {
+    float: right;
+  }
+}
+
+@media all and (max-width: 351px) {
+  .thirdPartyContainer {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+  .thirdPartyContainer > div {
+    flex: 0 1 auto;
+  }
+
+  .visitEngland, .tripAdvisor, .hiddenGem {
+    margin-right: 0;
+  }
+
+  .tripAdvisor {
+    float: none;
+    margin-right: 0;
+  }
+
+  .contact {
+    .container {
+      padding: 14px 5px 10px 5px;
+    }
+  }
 }
 
 @media all and (max-width: 399px) {
