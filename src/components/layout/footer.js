@@ -111,8 +111,48 @@ const Footer = () => {
 								alt="See us on Instagram" />
 							<span><span className={Styles.extended}>See us on </span>Instagram</span>
 						</a>
+					</div>
 
-
+					<div className={Styles.thirdPartyContainer}>
+						<div className={Styles.visitEngland}>
+							<a href="https://www.visitenglandassessmentservices.com/establishments/ford-green-hall/"
+							   target="_blank"
+							   rel="noreferrer">
+								<StaticImage
+									src="../../images/thirdparties/visit_england.png"
+									width={98}
+									placeholder="none"
+									loading="eager"
+									layout="fixed"
+									alt="" />
+							</a>
+						</div>
+						<div className={Styles.hiddenGem}>
+							<a href="https://www.visitenglandassessmentservices.com/establishments/ford-green-hall/"
+							   target="_blank"
+							   rel="noreferrer">
+								<StaticImage
+									src="../../images/thirdparties/hidden_gem_22.png"
+									height={141}
+									placeholder="none"
+									loading="eager"
+									layout="fixed"
+									alt="" />
+							</a>
+						</div>
+						<div className={Styles.tripAdvisor}>
+							<a href="https://www.tripadvisor.co.uk/Attraction_Review-g186378-d1647083-Reviews-Ford_Green_Hall-Stoke_on_Trent_Staffordshire_England.html"
+							   target="_blank"
+							   rel="noreferrer">
+								<StaticImage
+									src="../../images/thirdparties/tripadvisor_footer.png"
+									width={98}
+									placeholder="none"
+									loading="eager"
+									layout="fixed"
+									alt="" />
+							</a>
+						</div>
 					</div>
 
 					<StaticImage
@@ -131,32 +171,6 @@ const Footer = () => {
 						Copyright © Ford Green Hall - All rights reserved
 					</div>
 
-					<div className={Styles.visitEngland}>
-						<a href="https://www.visitenglandassessmentservices.com/establishments/ford-green-hall/"
-						   target="_blank"
-						   rel="noreferrer">
-							<StaticImage
-								src="../../images/thirdparties/visit_england.png"
-								width={98}
-								placeholder="none"
-								loading="eager"
-								layout="fixed"
-								alt="" />
-						</a>
-					</div>
-					<div className={Styles.tripAdvisor}>
-						<a href="https://www.tripadvisor.co.uk/Attraction_Review-g186378-d1647083-Reviews-Ford_Green_Hall-Stoke_on_Trent_Staffordshire_England.html"
-						   target="_blank"
-						   rel="noreferrer">
-							<StaticImage
-								src="../../images/thirdparties/tripadvisor_footer.png"
-								width={98}
-								placeholder="none"
-								loading="eager"
-								layout="fixed"
-								alt="" />
-						</a>
-					</div>
 				</div>
 			</div>
 		</footer>
