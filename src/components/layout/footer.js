@@ -64,7 +64,7 @@ const Footer = () => {
 								layout="fixed"
 								loading="eager"
 								alt="Find us on Facebook" />
-							<span><span className={Styles.extended}>Find us on </span>Facebook</span>
+							<span>Find us on Facebook</span>
 						</a>
 						<a
 							href="https://twitter.com/fordgreenhall"
@@ -79,7 +79,7 @@ const Footer = () => {
 								layout="fixed"
 								loading="eager"
 								alt="Follow us on Twitter" />
-							<span><span className={Styles.extended}>Follow us on </span>Twitter</span>
+							<span>Follow us on Twitter</span>
 						</a>
 						<a
 							href="https://www.youtube.com/channel/UCNgNqHYmtsuhSeWXDwJT8Mg"
@@ -94,7 +94,7 @@ const Footer = () => {
 								layout="fixed"
 								loading="eager"
 								alt="Watch on Youtube" />
-							<span><span className={Styles.extended}>Watch on </span>Youtube</span>
+							<span>Watch on Youtube</span>
 						</a>
 						<a
 							href="https://www.instagram.com/ford_green_hall_museum/"
@@ -109,7 +109,7 @@ const Footer = () => {
 								layout="fixed"
 								loading="eager"
 								alt="See us on Instagram" />
-							<span><span className={Styles.extended}>See us on </span>Instagram</span>
+							<span>See us on Instagram</span>
 						</a>
 					</div>
 
