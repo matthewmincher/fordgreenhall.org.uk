@@ -4,7 +4,6 @@ import Hero from "../components/pages/index/hero";
 
 import * as Styles from "./index.module.scss"
 import JustGivingBar from "../components/global/justgivingbar";
-import TemporaryMessage from "../components/global/temporarymessage";
 
 const IndexPage = ({location}) => {
   return (

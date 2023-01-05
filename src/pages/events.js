@@ -5,7 +5,6 @@ import * as Styles from "./events.module.scss"
 import CalendarEvent from "../components/pages/events/calendarevent";
 import ScrollToTop from "../components/layout/scrolltotop";
 import {graphql} from "gatsby";
-import TemporaryMessage from "../components/global/temporarymessage";
 
 const EventsPage = ({ data }) => {
 	return (
