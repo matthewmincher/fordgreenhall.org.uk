@@ -3,11 +3,9 @@ import Layout from "../components/layout/layout";
 
 import * as Styles from "./visit.module.scss"
 import {withPrefix} from "gatsby";
-import CovidMessage from "../components/global/covidmessage";
 
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import TemporaryMessage from "../components/global/temporarymessage";
 
 
 
