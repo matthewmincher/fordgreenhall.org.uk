@@ -6,6 +6,7 @@ import {withPrefix} from "gatsby";
 
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import TemporaryMessage from "../components/global/temporarymessage";
 
 
 
@@ -15,6 +16,10 @@ const VisitPage = () => {
 			<div className="constrainedContent">
 				<div className={Styles.visitContainer}>
 					<h1>Visit Us</h1>
+
+					<TemporaryMessage className="notification-general">
+						Please note that the hall will be closed on Thursday 23rd of March
+					</TemporaryMessage>
 
 					<div className={Styles.interactiveMapContainer}>
 						<Loader
