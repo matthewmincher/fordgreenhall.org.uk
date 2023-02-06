@@ -3,7 +3,7 @@ title: February Half Term - Plants and Animals
 facebookUrl: https://fb.me/e/3vfuAB07k
 image: ../../images/copy/events/plants_and_animals.jpeg 
 imageAlt: 
-startDate: 1676899800000
+startDate: 1676898000000
 endDate: 1677166200000
 dateDayPart: 20th - 23rd
 type: event

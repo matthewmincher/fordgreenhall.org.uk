@@ -5,7 +5,7 @@ image:
 imageAlt: 
 startDate: 1679232600000
 endDate: 1679239800000
-dateTimePart: 1:30pm or 2:30pm
+dateTimePart: 1:00pm
 type: event
 published: true
 ---
