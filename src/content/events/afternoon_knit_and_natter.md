@@ -6,6 +6,7 @@ dateDayPart: Thursday
 dateTimePart: 1:00pm - 3:30pm
 dateMonthPart: ' '
 type: event
+mini: true
 published: true
 startDate: 0
 endDate: 2147483647000

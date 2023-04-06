@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  position: relative;
 
   width: 100%;
   max-width: 850px;
@@ -7,6 +8,29 @@
 
   min-height: 200px;
   margin-bottom: 20px;
+}
+
+.container.mini {
+  min-height: auto;
+
+  .left {
+    padding-top: 10px;
+
+    .time {
+      margin-top: 5px;
+    }
+  }
+
+  .right {
+    padding-bottom: 10px;
+  }
+  .right .image {
+    max-width: 50px;
+  }
+
+  .facebookSpacer {
+    display: none;
+  }
 }
 
 
@@ -152,5 +176,12 @@
         }
       }
     }
+  }
+
+  .container.mini .right .image {
+    display: none;
+  }
+  .container.mini .right .title {
+    font-size: 24px;
   }
 }

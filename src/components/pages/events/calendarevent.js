@@ -5,7 +5,7 @@ import {useEffect, useState, useMemo} from "react";
 import {GatsbyImage, StaticImage, getImage} from "gatsby-plugin-image";
 import format from "date-fns/format";
 
-export default function CalendarEvent({ title, image, imageAlt, facebookUrl, startDate, endDate, datePrefix, dateDayPart, dateMonthPart, dateTimePart, children }) {
+export default function CalendarEvent({ title, image, imageAlt, facebookUrl, startDate, endDate, datePrefix, dateDayPart, dateMonthPart, dateTimePart, children, mini }) {
 	if (startDate) {
 		startDate = new Date(startDate);
 	}
@@ -36,7 +36,7 @@ export default function CalendarEvent({ title, image, imageAlt, facebookUrl, sta
 
 	return (
 		isVisible ?
-		<div className={Styles.container}>
+		<div className={`${Styles.container} ${mini ? Styles.mini : ''}`}>
 			<div className={Styles.left}>
 				{datePrefix &&
 					<div className={Styles.prefix}>{datePrefix}</div>

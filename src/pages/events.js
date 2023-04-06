@@ -61,7 +61,8 @@ export const query = graphql`
 							)
 						}
 					}
-					imageAlt
+					imageAlt,
+					mini
 				}
 			}
 		}
