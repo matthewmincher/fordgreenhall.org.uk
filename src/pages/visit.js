@@ -17,10 +17,6 @@ const VisitPage = () => {
 				<div className={Styles.visitContainer}>
 					<h1>Visit Us</h1>
 
-					<TemporaryMessage className="notification-general">
-						Please note that the hall will be closed on Thursday 23rd of March
-					</TemporaryMessage>
-
 					<div className={Styles.interactiveMapContainer}>
 						<Loader
 							className={Styles.interactiveMapLoader}
