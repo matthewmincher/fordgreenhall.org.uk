@@ -68,12 +68,12 @@ const VisitPage = () => {
 											2 adults + 2 children
 										</div>
 									</td>
-									<td className={Styles.priceColumn}>£13.00</td>
+									<td className={Styles.priceColumn}>£14.00</td>
 									<td className={Styles.emptyColumn}/>
 								</tr>
 								<tr>
 									<td className={Styles.annotationColumn}>Adult</td>
-									<td className={Styles.priceColumn}>£4.50</td>
+									<td className={Styles.priceColumn}>£5.00</td>
 									<td className={Styles.emptyColumn}/>
 								</tr>
 								<tr>
@@ -84,7 +84,7 @@ const VisitPage = () => {
 											Adults aged 60 or over
 										</div>
 									</td>
-									<td className={Styles.priceColumn}>£3.50</td>
+									<td className={Styles.priceColumn}>£4.00</td>
 									<td className={Styles.emptyColumn}/>
 								</tr>
 								<tr>
@@ -94,7 +94,7 @@ const VisitPage = () => {
 											Age 5 - 16. Under 5s free.
 										</div>
 									</td>
-									<td className={Styles.priceColumn}>£3.50</td>
+									<td className={Styles.priceColumn}>£4.00</td>
 									<td className={`${Styles.roundBr} ${Styles.emptyColumn}`}/>
 								</tr>
 								<tr>
