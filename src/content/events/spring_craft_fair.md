@@ -1,18 +1,21 @@
 ---
-title: Father's Day - King or Parliament!
-facebookUrl: https://fb.me/e/4mmXVFqOi
-image: ../../images/copy/events/king_or_parliament.jpeg
+title: Spring Craft Fair
+facebookUrl: https://fb.me/e/IldD1N4J
+image: ../../images/copy/events/spring_craft_fair_2020.jpg
 imageAlt: 
-startDate: 1687089600000
-endDate: 1687098600000
+startDate: 1685095200000
+endDate: 1685111400000
 type: event
 published: true
 ---
-Father's Day at Ford Green Hall.
+Lots of stalls to treat yourself or buy that special gift!
 
-Meet a soldier from the English Civil War, handle replica weapons from the period.
+Stalls inside and out!
 
-The surgeon will be on hand to explain some grisly treatments of the day!
+<br />
 
-Admission - Adults £5.00, Children and concessions £4.00, Family £14.00 (2 adults, 2 children)
+**Our friends The Warriors of the Black Bear Viking group will be joining us too.**
 
+<br /> 
+
+*Free admission. Tea room open.*

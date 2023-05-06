@@ -1,21 +1,21 @@
 ---
-title: Spring Craft Fair
-facebookUrl: https://fb.me/e/IldD1N4J
-image: ../../images/copy/events/spring_craft_fair_2020.jpg
+title: Tudor and Stuart day
+facebookUrl: https://fb.me/e/txqROECV
+image: ../../images/copy/events/tudor_and_stuart_day_23.jpeg
 imageAlt: 
-startDate: 1685095200000
-endDate: 1685111400000
+startDate: 1689501600000
+endDate: 1689517800000
 type: event
 published: true
 ---
-Lots of stalls to treat yourself or buy that special gift!
+Find out about life in Tudor and Stuart England.
 
-Stalls inside and out!
+We will be joined by the fabulous Gloriana living history group, who will be throwing some Tudor shapes on the dance floor!
 
-<br />
+Bring your wounds to the Barber surgeon and your ailments to the Wisewoman.
 
-**Our friends The Warriors of the Black Bear Viking group will be joining us too.**
+Meet a town watchman and learn about crime and some of the grisly punishments inflicted 400 years ago. 
 
-<br /> 
+Have a go at writing with a quill pen, and find out what food and recipes were available.
 
-*Free admission. Tea room open.*
+*Adults £5.00. Children and concessions £4.00. Family £14 (2 adults, 2 children)*

@@ -14,5 +14,5 @@ Meet a soldier from the English Civil War, handle replica weapons from the perio
 
 The surgeon will be on hand to explain some grisly treatments of the day!
 
-Admission - Adults £4.50, Children and concessions £3.50, Family £13.00 (2 adults, 2 children)
+Admission - Adults £5.00, Children and concessions £4.00, Family £14.00 (2 adults, 2 children)
 
