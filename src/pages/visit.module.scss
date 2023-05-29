@@ -48,6 +48,23 @@
 .visitContainer .openingDetails {
   display: flex;
   padding: 0 25px;
+
+  a {
+    color: yellow;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+
+    line-height: 35px;
+    text-decoration: none;
+
+    span {
+      border-bottom: 2px solid transparent;
+    }
+
+    span:hover {
+      border-bottom: 3px solid #c5c697;
+    }
+  }
 }
 .visitContainer .openingDetails p {
   font-family: "Georgia", serif;

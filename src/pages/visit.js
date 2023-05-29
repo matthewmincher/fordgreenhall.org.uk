@@ -2,11 +2,13 @@ import * as React from "react"
 import Layout from "../components/layout/layout";
 
 import * as Styles from "./visit.module.scss"
-import {withPrefix} from "gatsby";
+import {Link, withPrefix} from "gatsby";
 
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import TemporaryMessage from "../components/global/temporarymessage";
+import {faLink} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 
@@ -47,7 +49,7 @@ const VisitPage = () => {
 							<h2>Facilities</h2>
 							<p>Shop and Tea Room: open to non-museum visitors</p>
 							<p>A free car park is available on site</p>
-							<p>Ramp access is situated at the front of the Hall, accessed from the main road.</p>
+							<p>Ramp access is situated at the front of the Hall, accessed from the main road. More information can be found on our <Link to='/visit/access'><span>access information page</span> <FontAwesomeIcon icon={faLink} /></Link></p>
 						</div>
 					</div>
 					<div className={Styles.openingPrices}>
