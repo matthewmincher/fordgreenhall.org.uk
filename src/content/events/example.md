@@ -9,5 +9,6 @@ dateMonthPart: ''
 dateTimePart: ''
 type: event
 published: false
+mini: false
 ---
 Content
