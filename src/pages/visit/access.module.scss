@@ -1,0 +1,90 @@
+.accessContainer {
+  position: relative;
+
+  h1, h2 {
+    font-family: "Fredericka the Great", serif;
+    color: white;
+    font-weight: 400;
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+
+
+  p, li {
+    color:white;
+    font-family: "Georgia", serif;
+    font-size: 18px;
+  }
+
+  li + li {
+    margin-top: 1em;
+  }
+
+  .imageRow {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+  }
+  .imageRow > * {
+
+  }
+  .imageCaption {
+    text-align: center;
+    font-style: italic;
+
+    margin-bottom: 1em;
+
+    color:white;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+  }
+
+  li {
+    margin-right: 1em;
+  }
+
+
+
+  .download {
+    text-align: center;
+    font-size: 200%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    a {
+      color: white;
+      font-family: "Georgia", serif;
+
+      line-height: 35px;
+      text-decoration: none;
+
+      span {
+        border-bottom: 2px solid transparent;
+      }
+
+      span:hover {
+        border-bottom: 3px solid #c5c697;
+      }
+    }
+  }
+}
+
+
+.padded {}
+
+@media all and (max-width: 1220px) {
+  .accessContainer {
+    padding: 0;
+
+    h1, h2 {
+      margin-left: 20px;
+    }
+  }
+}
+@media (max-width: 1212px){
+  .padded {
+    padding: 0 20px;
+  }
+}
