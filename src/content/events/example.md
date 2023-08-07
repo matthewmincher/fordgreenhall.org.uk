@@ -10,5 +10,6 @@ dateTimePart: ''
 type: event
 published: false
 mini: false
+imageAlt: ''
 ---
 Content

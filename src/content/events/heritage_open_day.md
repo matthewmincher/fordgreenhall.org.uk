@@ -10,14 +10,19 @@ published: true
 ---
 Heritage Open Day at Ford Green Hall. 
 
+
 Explore the Hall free of charge! 
 
-Consult a 17th Century Surgeon. 
+&nbsp;
 
-Meet a soldier from the late Stuart army. 
+Consult a 17th Century Surgeon.
 
-Have a go at writing with a quill pen. 
+Meet a soldier from the late Stuart army.
+
+Have a go at writing with a quill pen.
 
 Play with period toys and games.
+
+&nbsp;
 
 Our tea room will be open as usual!
