@@ -2,9 +2,12 @@ import * as React from "react"
 import Layout from "../components/layout/layout";
 
 import * as Styles from "./events.module.scss"
-import CalendarEvent from "../components/pages/events/calendarevent";
+import CalendarEventComponent from "../components/pages/events/calendarevent";
 import ScrollToTop from "../components/layout/scrolltotop";
 import {graphql} from "gatsby";
+import {withTwoPassRendering} from "../helpers/withTwoPassRendering";
+
+const CalendarEvent = withTwoPassRendering(CalendarEventComponent);
 
 const EventsPage = ({ data }) => {
 	return (
