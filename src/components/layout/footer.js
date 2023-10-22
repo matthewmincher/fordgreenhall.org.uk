@@ -115,7 +115,7 @@ const Footer = () => {
 
 					<div className={Styles.thirdPartyContainer}>
 						<div className={Styles.visitEngland}>
-							<a href="https://www.visitenglandassessmentservices.com/establishments/ford-green-hall/"
+							<a href="https://visitenglandassessmentservices.com/establishments/ford-green-hall/"
 							   target="_blank"
 							   rel="noreferrer">
 								<StaticImage
@@ -128,7 +128,7 @@ const Footer = () => {
 							</a>
 						</div>
 						<div className={Styles.hiddenGemAward}>
-							<a href="https://www.visitenglandassessmentservices.com/establishments/ford-green-hall/"
+							<a href="https://visitenglandassessmentservices.com/establishments/ford-green-hall/"
 							   target="_blank"
 							   rel="noreferrer">
 								<StaticImage
@@ -141,7 +141,7 @@ const Footer = () => {
 							</a>
 						</div>
 						<div className={Styles.welcomeAward}>
-							<a href="https://www.visitenglandassessmentservices.com/establishments/ford-green-hall/"
+							<a href="https://visitenglandassessmentservices.com/establishments/ford-green-hall/"
 							   target="_blank"
 							   rel="noreferrer">
 								<StaticImage
