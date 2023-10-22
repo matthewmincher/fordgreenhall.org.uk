@@ -149,14 +149,14 @@
   color: #dddddd;
 }
 
-.visitEngland, .tripAdvisor, .hiddenGem {
+.visitEngland, .tripAdvisor, .hiddenGemAward, .welcomeAward {
   position: absolute;
   opacity: 0.8;
 }
 
 .visitEngland {
   top:0;
-  right:80px;
+  right:160px;
 }
 
 .tripAdvisor {
@@ -164,13 +164,18 @@
   right: 0;
 }
 
-.hiddenGem {
+.welcomeAward {
   top: 0;
   right: 0;
 }
 
+.hiddenGemAward {
+  top: 0;
+  right: 80px;
+}
 
-.tripAdvisor:hover, .visitEngland:hover, .hiddenGem:hover {
+
+.tripAdvisor:hover, .visitEngland:hover, .hiddenGemAward:hover, .welcomeAward:hover {
   opacity: 1;
 }
 
@@ -189,7 +194,7 @@
 
   .social {
     margin-bottom: 20px;
-    margin-right: 200px;
+    margin-right: 280px;
   }
 
   .social a {
@@ -211,7 +216,7 @@
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 580px) {
   .main {
 
   }
@@ -220,7 +225,7 @@
     margin-right: 0;
   }
 
-  .visitEngland, .tripAdvisor, .hiddenGem {
+  .visitEngland, .tripAdvisor, .hiddenGemAward, .welcomeAward {
     position: static;
     top: auto;
     right: auto;
@@ -237,11 +242,13 @@
   }
 }
 
-@media all and (max-width: 351px) {
+@media all and (max-width: 480px) {
   .thirdPartyContainer {
     display: flex;
     justify-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
 
   }
@@ -249,7 +256,7 @@
     flex: 0 1 auto;
   }
 
-  .visitEngland, .tripAdvisor, .hiddenGem {
+  .visitEngland, .tripAdvisor, .hiddenGemAward, .welcomeAward {
     margin-right: 0;
   }
 
