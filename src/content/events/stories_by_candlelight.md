@@ -10,7 +10,7 @@ published: true
 ---
 Hear ghost stories told in the Hall by candlelight, explore the house and enjoy included refreshments.
 
-Tickets £16 available at the Hall
+Tickets £18 available at the Hall
 
 Admission by pre-booked ticket only, places are limited.
 
