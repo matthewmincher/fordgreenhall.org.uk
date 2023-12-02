@@ -4,85 +4,113 @@ import * as Styles from "./calendarevent.module.scss"
 import {useEffect, useState, useMemo} from "react";
 import {GatsbyImage, StaticImage, getImage} from "gatsby-plugin-image";
 import format from "date-fns/format";
+import {renderRichText} from "gatsby-source-contentful/rich-text";
 
-export default function CalendarEvent({ title, image, imageAlt, facebookUrl, startDate, endDate, datePrefix, dateDayPart, dateMonthPart, dateTimePart, children, mini }) {
-	if (startDate) {
-		startDate = new Date(startDate);
-	}
-	if (endDate) {
-		endDate = new Date(endDate);
-	}
+const renderOptions = {
+    renderText: text => {
+        return text.split('\n').reduce((children, textSegment, index) => {
+            return [...children, index > 0 && <br key={index}/>, textSegment];
+        }, []);
+    },
+};
 
-	const hideFrom = useMemo(() => endDate ? new Date(endDate.getTime() + 43200000) : null, [endDate]);
-	const [isVisible, setIsVisible] = useState(!hideFrom || hideFrom >= Date.now());
+export default function CalendarEvent({
+                                          title,
+                                          startDate,
+                                          endDate,
+                                          dateOverridePrefix,
+                                          dateOverrideDay,
+                                          dateOverrideMonth,
+                                          dateOverrideTime,
+                                          facebookUrl,
+                                          image,
+                                          content,
+                                          isMini
+                                      }) {
+    if (startDate) {
+        startDate = new Date(startDate);
+    }
+    if (endDate) {
+        endDate = new Date(endDate);
+    }
 
-	useEffect(() => {
-		setIsVisible(!hideFrom || hideFrom >= Date.now());
-	}, [hideFrom]);
+    const hideFrom = useMemo(() => endDate ? new Date(endDate.getTime() + 43200000) : null, [endDate]);
+    const [isVisible, setIsVisible] = useState(!hideFrom || hideFrom >= Date.now());
 
-	if(!dateDayPart && (startDate || endDate)){
-		dateDayPart = format(startDate ?? endDate, 'do');
-	}
-	if(!dateMonthPart && (startDate || endDate)){
-		dateMonthPart = format(startDate ?? endDate, 'MMMM');
-	}
-	if(!dateTimePart && (startDate || endDate)){
-		dateTimePart = format(startDate ?? endDate, 'h:mmaaa')
+    useEffect(() => {
+        setIsVisible(!hideFrom || hideFrom >= Date.now());
+    }, [hideFrom]);
 
-		if(startDate && endDate){
-			dateTimePart += ' - ' + format(endDate, 'h:mmaaa');
-		}
-	}
+    let dateMonthPart = dateOverrideMonth, dateDayPart = dateOverrideDay, dateTimePart = dateOverrideTime;
 
-	return (
-		isVisible ?
-		<div className={`${Styles.container} ${mini ? Styles.mini : ''}`}>
-			<div className={Styles.left}>
-				{datePrefix &&
-					<div className={Styles.prefix}>{datePrefix}</div>
-				}
+    if (!dateDayPart && (startDate || endDate)) {
+        dateDayPart = format(startDate ?? endDate, 'do');
+    }
 
-				{dateDayPart &&
-					<div className={Styles.day}>{dateDayPart}</div>
-				}
+    if (!dateMonthPart && (startDate || endDate)) {
+        dateMonthPart = format(startDate ?? endDate, 'MMMM');
+    }
 
-				{dateMonthPart &&
-					<div className={Styles.month}>{dateMonthPart}</div>
-				}
+    if (!dateTimePart && (startDate || endDate)) {
+        dateTimePart = format(startDate ?? endDate, 'h:mmaaa')
 
-				{dateTimePart &&
-					<div className={Styles.time}>{dateTimePart}</div>
-				}
-			</div>
-			<div className={Styles.right}>
-				<div className={Styles.title}>
-					{title}
-				</div>
-				{image &&
-					<div className={Styles.image}>
-						<GatsbyImage alt={imageAlt ?? ""} image={getImage(image)} objectFit={"scale-down"} />
-					</div>
-				}
+        if (startDate && endDate) {
+            dateTimePart += ' - ' + format(endDate, 'h:mmaaa');
+        }
+    }
 
-				<div className={Styles.description}>
-					{children}
-				</div>
+    return (
+        isVisible ?
+            <div className={`${Styles.container} ${isMini ? Styles.mini : ''}`}>
+                <div className={Styles.left}>
+                    {dateOverridePrefix &&
+                        <div className={Styles.prefix}>{dateOverridePrefix}</div>
+                    }
 
-				<div className={Styles.facebookSpacer} />
+                    {dateDayPart &&
+                        <div className={Styles.day}>{dateDayPart}</div>
+                    }
 
-				{facebookUrl &&
-					<a target="_blank" rel="noreferrer" href={facebookUrl} className={Styles.facebookLink} title="See this event on Facebook">
-						<StaticImage
-							src="../../../images/social/f_logo_RGB-Black_100.png"
-							alt="Facebook logo"
-							placeholder="none"
-							layout="fixed"
-							loading="eager"
-							width={25}
-						/>
-					</a>
-				}
-			</div>
-		</div> : null
-	)
+                    {dateMonthPart &&
+                        <div className={Styles.month}>{dateMonthPart}</div>
+                    }
+
+                    {dateTimePart &&
+                        <div className={Styles.time}>{dateTimePart}</div>
+                    }
+                </div>
+                <div className={Styles.right}>
+                    <div className={Styles.title}>
+                        {title}
+                    </div>
+                    {image &&
+                        <div className={Styles.image}>
+                            <GatsbyImage alt={image.description ?? ""}
+                                         image={getImage(image.localFile.childImageSharp.gatsbyImageData)}
+                                         objectFit={"scale-down"}/>
+                        </div>
+                    }
+
+                    <div className={Styles.description}>
+                        {renderRichText(content, renderOptions)}
+                    </div>
+
+                    <div className={Styles.facebookSpacer}/>
+
+                    {facebookUrl &&
+                        <a target="_blank" rel="noreferrer" href={facebookUrl} className={Styles.facebookLink}
+                           title="See this event on Facebook">
+                            <StaticImage
+                                src="../../../images/social/f_logo_RGB-Black_100.png"
+                                alt="Facebook logo"
+                                placeholder="none"
+                                layout="fixed"
+                                loading="eager"
+                                width={25}
+                            />
+                        </a>
+                    }
+                </div>
+            </div> : null
+    )
 }

@@ -9,67 +9,58 @@ import {withTwoPassRendering} from "../helpers/withTwoPassRendering";
 
 const CalendarEvent = withTwoPassRendering(CalendarEventComponent);
 
-const EventsPage = ({ data }) => {
-	return (
-		<Layout pageTitle="Events">
-			<div className="constrainedContent">
-				<div className={Styles.container}>
-					<h1>Events</h1>
+const EventsPage = ({data}) => {
+    return (
+        <Layout pageTitle="Events">
+            <div className="constrainedContent">
+                <div className={Styles.container}>
+                    <h1>Events</h1>
 
-					<br />
+                    <br/>
 
-					{data.allMarkdownRemark.nodes.map(({ id, html, frontmatter }) => (
-						<CalendarEvent
-							{...frontmatter}
-							key={id}>
+                    {data.allContentfulEvent.nodes.map((event) => (
+                        <CalendarEvent key={event.id} {...event} />
+                    ))}
 
-							<div dangerouslySetInnerHTML={{ __html: html}} />
-						</CalendarEvent>
-					))}
+                    <ScrollToTop/>
 
-					<ScrollToTop />
-
-					<div className={Styles.moreInfo}>
-						For more information about any event, please telephone.
-					</div>
-				</div>
-			</div>
-		</Layout>
-	)
+                    <div className={Styles.moreInfo}>
+                        For more information about any event, please telephone.
+                    </div>
+                </div>
+            </div>
+        </Layout>
+    )
 }
 
 export const query = graphql`
-	query {
-		allMarkdownRemark(
-			filter: {frontmatter: { published: {eq: true}}}
-			sort: {fields: [frontmatter___startDate], order: ASC}
-		) {
-			nodes {
-				html
-				id
-				frontmatter {
-					title
-					facebookUrl
-					startDate
-					endDate
-					datePrefix
-					dateDayPart
-					dateMonthPart
-					dateTimePart
-					image {
-						childImageSharp {
-							gatsbyImageData(
-								layout: CONSTRAINED
-								placeholder: NONE
-							)
-						}
-					}
-					imageAlt,
-					mini
-				}
-			}
-		}
-	}
-`;
+    query {
+        allContentfulEvent(sort: {fields: [startDate], order: [ASC]}) {
+            nodes {
+                id
+                title
+                startDate
+                endDate
+                dateOverridePrefix
+                dateOverrideDay
+                dateOverrideMonth
+                dateOverrideTime
+                facebookUrl
+                image {
+                    localFile {
+                        childImageSharp {
+                            gatsbyImageData(layout: CONSTRAINED, placeholder: NONE)
+                        }
+                    }
+                    description
+                }
+                content {
+                    raw
+                }
+                isMini
+            }
+        }
+    }
+`
 
 export default EventsPage
