@@ -4,8 +4,8 @@ import Hero from '../components/pages/index/hero';
 
 import * as Styles from './index.module.scss';
 import JustGivingBar from '../components/global/justgivingbar';
-import { FC, PropsWithChildren } from 'react';
-import { GatsbyBrowser, PageProps } from 'gatsby';
+import { FC } from 'react';
+import { PageProps } from 'gatsby';
 
 const IndexPage: FC<PageProps<null, null, { internal: boolean }>> = ({
   location,

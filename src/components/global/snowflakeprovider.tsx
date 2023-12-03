@@ -3,7 +3,6 @@ import {
   FC,
   MutableRefObject,
   PropsWithChildren,
-  Ref,
   RefObject,
   useEffect,
   useRef,

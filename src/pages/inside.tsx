@@ -122,10 +122,10 @@ const InsidePage = () => {
           </p>
           <p className={Styles.copy}>
             <strong>The Kitchen</strong> is in the larger brick wing added to
-            the house in the 1730's. By this time it had become fashionable to
-            have a separate room devoted to the cooking and food preparation.
-            The room is furnished mainly with articles from the 18th and 19th
-            centuries.
+            the house in the 1730&lsquo;s. By this time it had become
+            fashionable to have a separate room devoted to the cooking and food
+            preparation. The room is furnished mainly with articles from the
+            18th and 19th centuries.
           </p>
           <p className={Styles.copy}>
             <strong>The Porch</strong> is a later addition, built c. 1630 - 50
@@ -228,9 +228,9 @@ const InsidePage = () => {
           <h2>Upstairs</h2>
           <p className={Styles.copy}>
             <strong>The Hall Chamber</strong> was originally used as a bedroom,
-            and at the time of Hugh Ford's death in 1712 it contained 3 beds.
-            The household at Ford Green was often a large one, so that it was
-            necessary to make maximum use of all available space.
+            and at the time of Hugh Ford&lsquo;s death in 1712 it contained 3
+            beds. The household at Ford Green was often a large one, so that it
+            was necessary to make maximum use of all available space.
           </p>
           <p className={Styles.copy}>
             <strong>The Parlour Chamber</strong> is now used as a workroom for

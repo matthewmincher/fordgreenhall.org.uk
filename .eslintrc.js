@@ -29,5 +29,11 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react', 'prettier'],
   rules: {
     'react/display-name': 'off',
+    'react/no-children-prop': 'off',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };
