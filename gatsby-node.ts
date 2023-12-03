@@ -1,6 +1,6 @@
-import type {CreateDevServerArgs} from "gatsby"
-import express from "express"
+import type { CreateDevServerArgs } from 'gatsby';
+import express from 'express';
 
-exports.onCreateDevServer = ({app}: CreateDevServerArgs) => {
-    app.use(express.static('public'))
-}
+exports.onCreateDevServer = ({ app }: CreateDevServerArgs) => {
+  app.use(express.static('public'));
+};
