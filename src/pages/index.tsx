@@ -12,6 +12,13 @@ const IndexPage: FC<PageProps<null, null, { internal: boolean }>> = ({
 }) => {
   return (
     <Layout pageTitle="" contentBackgroundColor="black" isPrimaryPage={true}>
+      <div className="constrainedContent">
+        <div className={Styles.christmasClosure}>
+          Ford Green Hall closes for Christmas on the 21st of December and
+          reopens on the 7th of January!
+        </div>
+      </div>
+
       <div className={Styles.heroContainer}>
         <Hero skipAnimation={location?.state?.internal ?? false} />
       </div>
