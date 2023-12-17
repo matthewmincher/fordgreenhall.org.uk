@@ -15,6 +15,13 @@ const VisitPage = () => {
         <div className={Styles.visitContainer}>
           <h1>Visit Us</h1>
 
+          <div className="constrainedContent">
+            <div className={Styles.christmasClosure}>
+              Ford Green Hall closes for Christmas on the 21st of December and
+              reopens on the 7th of January!
+            </div>
+          </div>
+
           <div className={Styles.interactiveMapContainer}>
             <TailSpin
               wrapperClass={Styles.interactiveMapLoader}
