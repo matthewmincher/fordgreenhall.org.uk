@@ -4,7 +4,7 @@
 
   width: 100%;
   max-width: 850px;
-  margin:0 auto;
+  margin: 0 auto;
 
   min-height: 200px;
   margin-bottom: 20px;
@@ -24,6 +24,7 @@
   .right {
     padding-bottom: 10px;
   }
+
   .right .image {
     max-width: 50px;
   }
@@ -38,11 +39,16 @@
   width: 200px;
 
   background-color: #000000;
-  background-image: /*url(../../images/layout/header_gradient_strip.png), */url(../../../images/layout/header_gradient_faded.jpg);
-  background-attachment: /*scroll, */scroll;
-  background-repeat: /*repeat-x, */repeat;
-  background-size: /*auto, */auto;
-  background-position: /*center bottom, */center top;
+  background-image: /*url(../../images/layout/header_gradient_strip.png), */
+          url(../../../images/layout/header_gradient_faded.jpg);
+  background-attachment: /*scroll, */
+          scroll;
+  background-repeat: /*repeat-x, */
+          repeat;
+  background-size: /*auto, */
+          auto;
+  background-position: /*center bottom, */
+          center top;
 
 
   display: flex;
@@ -56,20 +62,22 @@
     font-style: italic;
     font-family: Times New Roman, serif;
   }
+
   .day {
     color: white;
     text-align: center;
     font-size: 32px;
     font-weight: bold;
     padding: 0 3px;
-    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
   }
+
   .month {
     color: white;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
   }
 
   .time {
@@ -83,6 +91,7 @@
 
 
 }
+
 .right {
   flex: 1;
   background-color: white;
@@ -101,7 +110,6 @@
   }
 
 
-
   .description {
     font-family: Georgia, serif;
     font-size: 16px;
@@ -110,10 +118,11 @@
     text-shadow: 1px 1px 0px white;
 
     p {
-      margin:0;
+      margin: 0;
     }
+
     p + p {
-      margin-top: 5px;
+      margin-top: 15px;
     }
   }
 
@@ -126,8 +135,9 @@
   .facebookSpacer {
     width: 40px;
     height: 40px;
-    float:right;
+    float: right;
   }
+
   .facebookLink {
     position: absolute;
     bottom: 5px;
@@ -136,6 +146,7 @@
 
     transition: opacity 0.3s ease-out;
   }
+
   .facebookLink:hover {
     opacity: 1;
   }
@@ -153,9 +164,11 @@
     .day {
       font-size: 24px;
     }
+
     .month {
       font-size: 18px;
     }
+
     .time {
       font-size: 14px;
     }
