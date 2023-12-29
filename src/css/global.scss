@@ -84,35 +84,3 @@ body {
   margin: 0 auto 1em auto;
   text-align: center;
 }
-
-.closure-light > div {
-  color: #dddddd;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  font-family: Georgia, serif;
-  font-size: 90%;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-}
-
-.closure > div {
-  color: #dddddd;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  font-family: Georgia, serif;
-  font-size: 90%;
-  background-image: /*url(../../images/layout/header_gradient_strip.png), */
-          url(../images/layout/header_gradient_faded.jpg);
-  background-attachment: /*scroll, */
-          scroll;
-  background-repeat: /*repeat-x, */
-          repeat;
-  background-size: /*auto, */
-          auto;
-  background-position: /*center bottom, */
-          center top;
-  border: 2px solid rgba(183, 186, 143, 0.2);
-  margin-bottom: 20px;
-}

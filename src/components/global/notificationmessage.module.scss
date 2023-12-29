@@ -1,0 +1,23 @@
+.notification > div {
+  color: #dddddd;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  font-family: Georgia, serif;
+  font-size: 90%;
+  margin-bottom: 20px;
+}
+
+
+.notification.light > div {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.notification.dark > div {
+  background-image: url(../../images/layout/header_gradient_faded.jpg);
+  background-attachment: scroll;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center top;
+  border: 2px solid rgba(183, 186, 143, 0.2);
+}

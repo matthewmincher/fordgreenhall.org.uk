@@ -6,6 +6,7 @@ import * as Styles from './index.module.scss';
 import JustGivingBar from '../components/global/justgivingbar';
 import { FC } from 'react';
 import { graphql, PageProps } from 'gatsby';
+import NotificationMessage from '../components/global/notificationmessage';
 
 type Props = PageProps<
   {
@@ -27,11 +28,12 @@ const IndexPage: FC<Props> = ({ data, location }) => {
   return (
     <Layout pageTitle="" contentBackgroundColor="black" isPrimaryPage={true}>
       {data.allContentfulClosureNotice.nodes.map((node) => (
-        <div key={node.label} className="constrainedContent closure">
-          <div className={node.cssClasses.join(' ')}>
-            {node.message.message}
-          </div>
-        </div>
+        <NotificationMessage
+          key={node.label}
+          theme="dark"
+          message={node.message.message}
+          classList={node.cssClasses}
+        />
       ))}
 
       <div className={Styles.heroContainer}>
