@@ -1,6 +1,20 @@
-import type { CreateDevServerArgs } from 'gatsby';
+import type { GatsbyNode } from 'gatsby';
 import express from 'express';
 
-exports.onCreateDevServer = ({ app }: CreateDevServerArgs) => {
+export const onCreateDevServer: GatsbyNode['onCreateDevServer'] = ({ app }) => {
   app.use(express.static('public'));
+};
+
+export const onCreatePage: GatsbyNode['onCreatePage'] = async ({
+  page,
+  actions: { createPage, deletePage },
+}) => {
+  deletePage(page);
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      builtAt: new Date().toISOString(),
+    },
+  });
 };

@@ -5,19 +5,34 @@ import Hero from '../components/pages/index/hero';
 import * as Styles from './index.module.scss';
 import JustGivingBar from '../components/global/justgivingbar';
 import { FC } from 'react';
-import { PageProps } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 
-const IndexPage: FC<PageProps<null, null, { internal: boolean }>> = ({
-  location,
-}) => {
+type Props = PageProps<
+  {
+    allContentfulClosureNotice: {
+      nodes: {
+        label: string;
+        message: {
+          message: string;
+        };
+        cssClasses: string[];
+      }[];
+    };
+  },
+  null,
+  { internal: boolean }
+>;
+
+const IndexPage: FC<Props> = ({ data, location }) => {
   return (
     <Layout pageTitle="" contentBackgroundColor="black" isPrimaryPage={true}>
-      <div className="constrainedContent">
-        <div className={Styles.christmasClosure}>
-          Ford Green Hall closes for Christmas on the 21st of December and
-          reopens on the 7th of January!
+      {data.allContentfulClosureNotice.nodes.map((node) => (
+        <div key={node.label} className="constrainedContent closure">
+          <div className={node.cssClasses.join(' ')}>
+            {node.message.message}
+          </div>
         </div>
-      </div>
+      ))}
 
       <div className={Styles.heroContainer}>
         <Hero skipAnimation={location?.state?.internal ?? false} />
@@ -29,5 +44,22 @@ const IndexPage: FC<PageProps<null, null, { internal: boolean }>> = ({
     </Layout>
   );
 };
+
+export const query = graphql`
+  query ($builtAt: Date) {
+    allContentfulClosureNotice(
+      filter: { displayFrom: { lte: $builtAt }, displayTo: { gte: $builtAt } }
+      sort: { displayFrom: ASC }
+    ) {
+      nodes {
+        label
+        message {
+          message
+        }
+        cssClasses
+      }
+    }
+  }
+`;
 
 export default IndexPage;

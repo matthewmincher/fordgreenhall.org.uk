@@ -2,25 +2,39 @@ import * as React from 'react';
 import Layout from '../components/layout/layout';
 
 import * as Styles from './visit.module.scss';
-import { Link, withPrefix } from 'gatsby';
+import { graphql, Link, PageProps, withPrefix } from 'gatsby';
 
 import { TailSpin } from 'react-loader-spinner';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FC } from 'react';
 
-const VisitPage = () => {
+type Props = PageProps<{
+  allContentfulClosureNotice: {
+    nodes: {
+      label: string;
+      message: {
+        message: string;
+      };
+      cssClasses: string[];
+    }[];
+  };
+}>;
+
+const VisitPage: FC<Props> = ({ data }) => {
   return (
     <Layout pageTitle="Visit" isPrimaryPage={true}>
       <div className="constrainedContent">
         <div className={Styles.visitContainer}>
           <h1>Visit Us</h1>
 
-          <div className="constrainedContent">
-            <div className={Styles.christmasClosure}>
-              Ford Green Hall closes for Christmas on the 21st of December and
-              reopens on the 7th of January!
+          {data.allContentfulClosureNotice.nodes.map((node) => (
+            <div key={node.label} className="constrainedContent closure-light">
+              <div className={node.cssClasses.join(' ')}>
+                {node.message.message}
+              </div>
             </div>
-          </div>
+          ))}
 
           <div className={Styles.interactiveMapContainer}>
             <TailSpin
@@ -137,5 +151,22 @@ const VisitPage = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query ($builtAt: Date) {
+    allContentfulClosureNotice(
+      filter: { displayFrom: { lte: $builtAt }, displayTo: { gte: $builtAt } }
+      sort: { displayFrom: ASC }
+    ) {
+      nodes {
+        label
+        message {
+          message
+        }
+        cssClasses
+      }
+    }
+  }
+`;
 
 export default VisitPage;

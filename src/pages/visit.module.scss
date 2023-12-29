@@ -7,6 +7,7 @@
     font-weight: 400;
     font-size: 3em;
   }
+
   h2 {
     font-size: 1.5em;
   }
@@ -16,35 +17,42 @@
 .interactiveMapContainer {
   position: relative;
 }
+
 .interactiveMapLoader {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
 
   margin-left: -50px;
   margin-top: -50px;
 }
+
 .interactiveMap {
   margin: 10px auto 0 auto;
   display: block;
   z-index: 2;
   position: relative;
 }
+
 .tripadvisorFrame {
   width: 160px;
   height: 94px;
   overflow: hidden;
 }
+
 .tripadvisorContainer {
   text-align: center;
   margin-top: 20px;
 }
+
 .visitContainer .clear {
   clear: both;
 }
+
 .visitContainer .clear-r {
   clear: right;
 }
+
 .visitContainer .openingDetails {
   display: flex;
   padding: 0 25px;
@@ -66,12 +74,14 @@
     }
   }
 }
+
 .visitContainer .openingDetails p {
   font-family: "Georgia", serif;
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
 }
+
 .visitContainer .openingDetails p:last-of-type {
   margin-bottom: 0;
 }
@@ -81,9 +91,11 @@
   flex: 1;
   margin-right: 40px;
 }
+
 .visitContainer .openingDetailsRight {
   flex: 1;
 }
+
 .emph, .price {
   color: #ffff00;
 }
@@ -95,8 +107,9 @@
 .priceContainer {
   padding: 20px;
   max-width: 800px;
-  margin:0 auto;
+  margin: 0 auto;
 }
+
 .priceTable {
   border-collapse: collapse;
 
@@ -121,6 +134,7 @@
   .annotationColumn, .emptyColumn {
     background-color: #727259;
   }
+
   .priceColumn {
     background-color: #808062;
     text-align: center;
@@ -131,14 +145,14 @@
     color: yellow;
   }
 
-  th.priceColumn{
+  th.priceColumn {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
     padding: 15px;
   }
 
-  tr:last-of-type td.priceColumn{
+  tr:last-of-type td.priceColumn {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
@@ -156,12 +170,15 @@
   tr:first-of-type td.annotationColumn {
     border-top-left-radius: 10px;
   }
+
   tr:first-of-type td.emptyColumn {
     border-top-right-radius: 10px;
   }
+
   .roundBl {
     border-bottom-left-radius: 10px;
   }
+
   .roundBr {
     border-bottom-right-radius: 10px;
   }
@@ -176,9 +193,9 @@
     }
   }
 }
+
 @media all and (max-width: 800px) {
-  .visitContainer .openingDetails
-  {
+  .visitContainer .openingDetails {
     flex-direction: column;
   }
 
@@ -187,15 +204,4 @@
     text-align: left;
     margin-right: 0;
   }
-}
-
-.christmasClosure {
-  color: #dddddd;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  font-family: Georgia, serif;
-  font-size: 90%;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
 }

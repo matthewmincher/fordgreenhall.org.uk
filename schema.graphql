@@ -428,6 +428,112 @@ type ContentfulAssetSys {
     type: String
 }
 
+type ContentfulClosureNotice implements ContentfulEntry & ContentfulReference & Node {
+    "Returns the first child node of type contentfulClosureNoticeMessageTextNode or null if there are no children of given type on this node"
+    childContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNode
+    children: [Node!]!
+    "Returns all children nodes filtered by type contentfulClosureNoticeMessageTextNode"
+    childrenContentfulClosureNoticeMessageTextNode: [contentfulClosureNoticeMessageTextNode]
+    contentful_id: String!
+    createdAt(
+        "Returns the difference between this date and the current time. Defaults to \"milliseconds\" but you can also pass in as the measurement \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\", and \"seconds\"."
+        difference: String,
+        "Format the date using Moment.js' date tokens, e.g. `date(formatString: \"YYYY MMMM DD\")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens."
+        formatString: String,
+        "Returns a string generated with Moment.js' `fromNow` function"
+        fromNow: Boolean,
+        "Configures the locale Moment.js will use to format the date."
+        locale: String
+    ): Date
+    cssClasses: [String]
+    displayFrom(
+        "Returns the difference between this date and the current time. Defaults to \"milliseconds\" but you can also pass in as the measurement \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\", and \"seconds\"."
+        difference: String,
+        "Format the date using Moment.js' date tokens, e.g. `date(formatString: \"YYYY MMMM DD\")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens."
+        formatString: String,
+        "Returns a string generated with Moment.js' `fromNow` function"
+        fromNow: Boolean,
+        "Configures the locale Moment.js will use to format the date."
+        locale: String
+    ): Date
+    displayTo(
+        "Returns the difference between this date and the current time. Defaults to \"milliseconds\" but you can also pass in as the measurement \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\", and \"seconds\"."
+        difference: String,
+        "Format the date using Moment.js' date tokens, e.g. `date(formatString: \"YYYY MMMM DD\")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens."
+        formatString: String,
+        "Returns a string generated with Moment.js' `fromNow` function"
+        fromNow: Boolean,
+        "Configures the locale Moment.js will use to format the date."
+        locale: String
+    ): Date
+    id: ID!
+    internal: Internal!
+    label: String
+    message: contentfulClosureNoticeMessageTextNode
+    node_locale: String!
+    parent: Node
+    spaceId: String
+    sys: ContentfulClosureNoticeSys
+    updatedAt(
+        "Returns the difference between this date and the current time. Defaults to \"milliseconds\" but you can also pass in as the measurement \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\", and \"seconds\"."
+        difference: String,
+        "Format the date using Moment.js' date tokens, e.g. `date(formatString: \"YYYY MMMM DD\")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens."
+        formatString: String,
+        "Returns a string generated with Moment.js' `fromNow` function"
+        fromNow: Boolean,
+        "Configures the locale Moment.js will use to format the date."
+        locale: String
+    ): Date
+}
+
+type ContentfulClosureNoticeConnection {
+    distinct(field: ContentfulClosureNoticeFieldSelector!): [String!]!
+    edges: [ContentfulClosureNoticeEdge!]!
+    group(field: ContentfulClosureNoticeFieldSelector!, limit: Int, skip: Int): [ContentfulClosureNoticeGroupConnection!]!
+    max(field: ContentfulClosureNoticeFieldSelector!): Float
+    min(field: ContentfulClosureNoticeFieldSelector!): Float
+    nodes: [ContentfulClosureNotice!]!
+    pageInfo: PageInfo!
+    sum(field: ContentfulClosureNoticeFieldSelector!): Float
+    totalCount: Int!
+}
+
+type ContentfulClosureNoticeEdge {
+    next: ContentfulClosureNotice
+    node: ContentfulClosureNotice!
+    previous: ContentfulClosureNotice
+}
+
+type ContentfulClosureNoticeGroupConnection {
+    distinct(field: ContentfulClosureNoticeFieldSelector!): [String!]!
+    edges: [ContentfulClosureNoticeEdge!]!
+    field: String!
+    fieldValue: String
+    group(field: ContentfulClosureNoticeFieldSelector!, limit: Int, skip: Int): [ContentfulClosureNoticeGroupConnection!]!
+    max(field: ContentfulClosureNoticeFieldSelector!): Float
+    min(field: ContentfulClosureNoticeFieldSelector!): Float
+    nodes: [ContentfulClosureNotice!]!
+    pageInfo: PageInfo!
+    sum(field: ContentfulClosureNoticeFieldSelector!): Float
+    totalCount: Int!
+}
+
+type ContentfulClosureNoticeSys {
+    contentType: ContentfulClosureNoticeSysContentType
+    revision: Int
+    type: String
+}
+
+type ContentfulClosureNoticeSysContentType {
+    sys: ContentfulClosureNoticeSysContentTypeSys
+}
+
+type ContentfulClosureNoticeSysContentTypeSys {
+    id: String
+    linkType: String
+    type: String
+}
+
 type ContentfulContentType implements Node {
     children: [Node!]!
     description: String
@@ -1112,6 +1218,8 @@ type PageInfo {
 
 type Query {
     allContentfulAsset(filter: ContentfulAssetFilterInput, limit: Int, skip: Int, sort: [ContentfulAssetSortInput]): ContentfulAssetConnection!
+    allContentfulClosureNotice(filter: ContentfulClosureNoticeFilterInput, limit: Int, skip: Int, sort: [ContentfulClosureNoticeSortInput]): ContentfulClosureNoticeConnection!
+    allContentfulClosureNoticeMessageTextNode(filter: contentfulClosureNoticeMessageTextNodeFilterInput, limit: Int, skip: Int, sort: [contentfulClosureNoticeMessageTextNodeSortInput]): contentfulClosureNoticeMessageTextNodeConnection!
     allContentfulContentType(filter: ContentfulContentTypeFilterInput, limit: Int, skip: Int, sort: [ContentfulContentTypeSortInput]): ContentfulContentTypeConnection!
     allContentfulEntry(filter: ContentfulEntryFilterInput, limit: Int, skip: Int, sort: [ContentfulEntrySortInput]): ContentfulEntryConnection!
     allContentfulEvent(filter: ContentfulEventFilterInput, limit: Int, skip: Int, sort: [ContentfulEventSortInput]): ContentfulEventConnection!
@@ -1124,6 +1232,8 @@ type Query {
     allSitePage(filter: SitePageFilterInput, limit: Int, skip: Int, sort: [SitePageSortInput]): SitePageConnection!
     allSitePlugin(filter: SitePluginFilterInput, limit: Int, skip: Int, sort: [SitePluginSortInput]): SitePluginConnection!
     contentfulAsset(children: NodeFilterListInput, contentful_id: StringQueryOperatorInput, createdAt: DateQueryOperatorInput, description: StringQueryOperatorInput, fields: ContentfulAssetFieldsFilterInput, file: ContentfulAssetFileFilterInput, filename: StringQueryOperatorInput, filesize: IntQueryOperatorInput, gatsbyImage: GatsbyImageDataQueryOperatorInput, gatsbyImageData: GatsbyImageDataQueryOperatorInput, height: IntQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, localFile: FileFilterInput, mimeType: StringQueryOperatorInput, node_locale: StringQueryOperatorInput, parent: NodeFilterInput, placeholderUrl: StringQueryOperatorInput, publicUrl: StringQueryOperatorInput, resize: RemoteFileResizeFilterInput, size: IntQueryOperatorInput, spaceId: StringQueryOperatorInput, sys: ContentfulAssetSysFilterInput, title: StringQueryOperatorInput, updatedAt: DateQueryOperatorInput, url: StringQueryOperatorInput, width: IntQueryOperatorInput): ContentfulAsset
+    contentfulClosureNotice(childContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeFilterInput, children: NodeFilterListInput, childrenContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeFilterListInput, contentful_id: StringQueryOperatorInput, createdAt: DateQueryOperatorInput, cssClasses: StringQueryOperatorInput, displayFrom: DateQueryOperatorInput, displayTo: DateQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, label: StringQueryOperatorInput, message: contentfulClosureNoticeMessageTextNodeFilterInput, node_locale: StringQueryOperatorInput, parent: NodeFilterInput, spaceId: StringQueryOperatorInput, sys: ContentfulClosureNoticeSysFilterInput, updatedAt: DateQueryOperatorInput): ContentfulClosureNotice
+    contentfulClosureNoticeMessageTextNode(children: NodeFilterListInput, id: StringQueryOperatorInput, internal: InternalFilterInput, message: StringQueryOperatorInput, parent: NodeFilterInput, sys: contentfulClosureNoticeMessageTextNodeSysFilterInput): contentfulClosureNoticeMessageTextNode
     contentfulContentType(children: NodeFilterListInput, description: StringQueryOperatorInput, displayField: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, name: StringQueryOperatorInput, parent: NodeFilterInput, sys: ContentfulContentTypeSysFilterInput): ContentfulContentType
     contentfulEntry(children: NodeFilterListInput, contentful_id: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, node_locale: StringQueryOperatorInput, parent: NodeFilterInput): ContentfulEntry
     contentfulEvent(children: NodeFilterListInput, content: ContentfulEventContentFilterInput, contentful_id: StringQueryOperatorInput, createdAt: DateQueryOperatorInput, dateOverrideDay: StringQueryOperatorInput, dateOverrideMonth: StringQueryOperatorInput, dateOverridePrefix: StringQueryOperatorInput, dateOverrideTime: StringQueryOperatorInput, endDate: DateQueryOperatorInput, facebookUrl: StringQueryOperatorInput, id: StringQueryOperatorInput, image: ContentfulAssetFilterInput, imageAltText: StringQueryOperatorInput, internal: InternalFilterInput, isMini: BooleanQueryOperatorInput, node_locale: StringQueryOperatorInput, parent: NodeFilterInput, spaceId: StringQueryOperatorInput, startDate: DateQueryOperatorInput, sys: ContentfulEventSysFilterInput, title: StringQueryOperatorInput, updatedAt: DateQueryOperatorInput): ContentfulEvent
@@ -1393,6 +1503,51 @@ type SiteSiteMetadata {
     description: String
     siteUrl: String
     title: String
+}
+
+type contentfulClosureNoticeMessageTextNode implements Node {
+    children: [Node!]!
+    id: ID!
+    internal: Internal!
+    message: String
+    parent: Node
+    sys: contentfulClosureNoticeMessageTextNodeSys
+}
+
+type contentfulClosureNoticeMessageTextNodeConnection {
+    distinct(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): [String!]!
+    edges: [contentfulClosureNoticeMessageTextNodeEdge!]!
+    group(field: contentfulClosureNoticeMessageTextNodeFieldSelector!, limit: Int, skip: Int): [contentfulClosureNoticeMessageTextNodeGroupConnection!]!
+    max(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): Float
+    min(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): Float
+    nodes: [contentfulClosureNoticeMessageTextNode!]!
+    pageInfo: PageInfo!
+    sum(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): Float
+    totalCount: Int!
+}
+
+type contentfulClosureNoticeMessageTextNodeEdge {
+    next: contentfulClosureNoticeMessageTextNode
+    node: contentfulClosureNoticeMessageTextNode!
+    previous: contentfulClosureNoticeMessageTextNode
+}
+
+type contentfulClosureNoticeMessageTextNodeGroupConnection {
+    distinct(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): [String!]!
+    edges: [contentfulClosureNoticeMessageTextNodeEdge!]!
+    field: String!
+    fieldValue: String
+    group(field: contentfulClosureNoticeMessageTextNodeFieldSelector!, limit: Int, skip: Int): [contentfulClosureNoticeMessageTextNodeGroupConnection!]!
+    max(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): Float
+    min(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): Float
+    nodes: [contentfulClosureNoticeMessageTextNode!]!
+    pageInfo: PageInfo!
+    sum(field: contentfulClosureNoticeMessageTextNodeFieldSelector!): Float
+    totalCount: Int!
+}
+
+type contentfulClosureNoticeMessageTextNodeSys {
+    type: String
 }
 
 enum ContentfulImageCropFocus {
@@ -1738,6 +1893,114 @@ input ContentfulAssetSysFilterInput {
 }
 
 input ContentfulAssetSysSortInput {
+    revision: SortOrderEnum
+    type: SortOrderEnum
+}
+
+input ContentfulClosureNoticeFieldSelector {
+    childContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeFieldSelector
+    children: NodeFieldSelector
+    childrenContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeFieldSelector
+    contentful_id: FieldSelectorEnum
+    createdAt: FieldSelectorEnum
+    cssClasses: FieldSelectorEnum
+    displayFrom: FieldSelectorEnum
+    displayTo: FieldSelectorEnum
+    id: FieldSelectorEnum
+    internal: InternalFieldSelector
+    label: FieldSelectorEnum
+    message: contentfulClosureNoticeMessageTextNodeFieldSelector
+    node_locale: FieldSelectorEnum
+    parent: NodeFieldSelector
+    spaceId: FieldSelectorEnum
+    sys: ContentfulClosureNoticeSysFieldSelector
+    updatedAt: FieldSelectorEnum
+}
+
+input ContentfulClosureNoticeFilterInput {
+    childContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeFilterInput
+    children: NodeFilterListInput
+    childrenContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeFilterListInput
+    contentful_id: StringQueryOperatorInput
+    createdAt: DateQueryOperatorInput
+    cssClasses: StringQueryOperatorInput
+    displayFrom: DateQueryOperatorInput
+    displayTo: DateQueryOperatorInput
+    id: StringQueryOperatorInput
+    internal: InternalFilterInput
+    label: StringQueryOperatorInput
+    message: contentfulClosureNoticeMessageTextNodeFilterInput
+    node_locale: StringQueryOperatorInput
+    parent: NodeFilterInput
+    spaceId: StringQueryOperatorInput
+    sys: ContentfulClosureNoticeSysFilterInput
+    updatedAt: DateQueryOperatorInput
+}
+
+input ContentfulClosureNoticeSortInput {
+    childContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeSortInput
+    children: NodeSortInput
+    childrenContentfulClosureNoticeMessageTextNode: contentfulClosureNoticeMessageTextNodeSortInput
+    contentful_id: SortOrderEnum
+    createdAt: SortOrderEnum
+    cssClasses: SortOrderEnum
+    displayFrom: SortOrderEnum
+    displayTo: SortOrderEnum
+    id: SortOrderEnum
+    internal: InternalSortInput
+    label: SortOrderEnum
+    message: contentfulClosureNoticeMessageTextNodeSortInput
+    node_locale: SortOrderEnum
+    parent: NodeSortInput
+    spaceId: SortOrderEnum
+    sys: ContentfulClosureNoticeSysSortInput
+    updatedAt: SortOrderEnum
+}
+
+input ContentfulClosureNoticeSysContentTypeFieldSelector {
+    sys: ContentfulClosureNoticeSysContentTypeSysFieldSelector
+}
+
+input ContentfulClosureNoticeSysContentTypeFilterInput {
+    sys: ContentfulClosureNoticeSysContentTypeSysFilterInput
+}
+
+input ContentfulClosureNoticeSysContentTypeSortInput {
+    sys: ContentfulClosureNoticeSysContentTypeSysSortInput
+}
+
+input ContentfulClosureNoticeSysContentTypeSysFieldSelector {
+    id: FieldSelectorEnum
+    linkType: FieldSelectorEnum
+    type: FieldSelectorEnum
+}
+
+input ContentfulClosureNoticeSysContentTypeSysFilterInput {
+    id: StringQueryOperatorInput
+    linkType: StringQueryOperatorInput
+    type: StringQueryOperatorInput
+}
+
+input ContentfulClosureNoticeSysContentTypeSysSortInput {
+    id: SortOrderEnum
+    linkType: SortOrderEnum
+    type: SortOrderEnum
+}
+
+input ContentfulClosureNoticeSysFieldSelector {
+    contentType: ContentfulClosureNoticeSysContentTypeFieldSelector
+    revision: FieldSelectorEnum
+    type: FieldSelectorEnum
+}
+
+input ContentfulClosureNoticeSysFilterInput {
+    contentType: ContentfulClosureNoticeSysContentTypeFilterInput
+    revision: IntQueryOperatorInput
+    type: StringQueryOperatorInput
+}
+
+input ContentfulClosureNoticeSysSortInput {
+    contentType: ContentfulClosureNoticeSysContentTypeSortInput
     revision: SortOrderEnum
     type: SortOrderEnum
 }
@@ -2759,4 +3022,47 @@ input TransformOptions {
 
 input WebPOptions {
     quality: Int
+}
+
+input contentfulClosureNoticeMessageTextNodeFieldSelector {
+    children: NodeFieldSelector
+    id: FieldSelectorEnum
+    internal: InternalFieldSelector
+    message: FieldSelectorEnum
+    parent: NodeFieldSelector
+    sys: contentfulClosureNoticeMessageTextNodeSysFieldSelector
+}
+
+input contentfulClosureNoticeMessageTextNodeFilterInput {
+    children: NodeFilterListInput
+    id: StringQueryOperatorInput
+    internal: InternalFilterInput
+    message: StringQueryOperatorInput
+    parent: NodeFilterInput
+    sys: contentfulClosureNoticeMessageTextNodeSysFilterInput
+}
+
+input contentfulClosureNoticeMessageTextNodeFilterListInput {
+    elemMatch: contentfulClosureNoticeMessageTextNodeFilterInput
+}
+
+input contentfulClosureNoticeMessageTextNodeSortInput {
+    children: NodeSortInput
+    id: SortOrderEnum
+    internal: InternalSortInput
+    message: SortOrderEnum
+    parent: NodeSortInput
+    sys: contentfulClosureNoticeMessageTextNodeSysSortInput
+}
+
+input contentfulClosureNoticeMessageTextNodeSysFieldSelector {
+    type: FieldSelectorEnum
+}
+
+input contentfulClosureNoticeMessageTextNodeSysFilterInput {
+    type: StringQueryOperatorInput
+}
+
+input contentfulClosureNoticeMessageTextNodeSysSortInput {
+    type: SortOrderEnum
 }
