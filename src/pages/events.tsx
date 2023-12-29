@@ -65,8 +65,11 @@ const EventsPage: FC<Props> = ({ data }) => {
 };
 
 export const query = graphql`
-  query {
-    allContentfulEvent(sort: { startDate: ASC }) {
+  query EventsQuery($builtAt: Date) {
+    allContentfulEvent(
+      filter: { endDate: { gte: $builtAt } }
+      sort: { startDate: ASC }
+    ) {
       nodes {
         id
         title
