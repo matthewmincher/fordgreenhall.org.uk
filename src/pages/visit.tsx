@@ -8,6 +8,7 @@ import { TailSpin } from 'react-loader-spinner';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
+import NotificationMessage from '../components/global/notificationmessage';
 
 type Props = PageProps<{
   allContentfulClosureNotice: {
@@ -29,11 +30,12 @@ const VisitPage: FC<Props> = ({ data }) => {
           <h1>Visit Us</h1>
 
           {data.allContentfulClosureNotice.nodes.map((node) => (
-            <div key={node.label} className="constrainedContent closure-light">
-              <div className={node.cssClasses.join(' ')}>
-                {node.message.message}
-              </div>
-            </div>
+            <NotificationMessage
+              key={node.label}
+              theme="light"
+              message={node.message.message}
+              classList={node.cssClasses}
+            />
           ))}
 
           <div className={Styles.interactiveMapContainer}>
