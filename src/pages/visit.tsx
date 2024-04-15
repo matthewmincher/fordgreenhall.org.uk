@@ -121,7 +121,7 @@ const VisitPage: FC<Props> = ({ data }) => {
                         Age 5 - 16. Under 5s free.
                       </div>
                     </td>
-                    <td className={Styles.priceColumn}>£4.00</td>
+                    <td className={Styles.priceColumn}>£3.00</td>
                     <td className={`${Styles.roundBr} ${Styles.emptyColumn}`} />
                   </tr>
                   <tr>
