@@ -122,7 +122,7 @@ const Footer = () => {
               <span>Watch on Youtube</span>
             </a>
             <a
-              href="https://www.instagram.com/ford_green_hall_museum/"
+              href="https://www.instagram.com/hallfordgreen/"
               target="_blank"
               rel="noreferrer"
             >

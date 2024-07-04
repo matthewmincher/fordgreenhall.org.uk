@@ -34,10 +34,16 @@
   position: relative;
 }
 
+.goodJourneyIcon {
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .tripadvisorFrame {
   width: 160px;
   height: 94px;
   overflow: hidden;
+  display: inline-block;
 }
 
 .tripadvisorContainer {

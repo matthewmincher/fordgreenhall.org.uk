@@ -9,6 +9,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
 import NotificationMessage from '../components/global/notificationmessage';
+import { StaticImage } from 'gatsby-plugin-image';
 
 type Props = PageProps<{
   allContentfulClosureNotice: {
@@ -137,6 +138,22 @@ const VisitPage: FC<Props> = ({ data }) => {
           <div className={Styles.clear} />
 
           <div className={Styles.tripadvisorContainer}>
+            <a
+              href="https://www.goodjourney.org.uk/attractions/ford-green-hall/"
+              target="_blank"
+              rel="noreferrer"
+              title="Visit car free"
+            >
+              <StaticImage
+                className={Styles.goodJourneyIcon}
+                src="./../images/thirdparties/gj_mark.svg"
+                height={97}
+                placeholder="none"
+                loading="eager"
+                layout="fixed"
+                alt="Good Journey icon"
+              />
+            </a>
             <iframe
               className={Styles.tripadvisorFrame}
               width="160px"
