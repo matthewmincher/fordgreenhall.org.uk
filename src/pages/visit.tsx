@@ -97,12 +97,12 @@ const VisitPage: FC<Props> = ({ data }) => {
                       Family
                       <div className={Styles.sub}>2 adults + 2 children</div>
                     </td>
-                    <td className={Styles.priceColumn}>£14.00</td>
+                    <td className={Styles.priceColumn}>£15.00</td>
                     <td className={Styles.emptyColumn} />
                   </tr>
                   <tr>
                     <td className={Styles.annotationColumn}>Adult</td>
-                    <td className={Styles.priceColumn}>£5.00</td>
+                    <td className={Styles.priceColumn}>£5.50</td>
                     <td className={Styles.emptyColumn} />
                   </tr>
                   <tr>
@@ -110,7 +110,7 @@ const VisitPage: FC<Props> = ({ data }) => {
                       Concessions
                       <div className={Styles.sub}>Adults aged 60 or over</div>
                     </td>
-                    <td className={Styles.priceColumn}>£4.00</td>
+                    <td className={Styles.priceColumn}>£4.50</td>
                     <td className={Styles.emptyColumn} />
                   </tr>
                   <tr>
@@ -132,6 +132,12 @@ const VisitPage: FC<Props> = ({ data }) => {
                   </tr>
                 </tbody>
               </table>
+              <div className={Styles.localPriceDiscounts}>
+                20% off price of admission with proof of address in the ST6
+                postcode area.
+                <br />
+                Excludes school visits and ticketed events.
+              </div>
             </div>
           </div>
 
